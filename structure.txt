@@ -1,0 +1,48 @@
+.
+├── app.vue
+├── components
+│   ├── AboutSection.vue
+│   ├── BlogSection.vue
+│   ├── ClientsSection.vue
+│   ├── ContactSection.vue
+│   ├── EducationSection.vue
+│   ├── ExperienceSection.vue
+│   ├── Footer.vue
+│   ├── Header.vue
+│   ├── HeroSection.vue
+│   ├── PortfolioSection.vue
+│   ├── ServicesSection.vue
+│   ├── SkillsSection.vue
+│   └── TestimonialsSection.vue
+├── i18n
+│   └── locales
+│       ├── en.json
+│       └── fr.json
+├── kross-master.txt
+├── nuxt.config.ts
+├── package.json
+├── package-lock.json
+├── pages
+│   ├── about.vue
+│   ├── blog.vue
+│   ├── clients.vue
+│   ├── contact.vue
+│   ├── education.vue
+│   ├── experience.vue
+│   ├── index.vue
+│   ├── portfolio.vue
+│   ├── services.vue
+│   ├── skills.vue
+│   └── testimonials.vue
+├── public
+│   ├── favicon.ico
+│   └── _robots.txt
+├── README.md
+├── server
+│   └── tsconfig.json
+├── structure.txt
+├── tailwind.config.js
+├── tsconfig.compilerOptions.json
+└── tsconfig.json
+
+6 directories, 39 files

@@ -1,0 +1,132 @@
+{
+    "navigation": {
+        "home": "Accueil",
+        "about": "À propos",
+        "experience": "Expérience",
+        "education": "Formation",
+        "skills": "Compétences",
+        "portfolio": "Portfolio",
+        "services": "Services",
+        "contact": "Contact",
+        "blog": "Blog"
+    },
+    "hero": {
+        "title": "Bonjour, je suis Adam Abdel-Djamal",
+        "content": "Je suis un développeur web passionné. Je crée des applications web rapides, accessibles et modernes en utilisant Vue.js, Laravel et des outils de pointe.",
+        "cta": "En savoir plus"
+    },
+    "about": {
+        "title": "À propos de moi",
+        "content": "Avec une solide formation académique et une expérience pratique dans les domaines du frontend et du backend, je livre des solutions efficaces et scalables. Je m'amuse à transformer des idées en applications interactives que les utilisateurs adorent.",
+        "cta": "En savoir plus"
+    },
+    "experience": {
+        "title": "Expérience",
+        "positions": {
+            "webDeveloperIntern": {
+                "title": "Stagiaire Développeur Web",
+                "company": "OSI Group",
+                "period": "2022",
+                "description": "Développement d'applications web full-stack avec des architectures propres."
+            },
+            "webContentEditor": {
+                "title": "Rédacteur Web",
+                "company": "RedacLink",
+                "period": "2021",
+                "description": "Rédaction d'articles et descriptions de produits optimisés pour le SEO."
+            },
+            "academicIntern": {
+                "title": "Stagiaire Académique",
+                "company": "Rintio",
+                "period": "2019",
+                "description": "Développement d'une interface Angular pour la collecte de données."
+            }
+        }
+    },
+    "education": {
+        "title": "Formation",
+        "degrees": {
+            "bsc": {
+                "title": "Licence en Gestion Informatique",
+                "institution": "ENEAM, Cotonou",
+                "period": "2020"
+            },
+            "webDev": {
+                "title": "Formation en Développement Web",
+                "institution": "Smartel",
+                "period": "2023–2024"
+            },
+            "courses": {
+                "title": "Cours IA et DevOps",
+                "institution": "Udemy",
+                "period": "2025"
+            }
+        }
+    },
+    "skills": {
+        "title": "Compétences",
+        "categories": {
+            "languages": {
+                "title": "Langages",
+                "items": ["HTML", "CSS", "JavaScript", "PHP"]
+            },
+            "frameworks": {
+                "title": "Frameworks",
+                "items": ["Vue.js", "Laravel", "Bootstrap", "Tailwind CSS", "Nuxt.js"]
+            },
+            "tools": {
+                "title": "Outils",
+                "items": ["Docker", "Linux", "Git"]
+            }
+        }
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "projects": {
+            "newsPortal": {
+                "title": "Portail d'Actualités",
+                "period": "2022–2023",
+                "description": "Un site d'actualités responsive avec un CMS moderne."
+            },
+            "ecommerce": {
+                "title": "Site E-commerce",
+                "period": "2022–2024",
+                "description": "Une plateforme de vente évolutive utilisant Laravel et Vue.js."
+            }
+        }
+    },
+    "services": {
+        "title": "Services",
+        "items": {
+            "webDev": {
+                "title": "Développement Web",
+                "description": "Création d'applications web modernes et évolutives"
+            },
+            "backend": {
+                "title": "Architecture Backend",
+                "description": "Conception de solutions côté serveur robustes et efficaces"
+            },
+            "uiux": {
+                "title": "Intégration UI/UX",
+                "description": "Création d'interfaces utilisateur fluides et intuitives"
+            },
+            "cms": {
+                "title": "Solutions CMS",
+                "description": "Implémentation de systèmes de gestion de contenu flexibles"
+            },
+            "writing": {
+                "title": "Rédaction Technique",
+                "description": "Création de documentation claire et complète"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "email": "adamabdeldjamal[at]gmail.com",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/adam-abdel-djamal/",
+            "github": "https://github.com/adamabdeldjamal",
+            "twitter": "https://twitter.com/adamabdeldjamal"
+        }
+    }
+}

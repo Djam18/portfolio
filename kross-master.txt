@@ -1,0 +1,122 @@
+kross-master/
+├── about.html
+├── blog.html
+├── blog-single.html
+├── contact.html
+├── css
+│   ├── maps
+│   │   └── style.css.map
+│   └── style.css
+├── images
+│   ├── about
+│   │   ├── author.jpg
+│   │   └── signature.png
+│   ├── backgrounds
+│   │   ├── bg-dots.png
+│   │   ├── education-bg.png
+│   │   ├── map.png
+│   │   └── team-bg.png
+│   ├── blog
+│   │   ├── post-1.jpg
+│   │   ├── post-2.jpg
+│   │   ├── post-3.jpg
+│   │   ├── post-4.jpg
+│   │   ├── post-5.jpg
+│   │   └── post-6.jpg
+│   ├── clients-logo
+│   │   ├── client-logo-1.png
+│   │   ├── client-logo-2.png
+│   │   ├── client-logo-3.png
+│   │   ├── client-logo-4.png
+│   │   └── client-logo-5.png
+│   ├── experience
+│   │   ├── icon-1.png
+│   │   ├── icon-2.png
+│   │   └── icon-3.png
+│   ├── icons
+│   │   ├── design.png
+│   │   ├── plan.png
+│   │   └── print.png
+│   ├── illustrations
+│   │   ├── dots-cyan.png
+│   │   ├── dots-group-cyan.png
+│   │   ├── dots-group-orange.png
+│   │   ├── dots-group-sm.png
+│   │   ├── dots-group-v.png
+│   │   ├── dots-orange.png
+│   │   ├── leaf-bg.png
+│   │   ├── leaf-bg-top.png
+│   │   ├── leaf-cyan-2.png
+│   │   ├── leaf-cyan-lg.png
+│   │   ├── leaf-cyan.png
+│   │   ├── leaf-orange.png
+│   │   ├── leaf-pink.png
+│   │   ├── leaf-pink-round.png
+│   │   ├── leaf-yellow.png
+│   │   └── page-title.png
+│   ├── logo.png
+│   ├── portfolio
+│   │   ├── item-1.png
+│   │   ├── item-2.png
+│   │   ├── item-3.png
+│   │   ├── item-4.png
+│   │   ├── item-5.png
+│   │   ├── item-6.png
+│   │   ├── item-7.png
+│   │   └── item-8.png
+│   ├── progress-wave.png
+│   ├── team
+│   │   ├── member-1.png
+│   │   ├── member-2.png
+│   │   └── member-3.png
+│   ├── testimonial
+│   │   └── client-1.png
+│   ├── user-1.jpg
+│   ├── user-2.jpg
+│   └── user-3.jpg
+├── index.html
+├── js
+│   └── script.js
+├── plugins
+│   ├── bootstrap
+│   │   ├── bootstrap.min.css
+│   │   └── bootstrap.min.js
+│   ├── fonts
+│   │   └── BwNistaInt-xBd.woff
+│   ├── jQuery
+│   │   └── jquery.min.js
+│   ├── shuffle
+│   │   └── shuffle.min.js
+│   ├── slick
+│   │   ├── ajax-loader.gif
+│   │   ├── fonts
+│   │   │   ├── slick.eot
+│   │   │   ├── slick.svg
+│   │   │   ├── slick.ttf
+│   │   │   └── slick.woff
+│   │   ├── slick.css
+│   │   └── slick.min.js
+│   └── themify-icons
+│       ├── fonts
+│       │   ├── themify.eot
+│       │   ├── themify.svg
+│       │   ├── themify.ttf
+│       │   └── themify.woff
+│       └── themify-icons.css
+├── portfolio.html
+└── scss
+    ├── _buttons.scss
+    ├── _common.scss
+    ├── _mixins.scss
+    ├── style.scss
+    ├── templates
+    │   ├── _about.scss
+    │   ├── _blog.scss
+    │   ├── _hero-area.scss
+    │   ├── _homepage.scss
+    │   ├── _navigation.scss
+    │   └── _portfolio.scss
+    ├── _typography.scss
+    └── _variables.scss
+
+25 directories, 94 files
