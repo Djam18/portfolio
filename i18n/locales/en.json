@@ -16,7 +16,9 @@
     "hero": {
         "title": "Hi, I'm ADAM Abdel-Djamal",
         "content": "I'm a passionate Full Stack Web Developer. I build fast, accessible, and modern web applications using Vue.js, Laravel, and cutting-edge tools.",
-        "cta": "Know More"
+        "cta": "Know More",
+        "myGithub": "My Github",
+        "myLinkedin": "My LinkedIn"
     },
     "about": {
         "title": "About Me",

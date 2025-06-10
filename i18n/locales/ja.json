@@ -16,7 +16,9 @@
     "hero": {
         "title": "こんにちは、ADAM Abdel-Djamalです。",
         "content": "私は情熱的なWeb開発者です。Vue.js、Laravel、そして最先端のツールを使って、高速でアクセスしやすい、モダンなWebアプリケーションを構築しています。",
-        "cta": "詳細はこちら"
+        "cta": "詳細はこちら",
+        "myLinkedin": "私のLinkedIn",
+        "myGithub": "私のGithub"
     },
     "about": {
         "title": "自己紹介",

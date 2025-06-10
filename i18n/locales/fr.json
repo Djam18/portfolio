@@ -16,7 +16,9 @@
     "hero": {
         "title": "Bonjour, je suis ADAM Abdel-Djamal",
         "content": "Je suis un développeur web passionné. Je crée des applications web rapides, accessibles et modernes en utilisant Vue.js, Laravel et des outils de pointe.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "myLinkedin": "Mon LinkedIn",
+        "myGithub": "Mon Github"
     },
     "about": {
         "title": "À propos de moi",
