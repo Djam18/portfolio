@@ -78,7 +78,7 @@ export default defineEventHandler(async (event) => {
       message: 'Email envoyé avec succès'
     }
 
-  } catch (error: any) {
+   } catch (error: any) {
     console.error('Erreur lors de l\'envoi de l\'email:', error?.response?.body || error);
     const err = error;
     throw createError({
