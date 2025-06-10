@@ -1,53 +1,197 @@
 {
     "navigation": {
         "home": "Inicio",
-        "about": "Sobre mí",
+        "about": "Acerca de",
         "experience": "Experiencia",
-        "education": "Educación",
+        "education": "Formación",
         "skills": "Habilidades",
         "portfolio": "Portafolio",
         "services": "Servicios",
         "contact": "Contacto",
         "blog": "Blog",
-        "cta": "Saber más",
+        "cta": "Más información",
         "quickLinks": "Enlaces rápidos",
-        "postTitle": "Desarrollador Full Stack && Redactor de Contenido"
+        "postTitle": "Desarrollador Full Stack y Escritor Web"
     },
     "hero": {
         "title": "Hola, soy ADAM Abdel-Djamal",
-        "content": "Soy un desarrollador web apasionado. Construyo aplicaciones web rápidas, accesibles y modernas usando Vue.js, Laravel y herramientas de última generación.",
-        "cta": "Saber más"
+        "content": "Soy un apasionado desarrollador web. Desarrollo aplicaciones web rápidas, accesibles y modernas con Vue.js, Laravel y herramientas de vanguardia.",
+        "cta": "Más información"
+    },
+    "about": {
+        "title": "Acerca de mí",
+        "content": "Con una sólida formación académica y experiencia práctica en Desarrollo front-end y back-end. Ofrezco soluciones efectivas y escalables. Disfruto transformando ideas en aplicaciones interactivas que los usuarios adoran.",
+        "cta": "Más información"
+    },
+    "experience": {
+        "title": "Experiencia",
+        "positions": {
+            "webDeveloperIntern": {
+                "title": "Desarrollador Web en Prácticas",
+                "company": "OSI Group",
+                "period": "2022",
+                "description": "Desarrollo de aplicaciones web full-stack con arquitecturas limpias."
+            },
+            "webContentEditor": {
+                "title": "Editor Web",
+                "company": "RedacLink",
+                "period": "2021",
+                "description": "Redacción de artículos y descripciones de productos optimizados para SEO."
+            },
+            "academicIntern": {
+                "title": "Prácticas Académicas",
+                "company": "Rintio",
+                "period": "2019",
+                "description": "Desarrollo de una interfaz Angular para la recopilación de datos."
+            }
+        }
+    },
+    "education": {
+        "title": "Formación",
+        "degrees": {
+            "BSC": {
+                "title": "Licenciatura en Gestión de TI",
+                "institution": "ENEAM, Cotonú",
+                "period": "2020"
+            },
+            "webDev": {
+                "title": "Formación en Desarrollo Web",
+                "institution": "Smartel",
+                "period": "2023-2024"
+            },
+            "courses": {
+                "title": "Curso de IA y DevOps",
+                "institution": "Udemy",
+                "period": "2025"
+            }
+        }
+    },
+    "skills": {
+        "title": "Habilidades",
+        "subtitle": "Estas son algunas de las tecnologías que he utilizado.",
+        "categories": {
+            "languages": {
+                "title": "Idiomas",
+                "items": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "PHP"
+                ]
+            },
+            "frameworks": {
+                "title": "Frameworks",
+                "items": [
+                    "Vue.js",
+                    "Laravel",
+                    "Bootstrap",
+                    "Tailwind CSS",
+                    "Nuxt.js"
+                ]
+            },
+            "tools": {
+                "title": "Herramientas",
+                "items": [
+                    "Docker",
+                    "Linux",
+                    "git"
+                ]
+            }
+        }
+    },
+    "otherSkills": {
+        "title": "",
+        "databases": {
+            "title": "Bases de datos",
+            "items": [
+                "MySQL",
+                "PostgreSQL",
+                "MongoDB"
+            ]
+        },
+        "testing": {
+            "title": "Pruebas",
+            "items": [
+                "Jest",
+                "PHPUnit",
+                "Postman"
+            ]
+        }
+    },
+    "portfolio": {
+        "title": "Portafolio",
+        "subtitle": "Descubre mis proyectos recientes y las soluciones que he desarrollado.",
+        "viewProject": "Ver proyecto",
+        "projects": {
+            "newsPortal": {
+                "title": "Portal de noticias",
+                "period": "2022–2023",
+                "description": "Un sitio web de noticias adaptable con un CMS moderno.",
+                "link": "https://github.com/Djam18/news_portal"
+            },
+            "ecommerce": {
+                "title": "Sitio web de comercio electrónico",
+                "periodo": "2022–2024",
+                "descripción": "Una plataforma de ventas escalable con Laravel y Vue.js.",
+                "enlace": "https://github.com/Djam18/multi_vendor_ecommerce"
+            }
+        }
+    },
+    "services": {
+        "title": "Servicios",
+        "items": {
+            "webDev": {
+                "title": "Desarrollo web",
+                "description": "Desarrollo de aplicaciones web modernas y escalables"
+            },
+            "backend": {
+                "title": "Arquitectura de backend",
+                "description": "Diseño de soluciones robustas y eficientes del lado del servidor"
+            },
+            "uiux": {
+                "title": "Integración UI/UX",
+                "description": "Creación de interfaces de usuario fluidas e intuitivas"
+            },
+            "api": {
+                "title": "Desarrollo de API",
+                "description": "Creación de API seguras y escalables"
+            },
+            "contentWriting": {
+                "title": "Redacción de contenido",
+                "description": "Creación de artículos de blog y fichas de producto."
+            }
+        }
     },
     "contact": {
-        "title": "Contacto",
-        "email": "Correo",
-        "social": "Redes Sociales",
-        "subtitle": "Ponte en contacto para colaboraciones, consultas o simplemente para saludar.",
-        "infoTitle": "Información de Contacto",
+        "title": "Contáctame",
+        "email": "Correo electrónico",
+        "social": "Cuentas",
+        "subtitle": "Contáctame para colaboraciones, solicitudes o simplemente para saludar.",
+        "infoTitle": "Información de contacto",
         "phone": "Teléfono",
         "location": "Ubicación",
-        "formTitle": "Enviar un Mensaje",
+        "formTitle": "Enviar un mensaje",
         "form": {
-            "name": "Tu Nombre",
-            "namePlaceholder": "Ingresa tu nombre",
-            "email": "Tu Correo",
-            "emailPlaceholder": "Ingresa tu correo electrónico",
+            "name": "Tu nombre",
+            "namePlaceholder": "Introduce tu nombre",
+            "email": "Tu correo electrónico",
+            "emailPlaceholder": "Introduce tu dirección de correo electrónico",
             "subject": "Asunto",
             "subjectPlaceholder": "¿De qué se trata?",
             "message": "Mensaje",
-            "messagePlaceholder": "Escribe tu mensaje aquí...",
-            "submit": "Enviar Mensaje",
             "sending": "Enviando...",
-            "successMessage": "¡Tu mensaje ha sido enviado con éxito! Te responderé pronto.",
-            "errorMessage": "¡Ups! Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo."
-        },
-        "validation": {
-            "nameRequired": "Por favor, ingresa tu nombre",
-            "emailRequired": "Por favor, ingresa tu correo electrónico",
-            "emailInvalid": "Por favor, ingresa un correo electrónico válido",
-            "subjectRequired": "Por favor, ingresa un asunto",
-            "messageRequired": "Por favor, ingresa un mensaje",
-            "messageLength": "El mensaje debe tener al menos 10 caracteres"
+            "messagePlaceholder": "Escribe tu mensaje aquí...",
+            "submit": "Enviar mensaje",
+            "successMessage": "Tu mensaje se ha enviado correctamente. Te responderé.",
+            "errorMessage": "¡Uy! Se produjo un error al enviar tu mensaje. Vuelve a intentarlo.",
+            "validation": {
+                "nameRequired": "Introduce tu nombre",
+                "emailRequired": "Introduce tu dirección de correo electrónico",
+                "emailInvalid": "Introduce una dirección de correo electrónico válida",
+                "subjectRequired": "Introduce un asunto",
+                "messageRequired": "Introduce un mensaje",
+                "messageLength": "El mensaje debe tener al menos 10 caracteres"
+            }
         }
     }
 }

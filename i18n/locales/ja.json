@@ -1,53 +1,197 @@
 {
     "navigation": {
         "home": "ホーム",
-        "about": "私について",
+        "about": "概要",
         "experience": "経験",
-        "education": "教育",
-        "skills": "スキル",
+        "education": "形成",
+        "skills": "コンペテンス",
         "portfolio": "ポートフォリオ",
         "services": "サービス",
-        "contact": "お問い合わせ",
+        "contact": "接触",
         "blog": "ブログ",
-        "cta": "詳細を見る",
-        "quickLinks": "クイックリンク",
-        "postTitle": "フルスタック開発者 && コンテンツライター"
+        "cta": "もっと知りたい",
+        "quickLinks": "先取特権ラピデス",
+        "postTitle": "développeurフルスタック&&rédacteurweb"
     },
     "hero": {
-        "title": "こんにちは、ADAM Abdel-Djamalです",
-        "content": "私は情熱的なフルスタック開発者です。Vue.js、Laravel、最新のツールを使用して、高速で、アクセシブルでモダンなウェブアプリケーションを構築しています。",
-        "cta": "詳細を見る"
+        "title": "こんにちは、ADAM Abdel-Djamalです。",
+        "content": "私は情熱的なWeb開発者です。Vue.js、Laravel、そして最先端のツールを使って、高速でアクセスしやすい、モダンなWebアプリケーションを構築しています。",
+        "cta": "詳細はこちら"
+    },
+    "about": {
+        "title": "自己紹介",
+        "content": "フロントエンドとバックエンド開発における確かな学歴と実務経験を活かし、効率的でスケーラブルなソリューションを提供しています。アイデアを、ユーザーに愛されるインタラクティブなアプリケーションへと昇華させることにやりがいを感じています。",
+        "cta": "詳細はこちら"
+    },
+    "experience": {
+        "title": "経験",
+        "positions": {
+            "webDeveloperIntern": {
+                "title": "Web開発者インターン",
+                "company": "OSI Group",
+                "period": "2022",
+                "description": "独自アーキテクチャによるフルスタックWebアプリケーションの開発。"
+            },
+            "webContentEditor": {
+                "title": "Webエディター",
+                "company": "RedacLink",
+                "period": "2021",
+                "description": "SEOに最適化された記事と商品説明の作成。"
+            },
+            "academicIntern": {
+                "title": "アカデミックインターンシップ",
+                "company": "Rintio",
+                "period": "2019",
+                "description": "データ収集用Angularインターフェースの開発。"
+            }
+        }
+    },
+    "education": {
+        "title": "形成",
+        "degrees": {
+            "bsc": {
+                "title": "ジェスチャーインフォマティックのライセンス",
+                "institution": "Eneam,Cotonou",
+                "period": "2020"
+            },
+            "webDev": {
+                "title": "フォーメーションendéveloppementWeb",
+                "institution": "Smartel",
+                "period": "2023–2024"
+            },
+            "courses": {
+                "title": "IAとDevOpsコース",
+                "institution": "ウデミー",
+                "period": "2025"
+            }
+        }
+    },
+    "skills": {
+        "title": "コンペテンス",
+        "subtitle": "これは私が使用した技術のいくつかです",
+        "categories": {
+            "languages": {
+                "title": "言語",
+                "items": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "PHP"
+                ]
+            },
+            "frameworks": {
+                "title": "フレームワーク",
+                "items": [
+                    "Vue.js",
+                    "Laravel",
+                    "Bootstrap",
+                    "Tailwind CSS",
+                    "Nuxt.js"
+                ]
+            },
+            "tools": {
+                "title": "ツール",
+                "items": [
+                    "Docker",
+                    "Linux",
+                    "git"
+                ]
+            }
+        }
+    },
+    "otherSkills": {
+        "title": "",
+        "databases": {
+            "title": "ベースドンネー",
+            "items": [
+                "MySQL",
+                "PostgreSQL",
+                "MongoDB"
+            ]
+        },
+        "testing": {
+            "title": "テスト",
+            "items": [
+                "Jest",
+                "PHPUnit",
+                "Postman"
+            ]
+        }
+    },
+    "portfolio": {
+        "title": "ポートフォリオ",
+        "subtitle": "私の最近のプロジェクトと私が開発したソリューションをご覧ください",
+        "viewProject": "プロジェクトを見る",
+        "projects": {
+            "newsPortal": {
+                "title": "ファクタリティポータル",
+                "period": "2022–2023",
+                "description": "応答性のあるサイトで、現代的なCMSを使用しています",
+                "link": "https://github.com/djam18/news_portal"
+            },
+            "ecommerce": {
+                "title": "サイトeコマース",
+                "period": "2022–2024",
+                "description": "Une Plateforme deVenteévolutivevatilisant laravel et vue.js.",
+                "link": "https://github.com/djam18/multi_vendor_ecommerce"
+            }
+        }
+    },
+    "services": {
+        "title": "サービス",
+        "items": {
+            "webDev": {
+                "title": "ウェブ開発",
+                "description": "現代的で進化可能なWebアプリケーションの作成"
+            },
+            "backend": {
+                "title": "アーキテクチャバックエンド",
+                "description": "サーバー側の堅牢で効果的なソリューションの設計"
+            },
+            "uiux": {
+                "title": "UI/UX統合",
+                "description": "CréationD'Interfacesutilisateur fluides et Intuitive"
+            },
+            "api": {
+                "title": "API開発",
+                "description": "Créationde apisécuriséesetévolutives"
+            },
+            "contentWriting": {
+                "title": "コンテンツライティング",
+                "description": "CréationD'Articsede Blogs、De Fiches deの説明はプロデュースを注ぎます"
+            }
+        }
     },
     "contact": {
-        "title": "お問い合わせ",
+        "title": "連絡してください",
         "email": "メール",
-        "social": "ソーシャル",
-        "subtitle": "協力、お問い合わせ、または単にご挨拶のためにご連絡ください。",
-        "infoTitle": "連絡先情報",
+        "social": "コンプ",
+        "subtitle": "私の最近のプロジェクトと私が開発に協力したソリューションをご覧ください",
+        "infoTitle": "連絡先の情報",
         "phone": "電話",
-        "location": "所在地",
-        "formTitle": "メッセージを送信",
+        "location": "ローカリゼーション",
+        "formTitle": "エンボイズ国連メッセージ",
         "form": {
-            "name": "お名前",
-            "namePlaceholder": "お名前を入力してください",
-            "email": "メールアドレス",
+            "name": "名前を入力してください",
+            "namePlaceholder": "名前を入力してください",
+            "email": "投票メール",
             "emailPlaceholder": "メールアドレスを入力してください",
-            "subject": "件名",
-            "subjectPlaceholder": "件名を入力してください",
+            "subject": "スジェット",
+            "subjectPlaceholder": "なんですか？",
             "message": "メッセージ",
+            "sending": "エンボイ...",
             "messagePlaceholder": "メッセージを入力してください...",
-            "submit": "送信する",
-            "sending": "送信中...",
-            "successMessage": "メッセージが正常に送信されました。すぐにご返信いたします！",
-            "errorMessage": "申し訳ありません！メッセージの送信中にエラーが発生しました。もう一度お試しください。"
+            "submit": "エンボイヤールメッセージ",
+            "successMessage": "投票メッセージエトレボイエヴェックサッカーズ ",
+            "errorMessage": "OUPS！ なんかおかしいです"
         },
         "validation": {
-            "nameRequired": "お名前を入力してください",
-            "emailRequired": "メールアドレスを入力してください",
-            "emailInvalid": "有効なメールアドレスを入力してください",
-            "subjectRequired": "件名を入力してください",
-            "messageRequired": "メッセージを入力してください",
-            "messageLength": "メッセージは10文字以上である必要があります"
+            "nameRequired": "Veuillez Entrer botre nom",
+            "emailRequired": "Veuillez Entrer Votre Adresseメール",
+            "emailInvalid": "Veuillez Enterrer UNE Adresse Email Valide",
+            "subjectRequired": "Veuillez Entrer UN Sujet",
+            "messageRequired": "Veuillez Entrer UNメッセージ",
+            "messageLength": "LeメッセージDoitコンポーターAu Moins 10Caractères"
         }
     }
 }
