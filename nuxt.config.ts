@@ -53,10 +53,20 @@ export default defineNuxtConfig({
   i18n: {
     langDir: 'locales/',
     defaultLocale: 'en',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+      alwaysRedirect: true,
+      fallbackLocale: 'en'
+    },
     locales: [
+      { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
       { code: 'fr', iso: 'fr-FR', file: 'fr.json', name: 'Français' },
-      { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' }
+      { code: 'ja', iso: 'ja-JP', file: 'ja.json', name: '日本語' },
+      { code: 'es', iso: 'es-ES', file: 'es.json', name: 'Español' }
     ],
-    baseUrl: 'https://adam-portfolio.vercel.app'
+    baseUrl: 'https://adam-portfolio.vercel.app',
+    strategy: 'no_prefix'
   }
 })

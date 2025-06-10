@@ -86,16 +86,15 @@
           <!-- Language Selector -->
           <div>
             <h3 class="font-heading font-bold text-lg mb-3">Language</h3>
-            <div class="flex space-x-4">
-              <button @click="switchLocale('en')"
-                class="px-3 py-1 rounded border border-white hover:bg-white hover:text-dark transition-colors"
-                :class="{ 'bg-white text-dark': $i18n.locale === 'en' }">
-                EN
-              </button>
-              <button @click="switchLocale('fr')"
-                class="px-3 py-1 rounded border border-white hover:bg-white hover:text-dark transition-colors"
-                :class="{ 'bg-white text-dark': $i18n.locale === 'fr' }">
-                FR
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                v-for="locale in availableLocales"
+                :key="locale.code"
+                @click="switchLocale(locale.code)"
+                class="px-3 py-1 rounded border border-white hover:bg-white hover:text-dark transition-colors flex items-center justify-center"
+                :class="{ 'bg-white text-dark': $i18n.locale === locale.code }"
+              >
+                {{ locale.name }}
               </button>
             </div>
           </div>
@@ -112,16 +111,24 @@
 <script setup>
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useRuntimeConfig } from '#app';
 
-const { locale, setLocale } = useI18n()
+const { locale, setLocale } = useI18n();
+const config = useRuntimeConfig();
 const isMenuOpen = ref(false);
+
+// Available locales
+const availableLocales = [
+  { code: 'en', name: 'English' },
+  { code: 'fr', name: 'Français' },
+  { code: 'ja', name: '日本語' },
+  { code: 'es', name: 'Español' }
+];
 
 // Navigation items
 const navItems = {
   home: { to: '/' },
-/*   about: { to: '/about' },
-  experience: { to: '/experience' },
- */  skills: { to: '/skills' },
+  skills: { to: '/skills' },
   portfolio: { to: '/portfolio' },
   services: { to: '/services' },
   contact: { to: '/contact' }
@@ -131,6 +138,8 @@ const navItems = {
 const switchLocale = async (newLocale) => {
   try {
     await setLocale(newLocale);
+    // Save the locale preference in a cookie
+    document.cookie = `i18n_redirected=${newLocale}; path=/; max-age=31536000`;
   } catch (error) {
     console.error("Erreur lors du changement de locale:", error);
   }

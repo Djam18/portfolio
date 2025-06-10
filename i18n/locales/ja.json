@@ -1,0 +1,53 @@
+{
+    "navigation": {
+        "home": "ホーム",
+        "about": "私について",
+        "experience": "経験",
+        "education": "教育",
+        "skills": "スキル",
+        "portfolio": "ポートフォリオ",
+        "services": "サービス",
+        "contact": "お問い合わせ",
+        "blog": "ブログ",
+        "cta": "詳細を見る",
+        "quickLinks": "クイックリンク",
+        "postTitle": "フルスタック開発者 && コンテンツライター"
+    },
+    "hero": {
+        "title": "こんにちは、ADAM Abdel-Djamalです",
+        "content": "私は情熱的なフルスタック開発者です。Vue.js、Laravel、最新のツールを使用して、高速で、アクセシブルでモダンなウェブアプリケーションを構築しています。",
+        "cta": "詳細を見る"
+    },
+    "contact": {
+        "title": "お問い合わせ",
+        "email": "メール",
+        "social": "ソーシャル",
+        "subtitle": "協力、お問い合わせ、または単にご挨拶のためにご連絡ください。",
+        "infoTitle": "連絡先情報",
+        "phone": "電話",
+        "location": "所在地",
+        "formTitle": "メッセージを送信",
+        "form": {
+            "name": "お名前",
+            "namePlaceholder": "お名前を入力してください",
+            "email": "メールアドレス",
+            "emailPlaceholder": "メールアドレスを入力してください",
+            "subject": "件名",
+            "subjectPlaceholder": "件名を入力してください",
+            "message": "メッセージ",
+            "messagePlaceholder": "メッセージを入力してください...",
+            "submit": "送信する",
+            "sending": "送信中...",
+            "successMessage": "メッセージが正常に送信されました。すぐにご返信いたします！",
+            "errorMessage": "申し訳ありません！メッセージの送信中にエラーが発生しました。もう一度お試しください。"
+        },
+        "validation": {
+            "nameRequired": "お名前を入力してください",
+            "emailRequired": "メールアドレスを入力してください",
+            "emailInvalid": "有効なメールアドレスを入力してください",
+            "subjectRequired": "件名を入力してください",
+            "messageRequired": "メッセージを入力してください",
+            "messageLength": "メッセージは10文字以上である必要があります"
+        }
+    }
+}

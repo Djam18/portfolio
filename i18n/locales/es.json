@@ -1,0 +1,53 @@
+{
+    "navigation": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "education": "Educación",
+        "skills": "Habilidades",
+        "portfolio": "Portafolio",
+        "services": "Servicios",
+        "contact": "Contacto",
+        "blog": "Blog",
+        "cta": "Saber más",
+        "quickLinks": "Enlaces rápidos",
+        "postTitle": "Desarrollador Full Stack && Redactor de Contenido"
+    },
+    "hero": {
+        "title": "Hola, soy ADAM Abdel-Djamal",
+        "content": "Soy un desarrollador web apasionado. Construyo aplicaciones web rápidas, accesibles y modernas usando Vue.js, Laravel y herramientas de última generación.",
+        "cta": "Saber más"
+    },
+    "contact": {
+        "title": "Contacto",
+        "email": "Correo",
+        "social": "Redes Sociales",
+        "subtitle": "Ponte en contacto para colaboraciones, consultas o simplemente para saludar.",
+        "infoTitle": "Información de Contacto",
+        "phone": "Teléfono",
+        "location": "Ubicación",
+        "formTitle": "Enviar un Mensaje",
+        "form": {
+            "name": "Tu Nombre",
+            "namePlaceholder": "Ingresa tu nombre",
+            "email": "Tu Correo",
+            "emailPlaceholder": "Ingresa tu correo electrónico",
+            "subject": "Asunto",
+            "subjectPlaceholder": "¿De qué se trata?",
+            "message": "Mensaje",
+            "messagePlaceholder": "Escribe tu mensaje aquí...",
+            "submit": "Enviar Mensaje",
+            "sending": "Enviando...",
+            "successMessage": "¡Tu mensaje ha sido enviado con éxito! Te responderé pronto.",
+            "errorMessage": "¡Ups! Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo."
+        },
+        "validation": {
+            "nameRequired": "Por favor, ingresa tu nombre",
+            "emailRequired": "Por favor, ingresa tu correo electrónico",
+            "emailInvalid": "Por favor, ingresa un correo electrónico válido",
+            "subjectRequired": "Por favor, ingresa un asunto",
+            "messageRequired": "Por favor, ingresa un mensaje",
+            "messageLength": "El mensaje debe tener al menos 10 caracteres"
+        }
+    }
+}
