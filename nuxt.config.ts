@@ -11,6 +11,9 @@ export default defineNuxtConfig({
     emailHost: process.env.EMAIL_HOST || 'smtp.gmail.com',
     emailPort: process.env.EMAIL_PORT || '587',
     emailTo: process.env.EMAIL_TO, // Votre email de réception
+    sendgridApiKey: process.env.SENDGRID_API_KEY,
+    sendgridFrom: process.env.SENDGRID_FROM,
+    sendgridTo: process.env.SENDGRID_TO,
     // Variables publiques (accessibles côté client)
     public: {
       apiBase: '/api'

@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer'
+import sgMail from '@sendgrid/mail'
 
 export default defineEventHandler(async (event) => {
   try {
@@ -31,19 +31,9 @@ export default defineEventHandler(async (event) => {
       })
     }
 
-    // Configuration runtime
+    // Récupérer la config SendGrid
     const config = useRuntimeConfig()
-
-    // Configuration du transporteur email (createTransport, pas createTransporter)
-    const transporter = nodemailer.createTransport({
-      host: config.emailHost,
-      port: parseInt(config.emailPort),
-      secure: false, // true pour 465, false pour les autres ports
-      auth: {
-        user: config.emailUser,
-        pass: config.emailPass,
-      },
-    })
+    sgMail.setApiKey(config.sendgridApiKey)
 
     // Template de l'email
     const htmlTemplate = `
@@ -68,27 +58,19 @@ export default defineEventHandler(async (event) => {
       </html>
     `
 
-    // Options de l'email
-    const mailOptions = {
-      from: `"${name}" <${config.emailUser}>`,
-      to: config.emailTo,
+    // Préparer les données pour SendGrid
+    const msg = {
+      to: config.sendgridTo,
+      from: config.sendgridFrom,
       replyTo: email,
       subject: `Portfolio Contact: ${subject}`,
       html: htmlTemplate,
       text: `
-        Nouveau message depuis votre portfolio
-
-        Nom: ${name}
-        Email: ${email}
-        Sujet: ${subject}
-
-        Message:
-        ${message}
-      `
+        Nouveau message depuis votre portfolio\n\n        Nom: ${name}\n        Email: ${email}\n        Sujet: ${subject}\n\n        Message:\n        ${message}\n      `
     }
 
-    // Envoyer l'email
-    await transporter.sendMail(mailOptions)
+    // Envoyer l'email via SendGrid
+    await sgMail.send(msg)
 
     // Réponse de succès
     return {
@@ -101,21 +83,6 @@ export default defineEventHandler(async (event) => {
 
     // Typage correct de l'erreur
     const err = error as any
-
-    // Gérer les erreurs Nodemailer
-    if (err.code === 'EAUTH') {
-      throw createError({
-        statusCode: 500,
-        statusMessage: 'Erreur d\'authentification email'
-      })
-    }
-
-    if (err.code === 'ECONNECTION') {
-      throw createError({
-        statusCode: 500,
-        statusMessage: 'Erreur de connexion au serveur email'
-      })
-    }
 
     // Autres erreurs
     throw createError({
