@@ -78,16 +78,13 @@ export default defineEventHandler(async (event) => {
       message: 'Email envoyé avec succès'
     }
 
-  } catch (error) {
-    console.error('Erreur lors de l\'envoi de l\'email:', error)
-
-    // Typage correct de l'erreur
-    const err = error as any
-
-    // Autres erreurs
+  } catch (error: any) {
+    console.error('Erreur lors de l\'envoi de l\'email:', error?.response?.body || error);
+    const err = error;
     throw createError({
       statusCode: err.statusCode || 500,
-      statusMessage: err.statusMessage || 'Erreur interne du serveur'
-    })
+      statusMessage: err.statusMessage || 'Erreur interne du serveur',
+      message: err.message || 'Erreur interne du serveur'
+    });
   }
 })
