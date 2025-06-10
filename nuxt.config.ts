@@ -3,6 +3,19 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxtjs/seo', '@nuxtjs/robots', '@nuxtjs/i18n'],
+  // Configuration des variables d'environnement
+  runtimeConfig: {
+    // Variables privées (côté serveur uniquement)
+    emailUser: process.env.EMAIL_USER,
+    emailPass: process.env.EMAIL_PASS,
+    emailHost: process.env.EMAIL_HOST || 'smtp.gmail.com',
+    emailPort: process.env.EMAIL_PORT || '587',
+    emailTo: process.env.EMAIL_TO, // Votre email de réception
+    // Variables publiques (accessibles côté client)
+    public: {
+      apiBase: '/api'
+    }
+  },
   app: {
     head: {
       title: 'Adam Abdel-Djamal | Full Stack Developer Portfolio',
@@ -22,11 +35,14 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'canonical', href: 'https://votre-domaine.com' },
-      ]
+      ],
     }
   },
+  plugins: [
+    { src: '~/plugins/flowbite.client.js', mode: 'client' }
+  ],
   sitemap: {
-    siteUrl: 'https://adam-portfolio.vercel.app',
+    hostname: 'https://adam-portfolio.vercel.app',
     gzip: true,
     routes: []
   },
@@ -35,6 +51,7 @@ export default defineNuxtConfig({
     sitemap: 'https://adam-portfolio.vercel.app/sitemap.xml'
   },
   i18n: {
+    langDir: 'locales/',
     defaultLocale: 'en',
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },

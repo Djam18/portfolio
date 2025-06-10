@@ -1,0 +1,18 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background shape -->
+  <circle cx="200" cy="200" r="180" fill="#F1EEE9" />
+
+  <!-- Developer illustration - simplified avatar -->
+  <circle cx="200" cy="160" r="70" fill="#4A6670" />
+  <rect x="130" y="240" width="140" height="120" rx="10" fill="#4A6670" />
+
+  <!-- Face details -->
+  <circle cx="175" cy="150" r="10" fill="white" />
+  <circle cx="225" cy="150" r="10" fill="white" />
+  <path d="M180 180 Q200 200 220 180" stroke="white" stroke-width="5" stroke-linecap="round" />
+
+  <!-- Decorative elements -->
+  <circle cx="320" cy="100" r="30" fill="#D67D5B" opacity="0.7" />
+  <circle cx="80" cy="300" r="40" fill="#2F7D95" opacity="0.6" />
+  <circle cx="330" cy="280" r="25" fill="#E4B363" opacity="0.8" />
+</svg>

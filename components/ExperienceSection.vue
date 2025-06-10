@@ -9,7 +9,7 @@
   <section id="experience" class="py-20 bg-neutral">
     <div class="container mx-auto px-4">
       <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
-        {{ $t('experience.title') }}
+        {{ t('experience.title') }}
       </h2>
 
       <div class="relative max-w-4xl mx-auto">
@@ -30,13 +30,13 @@
             <!-- Content box -->
             <div class="ml-6 md:ml-0 md:w-5/12 p-5 bg-white rounded-lg shadow-md">
               <h3 class="font-heading text-xl font-bold text-primary mb-1">
-                {{ $t(`${exp.title}`) }}
+                {{ t(`experience.positions.${exp.key}.title`) }}
               </h3>
               <div class="text-accent2 font-medium mb-2">
-                {{ $(exp.company) }} | {{ $t(exp.period) }}
+                {{ t(`experience.positions.${exp.key}.company`) }} | {{ t(`experience.positions.${exp.key}.period`) }}
               </div>
               <p class="text-dark/80">
-                {{ $(exp.description) }}
+                {{ t(`experience.positions.${exp.key}.description`) }}
               </p>
             </div>
           </div>
@@ -55,11 +55,24 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-const { t } = useI18n();
+const { t, $t } = useI18n();
 const timelineRef = ref(null);
-const experience = {
-  "title": "Experience",
-  "positions": {
+
+// Get experience data from i18n as an array
+const experiences = computed(() => {
+  // Récupérer les données depuis les traductions i18n
+  const experienceData = t('experience.positions', {}, { returnObjects: true });
+
+  // Si les données existent, les convertir en array
+  if (experienceData && typeof experienceData === 'object') {
+    return Object.entries(experienceData).map(([key, data]) => ({
+      key,
+      ...data
+    }));
+  }
+
+  // Fallback si les traductions ne sont pas disponibles
+  const fallbackExperience = {
     "webDeveloperIntern": {
       "title": "Web Developer Intern",
       "company": "OSI Group",
@@ -78,18 +91,11 @@ const experience = {
       "period": "2019",
       "description": "Developed an Angular interface for data collection."
     }
-  }
-};
+  };
 
-// Get experience data from i18n as an array
-const experiences = computed(() => {
-  // Object.entries returns [[key, value], ...]
-  return Object.entries(experience.positions).map(([key, data]) => ({
+  return Object.entries(fallbackExperience).map(([key, data]) => ({
     key,
-    title: data.title,
-    company: data.company,
-    period: data.period,
-    description: data.description
+    ...data
   }));
 });
 

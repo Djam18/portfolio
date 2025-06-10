@@ -8,10 +8,13 @@
         "portfolio": "Portfolio",
         "services": "Services",
         "contact": "Contact",
-        "blog": "Blog"
+        "blog": "Blog",
+        "cta" :"En savoir plus",
+        "quickLinks" : "Liens rapides",
+        "postTitle" : "Développeur Full Stack && Rédacteur Web"
     },
     "hero": {
-        "title": "Bonjour, je suis Adam Abdel-Djamal",
+        "title": "Bonjour, je suis ADAM Abdel-Djamal",
         "content": "Je suis un développeur web passionné. Je crée des applications web rapides, accessibles et modernes en utilisant Vue.js, Laravel et des outils de pointe.",
         "cta": "En savoir plus"
     },
@@ -65,33 +68,72 @@
     },
     "skills": {
         "title": "Compétences",
+        "subtitle": "Voici quelques-unes des technologies que j'ai utilisées.",
         "categories": {
             "languages": {
                 "title": "Langages",
-                "items": ["HTML", "CSS", "JavaScript", "PHP"]
+                "items": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "PHP"
+                ]
             },
             "frameworks": {
                 "title": "Frameworks",
-                "items": ["Vue.js", "Laravel", "Bootstrap", "Tailwind CSS", "Nuxt.js"]
+                "items": [
+                    "Vue.js",
+                    "Laravel",
+                    "Bootstrap",
+                    "Tailwind CSS",
+                    "Nuxt.js"
+                ]
             },
             "tools": {
                 "title": "Outils",
-                "items": ["Docker", "Linux", "Git"]
+                "items": [
+                    "Docker",
+                    "Linux",
+                    "Git"
+                ]
             }
+        }
+    },
+    "otherSkills": {
+        "title": "",
+        "databases": {
+            "title": "Bases de données",
+            "items": [
+                "MySQL",
+                "PostgreSQL",
+                "MongoDB"
+            ]
+        },
+        "testing": {
+            "title": "Tests",
+            "items": [
+                "Jest",
+                "PHPUnit",
+                "Postman"
+            ]
         }
     },
     "portfolio": {
         "title": "Portfolio",
+        "subtitle": "Découvrez mes projets récents et les solutions que j'ai développées.",
+        "viewProject": "Voir le projet",
         "projects": {
             "newsPortal": {
                 "title": "Portail d'Actualités",
                 "period": "2022–2023",
-                "description": "Un site d'actualités responsive avec un CMS moderne."
+                "description": "Un site d'actualités responsive avec un CMS moderne.",
+                "link": "https://github.com/Djam18/news_portal"
             },
             "ecommerce": {
                 "title": "Site E-commerce",
                 "period": "2022–2024",
-                "description": "Une plateforme de vente évolutive utilisant Laravel et Vue.js."
+                "description": "Une plateforme de vente évolutive utilisant Laravel et Vue.js.",
+                "link": "https://github.com/Djam18/multi_vendor_ecommerce"
             }
         }
     },
@@ -110,23 +152,46 @@
                 "title": "Intégration UI/UX",
                 "description": "Création d'interfaces utilisateur fluides et intuitives"
             },
-            "cms": {
-                "title": "Solutions CMS",
-                "description": "Implémentation de systèmes de gestion de contenu flexibles"
+            "api": {
+                "title": "Développement d'API",
+                "description": "Création de API sécurisées et évolutives"
             },
-            "writing": {
-                "title": "Rédaction Technique",
-                "description": "Création de documentation claire et complète"
+            "contentWriting": {
+                "title": "Rédaction de contenu",
+                "description": "Création d'articles de blogs, de fiches de descriptions pour des produits."
             }
         }
     },
     "contact": {
-        "title": "Contact",
-        "email": "adamabdeldjamal[at]gmail.com",
-        "social": {
-            "linkedin": "https://www.linkedin.com/in/adam-abdel-djamal/",
-            "github": "https://github.com/adamabdeldjamal",
-            "twitter": "https://twitter.com/adamabdeldjamal"
+        "title": "Contactez-moi",
+        "email": "Email",
+        "social": "Comptes",
+        "subtitle": "Prenez contact pour des collaborations, des demandes ou simplement pour dire bonjour.",
+        "infoTitle": "Informations de Contact",
+        "phone": "Téléphone",
+        "location": "Localisation",
+        "formTitle": "Envoyez un Message",
+        "form": {
+            "name": "Votre Nom",
+            "namePlaceholder": "Entrez votre nom",
+            "email": "Votre Email",
+            "emailPlaceholder": "Entrez votre adresse email",
+            "subject": "Sujet",
+            "subjectPlaceholder": "De quoi s'agit-il?",
+            "message": "Message",
+            "sending": "Envoi...",
+            "messagePlaceholder": "Tapez votre message ici...",
+            "submit": "Envoyer le Message",
+            "successMessage": "Votre message a été envoyé avec succès. Je vous répondrai bientôt!",
+            "errorMessage": "Oups! Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
+        },
+        "validation": {
+            "nameRequired": "Veuillez entrer votre nom",
+            "emailRequired": "Veuillez entrer votre adresse email",
+            "emailInvalid": "Veuillez entrer une adresse email valide",
+            "subjectRequired": "Veuillez entrer un sujet",
+            "messageRequired": "Veuillez entrer un message",
+            "messageLength": "Le message doit comporter au moins 10 caractères"
         }
     }
 }

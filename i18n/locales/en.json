@@ -8,10 +8,13 @@
         "portfolio": "Portfolio",
         "services": "Services",
         "contact": "Contact",
-        "blog": "Blog"
+        "blog": "Blog",
+        "cta" :"Know More",
+        "quickLinks" : "Quick Links",
+        "postTitle" : "Full Stack Web Developer && Content Writer"
     },
     "hero": {
-        "title": "Hi, I'm Adam Abdel-Djamal",
+        "title": "Hi, I'm ADAM Abdel-Djamal",
         "content": "I'm a passionate Full Stack Web Developer. I build fast, accessible, and modern web applications using Vue.js, Laravel, and cutting-edge tools.",
         "cta": "Know More"
     },
@@ -65,23 +68,60 @@
     },
     "skills": {
         "title": "Skills",
+        "subtitle": "Here are some of the technologies I've worked with.",
         "categories": {
             "languages": {
                 "title": "Languages",
-                "items": ["HTML", "CSS", "JavaScript", "PHP"]
+                "items": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "PHP"
+                ]
             },
             "frameworks": {
                 "title": "Frameworks",
-                "items": ["Vue.js", "Laravel", "Bootstrap", "Tailwind CSS", "Nuxt.js"]
+                "items": [
+                    "Vue.js",
+                    "Laravel",
+                    "Bootstrap",
+                    "Tailwind CSS",
+                    "Nuxt.js"
+                ]
             },
             "tools": {
                 "title": "Tools",
-                "items": ["Docker", "Linux", "Git"]
+                "items": [
+                    "Docker",
+                    "Linux",
+                    "Git"
+                ]
             }
+        }
+    },
+    "otherSkills": {
+        "title": "",
+        "databases": {
+            "title": "Databases",
+            "items": [
+                "MySQL",
+                "PostgreSQL",
+                "MongoDB"
+            ]
+        },
+        "testing": {
+            "title": "Testing",
+            "items": [
+                "Jest",
+                "PHPUnit",
+                "Postman"
+            ]
         }
     },
     "portfolio": {
         "title": "Portfolio",
+        "subtitle": "Discover my recent projects and the solutions I've developed.",
+        "viewProject": "View Project",
         "projects": {
             "newsPortal": {
                 "title": "News Portal",
@@ -110,23 +150,46 @@
                 "title": "UI/UX Integration",
                 "description": "Creating seamless and intuitive user interfaces"
             },
-            "cms": {
-                "title": "CMS Solutions",
-                "description": "Implementing flexible content management systems"
+            "api": {
+                "title": "API Development",
+                "description": "Building secure and scalable APIs for seamless data integration"
             },
-            "writing": {
-                "title": "Technical Writing",
+            "contentWriting": {
+                "title": "Content Writing",
                 "description": "Creating clear and comprehensive documentation"
             }
         }
     },
     "contact": {
         "title": "Contact",
-        "email": "adamabdeldjamal[at]gmail.com",
-        "social": {
-            "linkedin": "https://www.linkedin.com/in/adam-abdel-djamal/",
-            "github": "https://github.com/adamabdeldjamal",
-            "twitter": "https://twitter.com/adamabdeldjamal"
+        "email": "Email",
+        "social": "Accounts",
+        "subtitle": "Get in touch for collaborations, inquiries, or just to say hello.",
+        "infoTitle": "Contact Information",
+        "phone": "Phone",
+        "location": "Location",
+        "formTitle": "Send a Message",
+        "form": {
+            "name": "Your Name",
+            "namePlaceholder": "Enter your name",
+            "email": "Your Email",
+            "emailPlaceholder": "Enter your email address",
+            "subject": "Subject",
+            "subjectPlaceholder": "What is this regarding?",
+            "message": "Message",
+            "messagePlaceholder": "Type your message here...",
+            "submit": "Send Message",
+            "sending": "Sending...",
+            "successMessage": "Your message has been sent successfully. I'll get back to you soon!",
+            "errorMessage": "Oops! There was an error sending your message. Please try again."
+        },
+        "validation": {
+            "nameRequired": "Please enter your name",
+            "emailRequired": "Please enter your email address",
+            "emailInvalid": "Please enter a valid email address",
+            "subjectRequired": "Please enter a subject",
+            "messageRequired": "Please enter a message",
+            "messageLength": "Message must be at least 10 characters long"
         }
     }
 }

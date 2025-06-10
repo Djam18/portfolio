@@ -1,40 +1,49 @@
 .
 ├── app.vue
+├── assets
+│   ├── flowbite
+│   │   ├── flowbite.min.css
+│   │   └── flowbite.min.js
+│   ├── icons
+│   └── images
+│       ├── about.svg
+│       ├── portfolio
+│       │   ├── ecommerce.svg
+│       │   └── news-portal.svg
+│       ├── profile.svg
+│       └── skills-bg.svg
 ├── components
 │   ├── AboutSection.vue
-│   ├── BlogSection.vue
-│   ├── ClientsSection.vue
-│   ├── ContactSection.vue
-│   ├── EducationSection.vue
 │   ├── ExperienceSection.vue
-│   ├── Footer.vue
-│   ├── Header.vue
+│   ├── FlowbiteTest.vue
 │   ├── HeroSection.vue
 │   ├── PortfolioSection.vue
-│   ├── ServicesSection.vue
-│   ├── SkillsSection.vue
-│   └── TestimonialsSection.vue
+│   ├── SkillBar.vue
+│   └── SkillsSection.vue
 ├── i18n
 │   └── locales
 │       ├── en.json
 │       └── fr.json
 ├── kross-master.txt
+├── layouts
+│   └── default.vue
 ├── nuxt.config.ts
 ├── package.json
 ├── package-lock.json
 ├── pages
-│   ├── about.vue
-│   ├── blog.vue
-│   ├── clients.vue
-│   ├── contact.vue
-│   ├── education.vue
-│   ├── experience.vue
 │   ├── index.vue
 │   ├── portfolio.vue
-│   ├── services.vue
-│   ├── skills.vue
-│   └── testimonials.vue
+│   └── skills.vue
+├── plugins
+│   └── gsap.client.js
 ├── public
+│   ├── assets
+│   │   └── images
+│   │       ├── about.svg
+│   │       ├── portfolio
+│   │       │   ├── ecommerce.svg
+│   │       │   └── news-portal.svg
+│   │       └── profile.svg
 │   ├── favicon.ico
 │   └── _robots.txt
 ├── README.md
@@ -45,4 +54,4 @@
 ├── tsconfig.compilerOptions.json
 └── tsconfig.json
 
-6 directories, 39 files
+16 directories, 38 files
