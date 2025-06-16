@@ -128,12 +128,6 @@ const projects = computed(() => {
       "period": "2022–2023",
       "description": "A fully responsive news site with a modern CMS.",
       "link": "https://github.com/Djam18/news_portal"
-    },
-    "ecommerce": {
-      "title": "E-commerce Website",
-      "period": "2023–2024",
-      "description": "A scalable shopping platform using Laravel and Vue.js.",
-      "link": "https://github.com/Djam18/multi_vendor_ecommerce"
     }
   };
 
@@ -150,7 +144,6 @@ const getProjectImage = (key) => {
     // Vous pouvez utiliser .png, .jpg, .svg, .webp, etc.
     const imageMap = {
       newsPortal: '/assets/images/portfolio/news-portal.png',
-      ecommerce: '/assets/images/portfolio/ecommerce.png'
     };
 
     return imageMap[key] || getDefaultImage(key);
