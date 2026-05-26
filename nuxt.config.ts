@@ -1,59 +1,87 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-05-15',
+  compatibilityDate: '2025-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxtjs/seo', '@nuxtjs/robots', '@nuxtjs/i18n'],
-  // Configuration des variables d'environnement
+  css: ['~/assets/css/main.css'],
+
+  // ── Modules ─────────────────────────────────────────
+  // Ordre important : sitemap/robots avant seo (meta-module qui les englobe)
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+    '@nuxtjs/seo',
+    '@nuxtjs/i18n',
+    '@nuxt/content',
+    '@nuxt/icon',
+    '@nuxt/image',
+    'nuxt-og-image',
+    'nuxt-umami',
+  ],
+
+  // ── Variables d'environnement ────────────────────────
   runtimeConfig: {
-    // Variables privées (côté serveur uniquement)
-    emailUser: process.env.EMAIL_USER,
-    emailPass: process.env.EMAIL_PASS,
-    emailHost: process.env.EMAIL_HOST || 'smtp.gmail.com',
-    emailPort: process.env.EMAIL_PORT || '587',
-    emailTo: process.env.EMAIL_TO, // Votre email de réception
+    // Privées (serveur uniquement)
+    // SMTP retiré : le projet utilise uniquement @sendgrid/mail, pas nodemailer
     sendgridApiKey: process.env.SENDGRID_API_KEY,
     sendgridFrom: process.env.SENDGRID_FROM,
     sendgridTo: process.env.SENDGRID_TO,
-    // Variables publiques (accessibles côté client)
+    // Publiques (accessibles côté client)
     public: {
-      apiBase: '/api'
-    }
+      apiBase: '/api',
+      calLink: process.env.NUXT_PUBLIC_CAL_LINK ?? 'https://cal.com/ton-compte',
+      whatsappLink: process.env.NUXT_PUBLIC_WHATSAPP_LINK ?? 'https://wa.me/XXXX',
+      linkedinProfile: process.env.NUXT_PUBLIC_LINKEDIN ?? 'https://linkedin.com/in/...',
+    },
   },
+
+  // ── Head global minimal ──────────────────────────────
+  // @nuxtjs/seo gère title/description/og/* automatiquement via site{}
+  // useSeoMeta() dans chaque page surcharge au besoin
+  // Ne pas dupliquer ici ce que seo/og-image génèrent déjà
   app: {
     head: {
-      title: 'Adam Abdel-Djamal | Full Stack Developer Portfolio',
-      meta: [
-        { name: 'description', content: 'Portfolio of Adam Abdel-Djamal, Full Stack Web Developer specialized in Vue.js, Laravel, and modern web technologies.' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { charset: 'utf-8' },
-        { name: 'author', content: 'Adam Abdel-Djamal' },
-        { name: 'keywords', content: 'Vue.js, Laravel, Full Stack Developer, Web Developer, Portfolio, Tailwind CSS, Nuxt.js' },
-        { property: 'og:title', content: 'Adam Abdel-Djamal | Web Developer' },
-        { property: 'og:description', content: 'Modern and responsive web applications built with Vue.js and Laravel.' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: '/favicon.ico' },
-        { property: 'og:url', content: 'https://votre-domaine.com' },
-        { name: 'twitter:card', content: 'summary_large_image' }
-      ],
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'canonical', href: 'https://votre-domaine.com' },
       ],
-    }
+    },
   },
-  plugins: [
-    { src: '~/plugins/flowbite.client.js', mode: 'client' }
-  ],
-  sitemap: {
-    hostname: 'https://adam-portfolio.vercel.app',
-    gzip: true,
-    routes: []
+
+  // ── SEO global (@nuxtjs/seo + nuxt-og-image) ─────────
+  // Source unique de vérité pour l'URL et le nom du site
+  site: {
+    url: 'https://adam-portfolio.vercel.app',
+    name: 'Adam Abdel-Djamal | Full Stack Developer',
+    description: 'Portfolio of Adam Abdel-Djamal, Full Stack Developer specialized in Vue.js, Nuxt 3 and Laravel.',
+    defaultLocale: 'en',
   },
+
+  // ── Sitemap (@nuxtjs/sitemap v8) ─────────────────────
+  // hostname et gzip supprimés (dépréciés) — l'URL vient de site.url
+  // Les routes dynamiques (blog/portfolio) sont découvertes automatiquement
+  sitemap: {},
+
+  // ── Robots (@nuxtjs/robots v5) ────────────────────────
+  // FIX: rules{} supprimé en v5, remplacé par groups[]
+  // sitemap en chemin relatif — résolu via site.url au runtime
   robots: {
-    rules: [{ userAgent: '*', allow: '/' }],
-    sitemap: 'https://adam-portfolio.vercel.app/sitemap.xml'
+    groups: [
+      {
+        userAgent: ['*'],
+        allow: ['/'],
+      },
+    ],
+    sitemap: ['/sitemap.xml'],
   },
+
+  // ── Internationalisation (@nuxtjs/i18n v9) ────────────
+  // FIX: iso → language (breaking change v9, confirmé dans migration guide)
+  // FIX: langDir mis à jour selon la nouvelle structure i18n/ de v9
+  //      Si tu gardes locales/ à la racine, ajoute restructureDir: false
   i18n: {
+    restructureDir: false, // conserve locales/ à la racine (hors i18n/)
     langDir: 'locales/',
     defaultLocale: 'en',
     detectBrowserLanguage: {
@@ -61,15 +89,34 @@ export default defineNuxtConfig({
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
       alwaysRedirect: true,
-      fallbackLocale: 'en'
+      fallbackLocale: 'en',
     },
     locales: [
-      { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
-      { code: 'fr', iso: 'fr-FR', file: 'fr.json', name: 'Français' },
-      { code: 'ja', iso: 'ja-JP', file: 'ja.json', name: '日本語' },
-      { code: 'es', iso: 'es-ES', file: 'es.json', name: 'Español' }
+      { code: 'en', language: 'en-US', file: 'en.json', name: 'English' },
+      { code: 'fr', language: 'fr-FR', file: 'fr.json', name: 'Français' },
+      { code: 'ja', language: 'ja-JP', file: 'ja.json', name: '日本語' },
+      { code: 'es', language: 'es-ES', file: 'es.json', name: 'Español' },
     ],
     baseUrl: 'https://adam-portfolio.vercel.app',
-    strategy: 'no_prefix'
-  }
+    strategy: 'no_prefix',
+  },
+
+  // ── Nuxt Image ───────────────────────────────────────
+  image: {
+    // provider ipx par défaut (local)
+    // Décommente si tu veux des tailles d'écran prédéfinies :
+    // screens: { xs: 320, sm: 640, md: 768, lg: 1024, xl: 1280 },
+  },
+
+  // ── Nuxt Content v3 ──────────────────────────────────
+  content: {},
+
+  // ── Nuxt Umami ───────────────────────────────────────
+  // Passe par des variables d'env pour ne pas exposer l'ID en dur
+  umami: {
+    host: process.env.NUXT_UMAMI_HOST ?? '',
+    id: process.env.NUXT_UMAMI_ID ?? '',
+    autoTrack: true,
+    ignoreLocalhost: true, // ne track pas les visites en dev
+  },
 })

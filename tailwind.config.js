@@ -1,31 +1,58 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-    content: [
-        "./components/**/*.{js,vue,ts}",
-        "./layouts/**/*.vue",
-        "./pages/**/*.vue",
-        "./plugins/**/*.{js,ts}",
-        "./app.vue",
-        "./assets/flowbite/**/*.js",
-    ],
-    theme: {
-        extend: {
-            colors: {
-                primary: "#4A6670", // Vert sauge profond
-                secondary: "#D67D5B", // Terracotta doux
-                accent1: "#E4B363", // Jaune moutarde
-                accent2: "#2F7D95", // Bleu canard
-                neutral: "#F1EEE9", // Beige clair
-                dark: "#2E353E", // Gris anthracite
-            },
-            fontFamily: {
-                sans: ["Montserrat", "Lato", "sans-serif"],
-                heading: ["Montserrat", "sans-serif"],
-                body: ["Lato", "sans-serif"],
-            },
+export default {
+  // Chemins scrutés pour purger les classes inutilisées en production
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./content/**/*.md",         // contenu markdown de Nuxt Content
+    "./composables/**/*.{js,ts}"
+  ],
+
+  // Active le mode sombre via la classe "dark" sur <html>
+  darkMode: 'class',
+
+  theme: {
+    extend: {
+      // 🎨 Palette de couleurs issue de la charte
+        colors: {
+        background: 'var(--color-background)',
+        surface: 'var(--color-surface)',
+        border: 'var(--color-border)',
+        'text-primary': 'var(--color-text-primary)',
+        'text-secondary': 'var(--color-text-secondary)',
+        accent: 'var(--color-accent)',
+        // etc.
         },
-    },
-    plugins: [
-        require('flowbite/plugin')
-    ],
-};
+
+      // ✍️ Nouvelles familles de police
+      fontFamily: {
+        display: ['Syne', 'sans-serif'],       // gros titres (nom, hero)
+        body: ['Outfit', 'sans-serif'],        // texte courant
+        mono: ['JetBrains Mono', 'monospace'], // code, labels techniques
+      },
+
+      // 📐 Rayons de bordure (issus de la section "Tokens d'espacement")
+      borderRadius: {
+        // On garde les valeurs par défaut de Tailwind, on ajoute juste des alias si besoin.
+        // La charte montre 8px / 12px pour les cartes.
+        'card': '8px',
+        'button': '12px',
+      },
+
+      // ↔️ Largeur de bordure fine
+      borderWidth: {
+        '0.5': '0.5px',   // pour les bordures très subtiles
+      },
+
+      // 🧩 Espacements spécifiques (optionnel – les valeurs Tailwind suffisent souvent)
+      spacing: {
+        'section': '24px',  // padding intérieur des sections
+        'sidebar': '200px', // largeur sidebar
+      }
+    }
+  },
+  plugins: []
+}
