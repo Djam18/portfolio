@@ -45,6 +45,10 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap'
+        },
       ],
     },
   },
@@ -81,7 +85,7 @@ export default defineNuxtConfig({
   // FIX: langDir mis à jour selon la nouvelle structure i18n/ de v9
   //      Si tu gardes locales/ à la racine, ajoute restructureDir: false
   i18n: {
-    restructureDir: false, // conserve locales/ à la racine (hors i18n/)
+   // restructureDir: false, // conserve locales/ à la racine (hors i18n/)
     langDir: 'locales/',
     defaultLocale: 'en',
     detectBrowserLanguage: {
@@ -119,4 +123,22 @@ export default defineNuxtConfig({
     autoTrack: true,
     ignoreLocalhost: true, // ne track pas les visites en dev
   },
+    ogImage: {
+    componentOptions: {
+      renderer: 'satori' // ← fixe le choix, plus de question interactive
+    },
+    // Optionnel : désactive la génération dynamique si tu n'en as pas besoin
+    // zeroRuntime: true,
+  },
+  vite: {
+    optimizeDeps: {
+      include: ['gsap', 'gsap/ScrollTrigger']
+    }
+  },
+  components: [
+  {
+    path: '~/components',
+    pathPrefix: false
+  },
+],
 })

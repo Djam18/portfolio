@@ -9,9 +9,9 @@
         "services": "Services",
         "contact": "Contact",
         "blog": "Blog",
-        "cta" :"Know More",
-        "quickLinks" : "Quick Links",
-        "postTitle" : "Full Stack Web Developer && Content Writer"
+        "cta": "Know More",
+        "quickLinks": "Quick Links",
+        "postTitle": "Full Stack Web Developer && Content Writer"
     },
     "hero": {
         "title": "Hi, I'm ADAM Abdel-Djamal",
@@ -70,72 +70,33 @@
     },
     "skills": {
         "title": "Skills",
-        "subtitle": "Here are some of the technologies I've worked with.",
+        "intro": "I build complete applications — from pixel‑perfect frontend to cloud architecture — with a Vue/Nuxt & Laravel specialization.",
+        "seeProject": "View project",
+        "currentStack": "Current stack (this month)",
         "categories": {
-            "languages": {
-                "title": "Languages",
-                "items": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "PHP"
-                ]
-            },
-            "frameworks": {
-                "title": "Frameworks",
-                "items": [
-                    "Vue.js",
-                    "Laravel",
-                    "Bootstrap",
-                    "Tailwind CSS",
-                    "Nuxt.js"
-                ]
-            },
-            "tools": {
-                "title": "Tools",
-                "items": [
-                    "Docker",
-                    "Linux",
-                    "Git"
-                ]
-            }
-        }
-    },
-    "otherSkills": {
-        "title": "",
-        "databases": {
-            "title": "Databases",
-            "items": [
-                "MySQL",
-                "PostgreSQL",
-                "MongoDB"
-            ]
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Database",
+            "devops": "DevOps & Cloud",
+            "ai": "AI & Tools"
         },
-        "testing": {
-            "title": "Testing",
-            "items": [
-                "Jest",
-                "PHPUnit",
-                "Postman"
-            ]
+        "categoryDescriptions": {
+            "frontend": "Performant, accessible and animated interfaces.",
+            "backend": "REST APIs, hexagonal architecture.",
+            "database": "Relational and NoSQL modeling.",
+            "devops": "CI/CD, containerization, deployment.",
+            "ai": "AI‑augmented productivity and design."
+        },
+        "levels": {
+            "expert": "Expert",
+            "proficient": "Proficient",
+            "familiar": "Familiar"
         }
     },
     "portfolio": {
         "title": "Portfolio",
-        "subtitle": "Discover my recent projects and the solutions I've developed.",
-        "viewProject": "View Project",
-        "projects": {
-            "newsPortal": {
-                "title": "News Portal",
-                "period": "2022–2023",
-                "description": "A fully responsive news site with a modern CMS."
-            },
-            "ecommerce": {
-                "title": "E-commerce Website",
-                "period": "2022–2024",
-                "description": "A scalable shopping platform using Laravel and Vue.js."
-            }
-        }
+        "intro": "A selection of projects that showcase my full‑stack expertise and my Vue/Nuxt & Laravel specialization.",
+        "all": "All"
     },
     "services": {
         "title": "Services",
@@ -160,7 +121,10 @@
                 "title": "Content Writing",
                 "description": "Creating clear and comprehensive documentation"
             }
-        }
+        },
+        "intro": "I turn your needs into high‑performing web & mobile applications, with a business‑focused and ROI‑driven approach.",
+        "cta": "Let's discuss your project",
+        "seeProject": "View case study"
     },
     "contact": {
         "title": "Contact",

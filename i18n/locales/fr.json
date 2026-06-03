@@ -9,9 +9,9 @@
         "services": "Services",
         "contact": "Contact",
         "blog": "Blog",
-        "cta" :"En savoir plus",
-        "quickLinks" : "Liens rapides",
-        "postTitle" : "Développeur Full Stack && Rédacteur Web"
+        "cta": "En savoir plus",
+        "quickLinks": "Liens rapides",
+        "postTitle": "Développeur Full Stack && Rédacteur Web"
     },
     "hero": {
         "title": "Bonjour, je suis ADAM Abdel-Djamal",
@@ -70,75 +70,34 @@
     },
     "skills": {
         "title": "Compétences",
-        "subtitle": "Voici quelques-unes des technologies que j'ai utilisées.",
+        "intro": "Je construis des applications complètes — du frontend pixel‑perfect à l'architecture cloud — avec une spécialisation Vue/Nuxt & Laravel.",
+        "seeProject": "Voir le projet",
+        "currentStack": "Stack actuelle (ce mois‑ci)",
         "categories": {
-            "languages": {
-                "title": "Langages",
-                "items": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "PHP"
-                ]
-            },
-            "frameworks": {
-                "title": "Frameworks",
-                "items": [
-                    "Vue.js",
-                    "Laravel",
-                    "Bootstrap",
-                    "Tailwind CSS",
-                    "Nuxt.js"
-                ]
-            },
-            "tools": {
-                "title": "Outils",
-                "items": [
-                    "Docker",
-                    "Linux",
-                    "Git"
-                ]
-            }
-        }
-    },
-    "otherSkills": {
-        "title": "",
-        "databases": {
-            "title": "Bases de données",
-            "items": [
-                "MySQL",
-                "PostgreSQL",
-                "MongoDB"
-            ]
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Base de données",
+            "devops": "DevOps & Cloud",
+            "ai": "IA & Outils"
         },
-        "testing": {
-            "title": "Tests",
-            "items": [
-                "Jest",
-                "PHPUnit",
-                "Postman"
-            ]
+        "categoryDescriptions": {
+            "frontend": "Interfaces performantes, accessibles et animées.",
+            "backend": "APIs REST, architecture hexagonale.",
+            "database": "Modélisation relationnelle et NoSQL.",
+            "devops": "CI/CD, conteneurisation, déploiement.",
+            "ai": "Productivité augmentée par l'IA et le design."
+        },
+        "levels": {
+            "expert": "Expert",
+            "proficient": "Proficient",
+            "familiar": "Familiar"
         }
     },
-    "portfolio": {
-        "title": "Portfolio",
-        "subtitle": "Découvrez mes projets récents et les solutions que j'ai développées.",
-        "viewProject": "Voir le projet",
-        "projects": {
-            "newsPortal": {
-                "title": "Portail d'Actualités",
-                "period": "2022–2023",
-                "description": "Un site d'actualités responsive avec un CMS moderne.",
-                "link": "https://github.com/Djam18/news_portal"
-            },
-            "ecommerce": {
-                "title": "Site E-commerce",
-                "period": "2022–2024",
-                "description": "Une plateforme de vente évolutive utilisant Laravel et Vue.js.",
-                "link": "https://github.com/Djam18/multi_vendor_ecommerce"
-            }
-        }
-    },
+     "portfolio": {
+    "title": "Portfolio",
+    "intro": "Une sélection de projets qui illustrent mon expertise full‑stack et ma spécialisation Vue/Nuxt & Laravel.",
+    "all": "Tous"
+  },
     "services": {
         "title": "Services",
         "items": {
@@ -162,7 +121,10 @@
                 "title": "Rédaction de contenu",
                 "description": "Création d'articles de blogs, de fiches de descriptions pour des produits."
             }
-        }
+        },
+        "intro": "Je transforme vos besoins en applications web & mobile performantes, avec une approche orientée business et ROI.",
+        "cta": "Discutons de votre projet",
+        "seeProject": "Voir l'étude de cas"
     },
     "contact": {
         "title": "Contactez-moi",
