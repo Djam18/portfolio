@@ -54,7 +54,18 @@
     },
     "blog": {
         "backToBlog": "Volver al blog",
-        "notFound": "Artículo no encontrado."
+        "notFound": "Artículo no encontrado.",
+        "readingTime": "{time} min de lectura",
+        "shareTitle": "Comparte este artículo",
+        "twitter": "Twitter / X",
+        "linkedin": "LinkedIn",
+        "index": {
+            "title": "Blog",
+            "subtitle": "Reflexiones sobre desarrollo web, tutoriales y lecciones aprendidas.",
+            "noPosts": "Aún no hay publicaciones. ¡Próximamente!",
+            "metaTitle": "Blog | Adam Abdel-Djamal",
+            "metaDesc": "Artículos y reflexiones sobre desarrollo web por Adam Abdel-Djamal."
+        }
     },
     "portfolio": {
         "title": "Portafolio",
@@ -68,7 +79,9 @@
         "featuredProjects": "Proyectos destacados",
         "viewAll": "Ver todos",
         "noProjects": "Aún no hay proyectos. Agrega el primero en",
-        "goToPortfolio": "Ir a la página de portafolio"
+        "goToPortfolio": "Ir a la página de portafolio",
+        "liveSite": "Sitio en vivo",
+        "sourceCode": "Código fuente"
     },
     "button": {
         "light": "Cambiar a modo claro",
@@ -86,8 +99,36 @@
     },
     "experience": {
         "title": "Experiencia",
+        "subtitle": "Mi trayectoria profesional",
         "viewAll": "Ver todo",
-        "current": "Actual"
+        "current": "Actual",
+        "metaTitle": "Experiencia | Adam Abdel-Djamal",
+        "jobs": [
+            {
+                "role": "Desarrollador web freelance",
+                "company": "Infraxdev",
+                "year": "2023",
+                "period": "ene. 2023 – actualidad",
+                "current": true,
+                "desc": "Desarrollo de aplicaciones full-stack (Vue.js, Laravel, Nuxt). Gestión de proyectos de clientes en modo híbrido desde Cotonú."
+            },
+            {
+                "role": "Becario de desarrollo web",
+                "company": "OSI Group Sarl",
+                "year": "2022",
+                "period": "mar. 2022 – nov. 2022",
+                "current": false,
+                "desc": "Desarrollo y mantenimiento de herramientas internas con React.js y Express.js. Descubrimiento del ecosistema React: componentes, hooks, gestión de estado."
+            },
+            {
+                "role": "Becario de desarrollo",
+                "company": "RINTIO",
+                "year": "2019",
+                "period": "sept. 2019 – dic. 2019",
+                "current": false,
+                "desc": "Prácticas de fin de grado. Desarrollo de una interfaz Angular para la recopilación y visualización de datos."
+            }
+        ]
     },
     "hero": {
         "available": "Disponible para freelance",
@@ -103,5 +144,13 @@
     },
     "socialLink": {
         "opensInNewTab": "se abre en una pestaña nueva"
+    },
+    "contact": {
+        "title": "Contáctame",
+        "description": "Encuéntrame en mis redes sociales o envíame un mensaje directo a través de las plataformas de abajo.",
+        "emailMessage": "¿Prefieres el correo electrónico?",
+        "sendEmail": "Enviar email",
+        "copyEmail": "Copiar correo",
+        "copied": "¡Copiado!"
     }
 }

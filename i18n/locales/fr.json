@@ -54,7 +54,18 @@
     },
     "blog": {
         "backToBlog": "Retour au blog",
-        "notFound": "Article introuvable."
+        "notFound": "Article introuvable.",
+        "readingTime": "{time} min de lecture",
+        "shareTitle": "Partager cet article",
+        "twitter": "Twitter / X",
+        "linkedin": "LinkedIn",
+        "index": {
+            "title": "Blog",
+            "subtitle": "Réflexions sur le développement web, tutoriels et leçons apprises.",
+            "noPosts": "Pas encore d'articles. Bientôt !",
+            "metaTitle": "Blog | Adam Abdel-Djamal",
+            "metaDesc": "Articles et réflexions sur le développement web par Adam Abdel-Djamal."
+        }
     },
     "portfolio": {
         "title": "Portfolio",
@@ -68,7 +79,9 @@
         "featuredProjects": "Projets en vedette",
         "viewAll": "Voir tout",
         "noProjects": "Aucun projet pour le moment. Ajoutez le premier dans",
-        "goToPortfolio": "Aller à la page Portfolio"
+        "goToPortfolio": "Aller à la page Portfolio",
+        "liveSite": "Site en ligne",
+        "sourceCode": "Code source"
     },
     "button": {
         "light": "Passer en mode clair",
@@ -86,8 +99,36 @@
     },
     "experience": {
         "title": "Expérience",
+        "subtitle": "Mon parcours professionnel",
         "viewAll": "Voir tout",
-        "current": "En poste"
+        "current": "En poste",
+        "metaTitle": "Expérience | Adam Abdel-Djamal",
+        "jobs": [
+            {
+                "role": "Développeur web freelance",
+                "company": "Infraxdev",
+                "year": "2023",
+                "period": "janv. 2023 – aujourd'hui",
+                "current": true,
+                "desc": "Développement d'applications full-stack (Vue.js, Laravel, Nuxt). Gestion de projets clients en mode hybride depuis Cotonou."
+            },
+            {
+                "role": "Stagiaire développeur web",
+                "company": "OSI Group Sarl",
+                "year": "2022",
+                "period": "mars 2022 – nov. 2022",
+                "current": false,
+                "desc": "Développement et maintenance d'outils internes avec React.js et Express.js. Découverte de l'écosystème React : composants, hooks, state management."
+            },
+            {
+                "role": "Stagiaire développeur",
+                "company": "RINTIO",
+                "year": "2019",
+                "period": "sept. 2019 – déc. 2019",
+                "current": false,
+                "desc": "Stage de fin de licence. Développement d'une interface Angular pour la collecte et la visualisation de données."
+            }
+        ]
     },
     "hero": {
         "available": "Disponible pour du freelance",
@@ -103,5 +144,13 @@
     },
     "socialLink": {
         "opensInNewTab": "s'ouvre dans un nouvel onglet"
+    },
+    "contact": {
+        "title": "Me contacter",
+        "description": "Retrouvez‑moi sur mes réseaux sociaux ou envoyez‑moi un message direct via les plateformes ci‑dessous.",
+        "emailMessage": "Vous préférez un email ?",
+        "sendEmail": "Envoyer un email",
+        "copyEmail": "Copier l'adresse",
+        "copied": "Copié !"
     }
 }

@@ -54,7 +54,18 @@
     },
     "blog": {
         "backToBlog": "Zurück zum Blog",
-        "notFound": "Artikel nicht gefunden."
+        "notFound": "Artikel nicht gefunden.",
+        "readingTime": "{time} Min. Lesezeit",
+        "shareTitle": "Diesen Artikel teilen",
+        "twitter": "Twitter / X",
+        "linkedin": "LinkedIn",
+        "index": {
+            "title": "Blog",
+            "subtitle": "Gedanken zur Webentwicklung, Tutorials und gewonnene Erkenntnisse.",
+            "noPosts": "Noch keine Beiträge. Demnächst!",
+            "metaTitle": "Blog | Adam Abdel-Djamal",
+            "metaDesc": "Artikel und Gedanken zur Webentwicklung von Adam Abdel-Djamal."
+        }
     },
     "portfolio": {
         "title": "Portfolio",
@@ -68,7 +79,9 @@
         "featuredProjects": "Ausgewählte Projekte",
         "viewAll": "Alle anzeigen",
         "noProjects": "Noch keine Projekte. Füge dein erstes hinzu in",
-        "goToPortfolio": "Zur Portfolio-Seite"
+        "goToPortfolio": "Zur Portfolio-Seite",
+        "liveSite": "Live-Website",
+        "sourceCode": "Quellcode"
     },
     "button": {
         "light": "Zum hellen Modus wechseln",
@@ -86,8 +99,36 @@
     },
     "experience": {
         "title": "Berufserfahrung",
+        "subtitle": "Mein beruflicher Werdegang",
         "viewAll": "Alle anzeigen",
-        "current": "Aktuell"
+        "current": "Aktuell",
+        "metaTitle": "Berufserfahrung | Adam Abdel-Djamal",
+        "jobs": [
+            {
+                "role": "Freiberuflicher Webentwickler",
+                "company": "Infraxdev",
+                "year": "2023",
+                "period": "Jan. 2023 – heute",
+                "current": true,
+                "desc": "Entwicklung von Full-Stack-Anwendungen (Vue.js, Laravel, Nuxt). Hybride Projektverwaltung für Kunden von Cotonou aus."
+            },
+            {
+                "role": "Praktikant Webentwicklung",
+                "company": "OSI Group Sarl",
+                "year": "2022",
+                "period": "März 2022 – Nov. 2022",
+                "current": false,
+                "desc": "Entwicklung und Wartung interner Tools mit React.js und Express.js. Kennenlernen des React-Ökosystems: Komponenten, Hooks, State Management."
+            },
+            {
+                "role": "Praktikant Entwicklung",
+                "company": "RINTIO",
+                "year": "2019",
+                "period": "Sept. 2019 – Dez. 2019",
+                "current": false,
+                "desc": "Bachelor-Praktikum. Entwicklung einer Angular-Oberfläche zur Datenerfassung und -visualisierung."
+            }
+        ]
     },
     "hero": {
         "available": "Für Freelance verfügbar",
@@ -103,5 +144,13 @@
     },
     "socialLink": {
         "opensInNewTab": "öffnet in einem neuen Tab"
+    },
+    "contact": {
+        "title": "Kontaktiere mich",
+        "description": "Finde mich auf meinen sozialen Netzwerken oder sende mir eine Direktnachricht über die untenstehenden Plattformen.",
+        "emailMessage": "Sie bevorzugen eine E-Mail?",
+        "sendEmail": "E-Mail senden",
+        "copyEmail": "Adresse kopieren",
+        "copied": "Kopiert!"
     }
 }

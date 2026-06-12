@@ -54,7 +54,18 @@
     },
     "blog": {
         "backToBlog": "ブログに戻る",
-        "notFound": "記事が見つかりません。"
+        "notFound": "記事が見つかりません。",
+        "readingTime": "{time}分",
+        "shareTitle": "この記事をシェア",
+        "twitter": "Twitter / X",
+        "linkedin": "LinkedIn",
+        "index": {
+            "title": "ブログ",
+            "subtitle": "ウェブ開発に関する考察、チュートリアル、学んだ教訓。",
+            "noPosts": "まだ投稿はありません。近日公開！",
+            "metaTitle": "ブログ | Adam Abdel-Djamal",
+            "metaDesc": "Adam Abdel-Djamal によるウェブ開発の記事と考察。"
+        }
     },
     "portfolio": {
         "title": "ポートフォリオ",
@@ -68,7 +79,9 @@
         "featuredProjects": "注目のプロジェクト",
         "viewAll": "すべて見る",
         "noProjects": "まだプロジェクトがありません。最初のプロジェクトを追加してください：",
-        "goToPortfolio": "ポートフォリオページへ"
+        "goToPortfolio": "ポートフォリオページへ",
+        "liveSite": "ライブサイト",
+        "sourceCode": "ソースコード"
     },
     "button": {
         "light": "ライトモードに切り替え",
@@ -86,8 +99,36 @@
     },
     "experience": {
         "title": "職歴",
+        "subtitle": "私の職歴",
         "viewAll": "すべて表示",
-        "current": "現在"
+        "current": "現在",
+        "metaTitle": "職歴 | Adam Abdel-Djamal",
+        "jobs": [
+            {
+                "role": "フリーランスウェブ開発者",
+                "company": "Infraxdev",
+                "year": "2023",
+                "period": "2023年1月 – 現在",
+                "current": true,
+                "desc": "フルスタックアプリケーションの開発（Vue.js、Laravel、Nuxt）。コトヌーからハイブリッド形式でクライアントプロジェクトを管理。"
+            },
+            {
+                "role": "ウェブ開発インターン",
+                "company": "OSI Group Sarl",
+                "year": "2022",
+                "period": "2022年3月 – 2022年11月",
+                "current": false,
+                "desc": "React.jsとExpress.jsを使用した内部ツールの開発と保守。Reactエコシステム（コンポーネント、フック、状態管理）を習得。"
+            },
+            {
+                "role": "開発インターン",
+                "company": "RINTIO",
+                "year": "2019",
+                "period": "2019年9月 – 2019年12月",
+                "current": false,
+                "desc": "学士課程のインターンシップ。データ収集と可視化のためのAngularインターフェースを開発。"
+            }
+        ]
     },
     "hero": {
         "available": "フリーランスとして活動中",
@@ -103,5 +144,13 @@
     },
     "socialLink": {
         "opensInNewTab": "新しいタブで開きます"
+    },
+    "contact": {
+        "title": "お問い合わせ",
+        "description": "SNSで見つけるか、以下のプラットフォームからダイレクトメッセージを送ってください。",
+        "emailMessage": "メールでのご連絡をご希望ですか？",
+        "sendEmail": "メールを送信",
+        "copyEmail": "アドレスをコピー",
+        "copied": "コピー完了"
     }
 }

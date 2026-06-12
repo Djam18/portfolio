@@ -54,7 +54,18 @@
     },
     "blog": {
         "backToBlog": "Back to blog",
-        "notFound": "Article not found."
+        "notFound": "Article not found.",
+        "readingTime": "{time} min read",
+        "shareTitle": "Share this article",
+        "twitter": "Twitter / X",
+        "linkedin": "LinkedIn",
+        "index": {
+            "title": "Blog",
+            "subtitle": "Thoughts on web development, tutorials, and lessons learned.",
+            "noPosts": "No posts yet. Coming soon!",
+            "metaTitle": "Blog | Adam Abdel-Djamal",
+            "metaDesc": "Articles and thoughts on web development by Adam Abdel-Djamal."
+        }
     },
     "portfolio": {
         "title": "Portfolio",
@@ -68,7 +79,9 @@
         "featuredProjects": "Featured Projects",
         "viewAll": "View all",
         "noProjects": "No projects yet. Add your first one in",
-        "goToPortfolio": "Go to Portfolio page"
+        "goToPortfolio": "Go to Portfolio page",
+        "liveSite": "Live Site",
+        "sourceCode": "Source Code"
     },
     "cookies": {
         "message": "We use cookies to remember your language preference and measure anonymous traffic.",
@@ -96,8 +109,35 @@
     },
     "experience": {
         "title": "Experience",
+        "subtitle": "My professional journey",
         "viewAll": "View all",
-        "current": "Current"
+        "current": "Current",
+        "jobs": [
+            {
+                "role": "Freelance Web Developer",
+                "company": "Infraxdev",
+                "year": "2023",
+                "period": "Jan 2023 – present",
+                "current": true,
+                "desc": "Development of full-stack applications (Vue.js, Laravel, Nuxt). Client project management in hybrid mode from Cotonou."
+            },
+            {
+                "role": "Web Developer Intern",
+                "company": "OSI Group Sarl",
+                "year": "2022",
+                "period": "Mar 2022 – Nov 2022",
+                "current": false,
+                "desc": "Development and maintenance of internal tools with React.js and Express.js. Discovery of the React ecosystem: components, hooks, state management."
+            },
+            {
+                "role": "Developer Intern",
+                "company": "RINTIO",
+                "year": "2019",
+                "period": "Sep 2019 – Dec 2019",
+                "current": false,
+                "desc": "Bachelor's degree internship. Development of an Angular interface for data collection and visualization."
+            }
+        ]
     },
     "hero": {
         "available": "Available for freelance",
@@ -113,5 +153,18 @@
     },
     "socialLink": {
         "opensInNewTab": "opens in a new tab"
+    },
+    "contact": {
+        "title": "Contact me",
+        "description": "Find me on my social networks or send me a direct message via the platforms below.",
+        "emailMessage": "Prefer email?",
+        "sendEmail": "Send email",
+        "copyEmail": "Copy address",
+        "copied": "Copied!"
+    },
+    "metaTitles": {
+        "experiencePage": "Experience | {author} ",
+        "contactPage": "Contact | {author} ",
+        "blogPage": "Blog | {author} "
     }
 }
