@@ -1,0 +1,107 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "projects": "Projekte",
+        "skills": "Fähigkeiten",
+        "experience": "Erfahrung",
+        "blog": "Blog",
+        "contact": "Kontakt"
+    },
+    "skills": {
+        "title": "Fähigkeiten",
+        "intro": "Ich entwickle komplette Anwendungen — vom pixelperfekten Frontend bis zur Cloud-Architektur — mit Spezialisierung auf Vue/Nuxt & Laravel.",
+        "seeProject": "Projekt ansehen",
+        "currentStack": "Aktueller Stack (diesen Monat)",
+        "categories": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Datenbank",
+            "devops": "DevOps & Cloud",
+            "ai": "KI & Tools"
+        },
+        "categoryDescriptions": {
+            "frontend": "Performante, barrierefreie und animierte Interfaces.",
+            "backend": "REST-APIs, hexagonale Architektur.",
+            "database": "Relationale und NoSQL-Modellierung.",
+            "devops": "CI/CD, Containerisierung, Deployment.",
+            "ai": "KI-gestützte Produktivität und Design."
+        },
+        "levels": {
+            "expert": "Experte",
+            "proficient": "Versiert",
+            "familiar": "Vertraut"
+        }
+    },
+    "services": {
+        "title": "Leistungen",
+        "intro": "Ich verwandle Ihre Anforderungen in leistungsstarke Web- und Mobile-Apps — mit einem business-orientierten, ROI-getriebenen Ansatz.",
+        "cta": "Lassen Sie uns über Ihr Projekt sprechen",
+        "seeProject": "Fallstudie ansehen",
+        "items": [
+            {
+                "title": "Webentwicklung",
+                "desc": "Full-Stack-Apps mit Vue, Nuxt, Laravel und modernen Werkzeugen."
+            },
+            {
+                "title": "Mobile Apps",
+                "desc": "Plattformübergreifende mobile Lösungen mit React Native."
+            },
+            {
+                "title": "SEO & Performance",
+                "desc": "Optimierte Seiten, die ranken und schnell laden."
+            }
+        ]
+    },
+    "blog": {
+        "backToBlog": "Zurück zum Blog",
+        "notFound": "Artikel nicht gefunden."
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "intro": "Eine Auswahl von Projekten, die ich entwickelt habe.",
+        "all": "Alle Projekte",
+        "backToList": "← Zurück zum Portfolio",
+        "context": "Kontext",
+        "challenges": "Herausforderungen",
+        "solution": "Lösung",
+        "results": "Ergebnisse",
+        "featuredProjects": "Ausgewählte Projekte",
+        "viewAll": "Alle anzeigen",
+        "noProjects": "Noch keine Projekte. Füge dein erstes hinzu in",
+        "goToPortfolio": "Zur Portfolio-Seite"
+    },
+    "button": {
+        "light": "Zum hellen Modus wechseln",
+        "dark": "Zum dunklen Modus wechseln"
+    },
+    "about": {
+        "title": "Über mich",
+        "p1": "Mit einem starken akademischen Hintergrund und praktischer Erfahrung sowohl im Frontend als auch im Backend liefere ich effiziente und skalierbare Lösungen.",
+        "p2": "Ich verwandle gerne Ideen in interaktive Anwendungen, die Benutzer lieben. Mein Stack umfasst Vue, Nuxt, Laravel, React Native, TypeScript, Node.js und Python."
+    },
+    "cta": {
+        "title": "Lass uns zusammenarbeiten",
+        "description": "Hast du ein Projekt im Kopf? Ich bin derzeit für freiberufliche Arbeit verfügbar.",
+        "button": "Kontakt aufnehmen"
+    },
+    "experience": {
+        "title": "Berufserfahrung",
+        "viewAll": "Alle anzeigen",
+        "current": "Aktuell"
+    },
+    "hero": {
+        "available": "Für Freelance verfügbar",
+        "viewProjects": "Projekte ansehen",
+        "contactMe": "Kontaktiere mich",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+    },
+    "projectCard": {
+        "caseStudy": "Fallstudie",
+        "live": "Live-Demo",
+        "code": "Code"
+    },
+    "socialLink": {
+        "opensInNewTab": "öffnet in einem neuen Tab"
+    }
+}

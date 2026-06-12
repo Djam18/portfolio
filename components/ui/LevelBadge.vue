@@ -19,7 +19,6 @@ const props = defineProps<{
   size?: 'md' | 'sm'
 }>()
 
-// Fallback to 'md' if size is not provided
 const size = computed(() => props.size ?? 'md')
 
 const { t } = useI18n()

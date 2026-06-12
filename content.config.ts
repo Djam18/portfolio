@@ -14,6 +14,14 @@ export default defineContentConfig({
         link: z.string().optional(),
         github: z.string().optional(),
         featured: z.boolean().default(false),
+          role: z.string().optional(),
+    year: z.string().optional(),
+    liveUrl: z.string().optional(),
+    repoUrl: z.string().nullable().optional(),
+    context: z.string().optional(),
+    challenges: z.string().optional(),
+    solution: z.string().optional(),
+    results: z.string().optional(),
       })
     }),
     blog: defineCollection({
@@ -25,6 +33,8 @@ export default defineContentConfig({
         date: z.string(),
         tags: z.array(z.string()).optional(),
         image: z.string().optional(),
+        author: z.string().optional(),
+        readingTime: z.number().optional(),
       })
     })
   }

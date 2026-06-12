@@ -12,7 +12,7 @@ export default {
   ],
 
   // Active le mode sombre via la classe "dark" sur <html>
-  darkMode: 'class',
+  darkMode: ['selector', '[data-theme="dark"]'],
 
   theme: {
     extend: {
@@ -54,5 +54,5 @@ export default {
       }
     }
   },
-  plugins: []
+  plugins: [require('@tailwindcss/typography')]
 }

@@ -8,14 +8,14 @@
         </div>
 
         <div class="flex gap-6">
-          <a v-for="link in socials" :key="link.name" :href="link.url" target="_blank"
+          <a v-for="social in SOCIALS" :key="social.name" :href="social.url" target="_blank"
             class="text-text-secondary hover:text-accent transition-colors">
-            <Icon :name="link.icon" class="h-5 w-5" />
+            <Icon :name="social.icon" class="h-5 w-5" />
           </a>
         </div>
         <ClientOnly>
           <p class="text-sm text-text-secondary">
-            © {{ year }} Adam Abdel-Djamal
+            © {{ year }}
           </p>
         </ClientOnly>
       </div>
@@ -23,13 +23,8 @@
   </footer>
 </template>
 
-<script setup>
+<script setup lang='ts'>
+import { SOCIALS } from '@/constants/socials'
 const year = ref('')
 onMounted(() => { year.value = new Date().getFullYear() })
-
-const socials = [
-  { name: 'GitHub', icon: 'ph:github-logo', url: 'https://github.com' },
-  { name: 'LinkedIn', icon: 'ph:linkedin-logo', url: 'https://linkedin.com' },
-  { name: 'Email', icon: 'ph:envelope', url: 'mailto:contact@example.com' },
-]
 </script>

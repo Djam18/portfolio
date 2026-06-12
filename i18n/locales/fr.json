@@ -1,78 +1,17 @@
 {
-    "navigation": {
+    "nav": {
         "home": "Accueil",
-        "about": "À propos",
-        "experience": "Expérience",
-        "education": "Formation",
+        "projects": "Projets",
         "skills": "Compétences",
-        "portfolio": "Portfolio",
-        "services": "Services",
-        "contact": "Contact",
+        "experience": "Expérience",
         "blog": "Blog",
-        "cta": "En savoir plus",
-        "quickLinks": "Liens rapides",
-        "postTitle": "Développeur Full Stack && Rédacteur Web"
-    },
-    "hero": {
-        "title": "Bonjour, je suis ADAM Abdel-Djamal",
-        "content": "Je suis un développeur web passionné. Je crée des applications web rapides, accessibles et modernes en utilisant Vue.js, Laravel et des outils de pointe.",
-        "cta": "En savoir plus",
-        "myLinkedin": "Mon LinkedIn",
-        "myGithub": "Mon Github"
-    },
-    "about": {
-        "title": "À propos de moi",
-        "content": "Avec une solide formation académique et une expérience pratique dans les domaines du frontend et du backend, je livre des solutions efficaces et scalables. Je m'amuse à transformer des idées en applications interactives que les utilisateurs adorent.",
-        "cta": "En savoir plus"
-    },
-    "experience": {
-        "title": "Expérience",
-        "positions": {
-            "webDeveloperIntern": {
-                "title": "Stagiaire Développeur Web",
-                "company": "OSI Group",
-                "period": "2022",
-                "description": "Développement d'applications web full-stack avec des architectures propres."
-            },
-            "webContentEditor": {
-                "title": "Rédacteur Web",
-                "company": "RedacLink",
-                "period": "2021",
-                "description": "Rédaction d'articles et descriptions de produits optimisés pour le SEO."
-            },
-            "academicIntern": {
-                "title": "Stage Académique",
-                "company": "Rintio",
-                "period": "2019",
-                "description": "Développement d'une interface Angular pour la collecte de données."
-            }
-        }
-    },
-    "education": {
-        "title": "Formation",
-        "degrees": {
-            "bsc": {
-                "title": "Licence en Gestion Informatique",
-                "institution": "ENEAM, Cotonou",
-                "period": "2020"
-            },
-            "webDev": {
-                "title": "Formation en Développement Web",
-                "institution": "Smartel",
-                "period": "2023–2024"
-            },
-            "courses": {
-                "title": "Cours IA et DevOps",
-                "institution": "Udemy",
-                "period": "2025"
-            }
-        }
+        "contact": "Contact"
     },
     "skills": {
         "title": "Compétences",
         "intro": "Je construis des applications complètes — du frontend pixel‑perfect à l'architecture cloud — avec une spécialisation Vue/Nuxt & Laravel.",
         "seeProject": "Voir le projet",
-        "currentStack": "Stack actuelle (ce mois‑ci)",
+        "currentStack": "Stack actuel (ce mois)",
         "categories": {
             "frontend": "Frontend",
             "backend": "Backend",
@@ -85,77 +24,84 @@
             "backend": "APIs REST, architecture hexagonale.",
             "database": "Modélisation relationnelle et NoSQL.",
             "devops": "CI/CD, conteneurisation, déploiement.",
-            "ai": "Productivité augmentée par l'IA et le design."
+            "ai": "Productivité et design augmentés par l'IA."
         },
         "levels": {
             "expert": "Expert",
-            "proficient": "Proficient",
-            "familiar": "Familiar"
+            "proficient": "Avancé",
+            "familiar": "Familiarisé"
         }
     },
-     "portfolio": {
-    "title": "Portfolio",
-    "intro": "Une sélection de projets qui illustrent mon expertise full‑stack et ma spécialisation Vue/Nuxt & Laravel.",
-    "all": "Tous"
-  },
     "services": {
         "title": "Services",
-        "items": {
-            "webDev": {
-                "title": "Développement Web",
-                "description": "Création d'applications web modernes et évolutives"
-            },
-            "backend": {
-                "title": "Architecture Backend",
-                "description": "Conception de solutions côté serveur robustes et efficaces"
-            },
-            "uiux": {
-                "title": "Intégration UI/UX",
-                "description": "Création d'interfaces utilisateur fluides et intuitives"
-            },
-            "api": {
-                "title": "Développement d'API",
-                "description": "Création de API sécurisées et évolutives"
-            },
-            "contentWriting": {
-                "title": "Rédaction de contenu",
-                "description": "Création d'articles de blogs, de fiches de descriptions pour des produits."
-            }
-        },
-        "intro": "Je transforme vos besoins en applications web & mobile performantes, avec une approche orientée business et ROI.",
+        "intro": "Je transforme vos besoins en applications web et mobile haute performance, avec une approche orientée business et ROI.",
         "cta": "Discutons de votre projet",
-        "seeProject": "Voir l'étude de cas"
+        "seeProject": "Voir l'étude de cas",
+        "items": [
+            {
+                "title": "Développement web",
+                "desc": "Applications full-stack avec Vue, Nuxt, Laravel et outils modernes."
+            },
+            {
+                "title": "Applications mobiles",
+                "desc": "Solutions mobiles multiplateformes avec React Native."
+            },
+            {
+                "title": "SEO et performance",
+                "desc": "Sites optimisés qui se classent et chargent rapidement."
+            }
+        ]
     },
-    "contact": {
-        "title": "Contactez-moi",
-        "email": "Email",
-        "social": "Comptes",
-        "subtitle": "Prenez contact pour des collaborations, des demandes ou simplement pour dire bonjour.",
-        "infoTitle": "Informations de Contact",
-        "phone": "Téléphone",
-        "location": "Localisation",
-        "formTitle": "Envoyez un Message",
-        "form": {
-            "name": "Votre Nom",
-            "namePlaceholder": "Entrez votre nom",
-            "email": "Votre Email",
-            "emailPlaceholder": "Entrez votre adresse email",
-            "subject": "Sujet",
-            "subjectPlaceholder": "De quoi s'agit-il?",
-            "message": "Message",
-            "sending": "Envoi...",
-            "messagePlaceholder": "Tapez votre message ici...",
-            "submit": "Envoyer le Message",
-            "successMessage": "Votre message a été envoyé avec succès. Je vous répondrai bientôt!",
-            "errorMessage": "Oups! Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
-        },
-        "validation": {
-            "nameRequired": "Veuillez entrer votre nom",
-            "emailRequired": "Veuillez entrer votre adresse email",
-            "emailInvalid": "Veuillez entrer une adresse email valide",
-            "subjectRequired": "Veuillez entrer un sujet",
-            "messageRequired": "Veuillez entrer un message",
-            "messageLength": "Le message doit comporter au moins 10 caractères"
-        }
+    "blog": {
+        "backToBlog": "Retour au blog",
+        "notFound": "Article introuvable."
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "intro": "Une sélection de projets que j'ai réalisés.",
+        "all": "Tous les projets",
+        "backToList": "← Retour au portfolio",
+        "context": "Contexte",
+        "challenges": "Défis",
+        "solution": "Solution",
+        "results": "Résultats",
+        "featuredProjects": "Projets en vedette",
+        "viewAll": "Voir tout",
+        "noProjects": "Aucun projet pour le moment. Ajoutez le premier dans",
+        "goToPortfolio": "Aller à la page Portfolio"
+    },
+    "button": {
+        "light": "Passer en mode clair",
+        "dark": "Passer en mode sombre"
+    },
+    "about": {
+        "title": "À propos",
+        "p1": "Avec un solide parcours académique et une expérience pratique en frontend et backend, je fournis des solutions efficaces et évolutives.",
+        "p2": "J'aime transformer les idées en applications interactives que les utilisateurs adorent. Ma stack comprend Vue, Nuxt, Laravel, React Native, TypeScript, Node.js et Python."
+    },
+    "cta": {
+        "title": "Travaillons ensemble",
+        "description": "Un projet en tête ? Je suis actuellement disponible pour du freelance.",
+        "button": "Me contacter"
+    },
+    "experience": {
+        "title": "Expérience",
+        "viewAll": "Voir tout",
+        "current": "En poste"
+    },
+    "hero": {
+        "available": "Disponible pour du freelance",
+        "viewProjects": "Voir les projets",
+        "contactMe": "Me contacter",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+    },
+    "projectCard": {
+        "caseStudy": "Étude de cas",
+        "live": "Site en direct",
+        "code": "Code source"
+    },
+    "socialLink": {
+        "opensInNewTab": "s'ouvre dans un nouvel onglet"
     }
 }

@@ -1,72 +1,11 @@
 {
-    "navigation": {
+    "nav": {
         "home": "Home",
-        "about": "About",
-        "experience": "Experience",
-        "education": "Education",
+        "projects": "Projects",
         "skills": "Skills",
-        "portfolio": "Portfolio",
-        "services": "Services",
-        "contact": "Contact",
+        "experience": "Experience",
         "blog": "Blog",
-        "cta": "Know More",
-        "quickLinks": "Quick Links",
-        "postTitle": "Full Stack Web Developer && Content Writer"
-    },
-    "hero": {
-        "title": "Hi, I'm ADAM Abdel-Djamal",
-        "content": "I'm a passionate Full Stack Web Developer. I build fast, accessible, and modern web applications using Vue.js, Laravel, and cutting-edge tools.",
-        "cta": "Know More",
-        "myGithub": "My Github",
-        "myLinkedin": "My LinkedIn"
-    },
-    "about": {
-        "title": "About Me",
-        "content": "With a strong academic background and hands-on experience in both frontend and backend, I deliver efficient and scalable solutions. I enjoy transforming ideas into interactive applications that users love.",
-        "cta": "Know More"
-    },
-    "experience": {
-        "title": "Experience",
-        "positions": {
-            "webDeveloperIntern": {
-                "title": "Web Developer Intern",
-                "company": "OSI Group",
-                "period": "2022",
-                "description": "Built full-stack web apps with clean architectures."
-            },
-            "webContentEditor": {
-                "title": "Web Content Editor",
-                "company": "RedacLink",
-                "period": "2021",
-                "description": "Wrote SEO-optimized articles and product descriptions."
-            },
-            "academicIntern": {
-                "title": "Academic Intern",
-                "company": "Rintio",
-                "period": "2019",
-                "description": "Developed an Angular interface for data collection."
-            }
-        }
-    },
-    "education": {
-        "title": "Education",
-        "degrees": {
-            "bsc": {
-                "title": "BSc in IT Management",
-                "institution": "ENEAM, Cotonou",
-                "period": "2020"
-            },
-            "webDev": {
-                "title": "Web Application Development Training",
-                "institution": "Smartel",
-                "period": "2023–2024"
-            },
-            "courses": {
-                "title": "AI and DevOps Courses",
-                "institution": "Udemy",
-                "period": "2025"
-            }
-        }
+        "contact": "Contact"
     },
     "skills": {
         "title": "Skills",
@@ -93,69 +32,86 @@
             "familiar": "Familiar"
         }
     },
-    "portfolio": {
-        "title": "Portfolio",
-        "intro": "A selection of projects that showcase my full‑stack expertise and my Vue/Nuxt & Laravel specialization.",
-        "all": "All"
-    },
     "services": {
         "title": "Services",
-        "items": {
-            "webDev": {
-                "title": "Web App Development",
-                "description": "Building modern and scalable web applications"
-            },
-            "backend": {
-                "title": "Backend Architecture",
-                "description": "Designing robust and efficient server-side solutions"
-            },
-            "uiux": {
-                "title": "UI/UX Integration",
-                "description": "Creating seamless and intuitive user interfaces"
-            },
-            "api": {
-                "title": "API Development",
-                "description": "Building secure and scalable APIs for seamless data integration"
-            },
-            "contentWriting": {
-                "title": "Content Writing",
-                "description": "Creating clear and comprehensive documentation"
-            }
-        },
         "intro": "I turn your needs into high‑performing web & mobile applications, with a business‑focused and ROI‑driven approach.",
         "cta": "Let's discuss your project",
-        "seeProject": "View case study"
+        "seeProject": "View case study",
+        "items": [
+            {
+                "title": "Web Development",
+                "desc": "Full-stack apps with Vue, Nuxt, Laravel and modern tooling."
+            },
+            {
+                "title": "Mobile Apps",
+                "desc": "Cross-platform mobile solutions with React Native."
+            },
+            {
+                "title": "SEO & Performance",
+                "desc": "Optimized sites that rank and load fast."
+            }
+        ]
     },
-    "contact": {
-        "title": "Contact",
-        "email": "Email",
-        "social": "Accounts",
-        "subtitle": "Get in touch for collaborations, inquiries, or just to say hello.",
-        "infoTitle": "Contact Information",
-        "phone": "Phone",
-        "location": "Location",
-        "formTitle": "Send a Message",
-        "form": {
-            "name": "Your Name",
-            "namePlaceholder": "Enter your name",
-            "email": "Your Email",
-            "emailPlaceholder": "Enter your email address",
-            "subject": "Subject",
-            "subjectPlaceholder": "What is this regarding?",
-            "message": "Message",
-            "messagePlaceholder": "Type your message here...",
-            "submit": "Send Message",
-            "sending": "Sending...",
-            "successMessage": "Your message has been sent successfully. I'll get back to you soon!",
-            "errorMessage": "Oops! There was an error sending your message. Please try again."
-        },
-        "validation": {
-            "nameRequired": "Please enter your name",
-            "emailRequired": "Please enter your email address",
-            "emailInvalid": "Please enter a valid email address",
-            "subjectRequired": "Please enter a subject",
-            "messageRequired": "Please enter a message",
-            "messageLength": "Message must be at least 10 characters long"
-        }
+    "blog": {
+        "backToBlog": "Back to blog",
+        "notFound": "Article not found."
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "intro": "A selection of projects I've built.",
+        "all": "All projects",
+        "backToList": "Back to portfolio",
+        "context": "Context",
+        "challenges": "Challenges",
+        "solution": "Solution",
+        "results": "Results",
+        "featuredProjects": "Featured Projects",
+        "viewAll": "View all",
+        "noProjects": "No projects yet. Add your first one in",
+        "goToPortfolio": "Go to Portfolio page"
+    },
+    "cookies": {
+        "message": "We use cookies to remember your language preference and measure anonymous traffic.",
+        "learnMore": "Learn more",
+        "accept": "Accept",
+        "decline": "Decline"
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "cookies": "This site uses cookies solely to remember your language preference (i18n_redirected) and to measure anonymous traffic via Umami Analytics. No personal data is collected or sold."
+    },
+    "button": {
+        "light": "Switch to light mode",
+        "dark": "Switch to dark mode"
+    },
+    "about": {
+        "title": "About Me",
+        "p1": "With a strong academic background and hands-on experience in both frontend and backend, I deliver efficient and scalable solutions.",
+        "p2": "I enjoy transforming ideas into interactive applications that users love. My stack includes Vue, Nuxt, Laravel, React Native, TypeScript, Node.js and Python."
+    },
+    "cta": {
+        "title": "Let's work together",
+        "description": "Have a project in mind? I'm currently available for freelance work.",
+        "button": "Get in Touch"
+    },
+    "experience": {
+        "title": "Experience",
+        "viewAll": "View all",
+        "current": "Current"
+    },
+    "hero": {
+        "available": "Available for freelance",
+        "viewProjects": "View Projects",
+        "contactMe": "Contact Me",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+    },
+    "projectCard": {
+        "caseStudy": "Case study",
+        "live": "Live",
+        "code": "Code"
+    },
+    "socialLink": {
+        "opensInNewTab": "opens in a new tab"
     }
 }

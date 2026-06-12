@@ -1,4 +1,4 @@
-//AboutSection.vue
+<!-- components/sections/AboutSection.vue -->
 <template>
   <section class="mx-auto max-w-4xl px-4 py-24">
     <h2 class="mb-8 font-display text-3xl font-bold text-text-primary">About Me</h2>

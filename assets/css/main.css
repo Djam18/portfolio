@@ -4,12 +4,23 @@
 
 @layer base {
   :root {
-    --color-background: #0a0a0f;
-    --color-surface: #12121a;
-    --color-border: #1e1e2e;
-    --color-text-primary: #f0f0f5;
-    --color-text-secondary: #8a8a9a;
-    --color-accent: #6366f1;
+    --color-background:     #0c0a06;
+    --color-surface:        #141208;
+    --color-border:         #252010;
+    --color-text-primary:   #f5f0e8;
+    --color-text-secondary: #8a7a60;
+    --color-accent:         #f59e0b;   /* amber-400 */
+    --color-accent-muted:   #d97706;
+  }
+
+  [data-theme="light"] {
+    --color-background:     #fffbf0;
+    --color-surface:        #ffffff;
+    --color-border:         #fde68a;
+    --color-text-primary:   #1a1408;
+    --color-text-secondary: #6b5a38;
+    --color-accent:         #d97706;
+    --color-accent-muted:   #b45309;
   }
 
   body {

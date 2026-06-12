@@ -1,199 +1,107 @@
 {
-    "navigation": {
+    "nav": {
         "home": "ホーム",
-        "about": "概要",
+        "projects": "プロジェクト",
+        "skills": "スキル",
         "experience": "経験",
-        "education": "形成",
-        "skills": "コンペテンス",
-        "portfolio": "ポートフォリオ",
-        "services": "サービス",
-        "contact": "接触",
         "blog": "ブログ",
-        "cta": "もっと知りたい",
-        "quickLinks": "先取特権ラピデス",
-        "postTitle": "développeurフルスタック&&rédacteurweb"
-    },
-    "hero": {
-        "title": "こんにちは、ADAM Abdel-Djamalです。",
-        "content": "私は情熱的なWeb開発者です。Vue.js、Laravel、そして最先端のツールを使って、高速でアクセスしやすい、モダンなWebアプリケーションを構築しています。",
-        "cta": "詳細はこちら",
-        "myLinkedin": "私のLinkedIn",
-        "myGithub": "私のGithub"
-    },
-    "about": {
-        "title": "自己紹介",
-        "content": "フロントエンドとバックエンド開発における確かな学歴と実務経験を活かし、効率的でスケーラブルなソリューションを提供しています。アイデアを、ユーザーに愛されるインタラクティブなアプリケーションへと昇華させることにやりがいを感じています。",
-        "cta": "詳細はこちら"
-    },
-    "experience": {
-        "title": "経験",
-        "positions": {
-            "webDeveloperIntern": {
-                "title": "Web開発者インターン",
-                "company": "OSI Group",
-                "period": "2022",
-                "description": "独自アーキテクチャによるフルスタックWebアプリケーションの開発。"
-            },
-            "webContentEditor": {
-                "title": "Webエディター",
-                "company": "RedacLink",
-                "period": "2021",
-                "description": "SEOに最適化された記事と商品説明の作成。"
-            },
-            "academicIntern": {
-                "title": "アカデミックインターンシップ",
-                "company": "Rintio",
-                "period": "2019",
-                "description": "データ収集用Angularインターフェースの開発。"
-            }
-        }
-    },
-    "education": {
-        "title": "形成",
-        "degrees": {
-            "bsc": {
-                "title": "ジェスチャーインフォマティックのライセンス",
-                "institution": "Eneam,Cotonou",
-                "period": "2020"
-            },
-            "webDev": {
-                "title": "フォーメーションendéveloppementWeb",
-                "institution": "Smartel",
-                "period": "2023–2024"
-            },
-            "courses": {
-                "title": "IAとDevOpsコース",
-                "institution": "ウデミー",
-                "period": "2025"
-            }
-        }
+        "contact": "お問い合わせ"
     },
     "skills": {
-        "title": "コンペテンス",
-        "subtitle": "これは私が使用した技術のいくつかです",
+        "title": "スキル",
+        "intro": "Vue/Nuxt & Laravelを専門とし、ピクセルパーフェクトなフロントエンドからクラウドアーキテクチャまで、完全なアプリケーションを構築します。",
+        "seeProject": "プロジェクトを見る",
+        "currentStack": "現在の技術スタック（今月）",
         "categories": {
-            "languages": {
-                "title": "言語",
-                "items": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "PHP"
-                ]
-            },
-            "frameworks": {
-                "title": "フレームワーク",
-                "items": [
-                    "Vue.js",
-                    "Laravel",
-                    "Bootstrap",
-                    "Tailwind CSS",
-                    "Nuxt.js"
-                ]
-            },
-            "tools": {
-                "title": "ツール",
-                "items": [
-                    "Docker",
-                    "Linux",
-                    "git"
-                ]
-            }
-        }
-    },
-    "otherSkills": {
-        "title": "",
-        "databases": {
-            "title": "ベースドンネー",
-            "items": [
-                "MySQL",
-                "PostgreSQL",
-                "MongoDB"
-            ]
+            "frontend": "フロントエンド",
+            "backend": "バックエンド",
+            "database": "データベース",
+            "devops": "DevOps & クラウド",
+            "ai": "AI & ツール"
         },
-        "testing": {
-            "title": "テスト",
-            "items": [
-                "Jest",
-                "PHPUnit",
-                "Postman"
-            ]
-        }
-    },
-    "portfolio": {
-        "title": "ポートフォリオ",
-        "subtitle": "私の最近のプロジェクトと私が開発したソリューションをご覧ください",
-        "viewProject": "プロジェクトを見る",
-        "projects": {
-            "newsPortal": {
-                "title": "ファクタリティポータル",
-                "period": "2022–2023",
-                "description": "応答性のあるサイトで、現代的なCMSを使用しています",
-                "link": "https://github.com/djam18/news_portal"
-            },
-            "ecommerce": {
-                "title": "サイトeコマース",
-                "period": "2022–2024",
-                "description": "Une Plateforme deVenteévolutivevatilisant laravel et vue.js.",
-                "link": "https://github.com/djam18/multi_vendor_ecommerce"
-            }
+        "categoryDescriptions": {
+            "frontend": "高性能で、アクセシブルで、アニメーションのあるインターフェース。",
+            "backend": "REST API、ヘキサゴナルアーキテクチャ。",
+            "database": "リレーショナルおよびNoSQLのモデリング。",
+            "devops": "CI/CD、コンテナ化、デプロイ。",
+            "ai": "AIによる生産性とデザインの向上。"
+        },
+        "levels": {
+            "expert": "エキスパート",
+            "proficient": "熟練",
+            "familiar": "習熟"
         }
     },
     "services": {
         "title": "サービス",
-        "items": {
-            "webDev": {
-                "title": "ウェブ開発",
-                "description": "現代的で進化可能なWebアプリケーションの作成"
+        "intro": "ビジネス重視でROI主導のアプローチにより、あなたのニーズを高性能なWebおよびモバイルアプリケーションに変えます。",
+        "cta": "あなたのプロジェクトについて話しましょう",
+        "seeProject": "ケーススタディを見る",
+        "items": [
+            {
+                "title": "Web開発",
+                "desc": "Vue、Nuxt、Laravelなどのモダンツールを使用したフルスタックアプリケーション。"
             },
-            "backend": {
-                "title": "アーキテクチャバックエンド",
-                "description": "サーバー側の堅牢で効果的なソリューションの設計"
+            {
+                "title": "モバイルアプリ",
+                "desc": "React Nativeによるクロスプラットフォームのモバイルソリューション。"
             },
-            "uiux": {
-                "title": "UI/UX統合",
-                "description": "CréationD'Interfacesutilisateur fluides et Intuitive"
-            },
-            "api": {
-                "title": "API開発",
-                "description": "Créationde apisécuriséesetévolutives"
-            },
-            "contentWriting": {
-                "title": "コンテンツライティング",
-                "description": "CréationD'Articsede Blogs、De Fiches deの説明はプロデュースを注ぎます"
+            {
+                "title": "SEOとパフォーマンス",
+                "desc": "高速に読み込まれ、検索順位が向上する最適化されたサイト。"
             }
-        }
+        ]
     },
-    "contact": {
-        "title": "連絡してください",
-        "email": "メール",
-        "social": "コンプ",
-        "subtitle": "私の最近のプロジェクトと私が開発に協力したソリューションをご覧ください",
-        "infoTitle": "連絡先の情報",
-        "phone": "電話",
-        "location": "ローカリゼーション",
-        "formTitle": "エンボイズ国連メッセージ",
-        "form": {
-            "name": "名前を入力してください",
-            "namePlaceholder": "名前を入力してください",
-            "email": "投票メール",
-            "emailPlaceholder": "メールアドレスを入力してください",
-            "subject": "スジェット",
-            "subjectPlaceholder": "なんですか？",
-            "message": "メッセージ",
-            "sending": "エンボイ...",
-            "messagePlaceholder": "メッセージを入力してください...",
-            "submit": "エンボイヤールメッセージ",
-            "successMessage": "投票メッセージエトレボイエヴェックサッカーズ ",
-            "errorMessage": "OUPS！ なんかおかしいです"
-        },
-        "validation": {
-            "nameRequired": "Veuillez Entrer botre nom",
-            "emailRequired": "Veuillez Entrer Votre Adresseメール",
-            "emailInvalid": "Veuillez Enterrer UNE Adresse Email Valide",
-            "subjectRequired": "Veuillez Entrer UN Sujet",
-            "messageRequired": "Veuillez Entrer UNメッセージ",
-            "messageLength": "LeメッセージDoitコンポーターAu Moins 10Caractères"
-        }
+    "blog": {
+        "backToBlog": "ブログに戻る",
+        "notFound": "記事が見つかりません。"
+    },
+    "portfolio": {
+        "title": "ポートフォリオ",
+        "intro": "これまでに構築したプロジェクトの厳選リスト。",
+        "all": "すべてのプロジェクト",
+        "backToList": "← ポートフォリオに戻る",
+        "context": "背景",
+        "challenges": "課題",
+        "solution": "解決策",
+        "results": "成果",
+        "featuredProjects": "注目のプロジェクト",
+        "viewAll": "すべて見る",
+        "noProjects": "まだプロジェクトがありません。最初のプロジェクトを追加してください：",
+        "goToPortfolio": "ポートフォリオページへ"
+    },
+    "button": {
+        "light": "ライトモードに切り替え",
+        "dark": "ダークモードに切り替え"
+    },
+    "about": {
+        "title": "自己紹介",
+        "p1": "強力な学歴とフロントエンド・バックエンド両方の実践的な経験を活かし、効率的でスケーラブルなソリューションを提供します。",
+        "p2": "アイデアをユーザーに愛されるインタラクティブなアプリケーションに変えることを楽しんでいます。使用スタック：Vue、Nuxt、Laravel、React Native、TypeScript、Node.js、Python。"
+    },
+    "cta": {
+        "title": "一緒に仕事をしませんか",
+        "description": "やりたいプロジェクトはありますか？現在、フリーランスの仕事を受付中です。",
+        "button": "お問い合わせ"
+    },
+    "experience": {
+        "title": "職歴",
+        "viewAll": "すべて表示",
+        "current": "現在"
+    },
+    "hero": {
+        "available": "フリーランスとして活動中",
+        "viewProjects": "プロジェクトを見る",
+        "contactMe": "お問い合わせ",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+    },
+    "projectCard": {
+        "caseStudy": "事例を見る",
+        "live": "ライブデモ",
+        "code": "コード"
+    },
+    "socialLink": {
+        "opensInNewTab": "新しいタブで開きます"
     }
 }

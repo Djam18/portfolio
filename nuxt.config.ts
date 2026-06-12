@@ -4,29 +4,29 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
 
+  // ── Déploiement Vercel (statique) ───────────────────
+  // nuxt generate → rendu statique complet
+  // Évite le problème de better-sqlite3 en runtime (utilisé uniquement au build)
+  nitro: {
+    preset: 'vercel-static',
+  },
+
   // ── Modules ─────────────────────────────────────────
-  // Ordre important : sitemap/robots avant seo (meta-module qui les englobe)
+  // Ordre : i18n avant content (routes localisées avant génération des routes Content)
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
-    '@nuxtjs/seo',
     '@nuxtjs/i18n',
     '@nuxt/content',
+    '@nuxtjs/seo',
     '@nuxt/icon',
     '@nuxt/image',
     'nuxt-og-image',
     'nuxt-umami',
+    '@nuxtjs/google-fonts',
   ],
 
-  // ── Variables d'environnement ────────────────────────
+  // ── Variables d'environnement ───────────────────────
   runtimeConfig: {
-    // Privées (serveur uniquement)
-    // SMTP retiré : le projet utilise uniquement @sendgrid/mail, pas nodemailer
-    sendgridApiKey: process.env.SENDGRID_API_KEY,
-    sendgridFrom: process.env.SENDGRID_FROM,
-    sendgridTo: process.env.SENDGRID_TO,
-    // Publiques (accessibles côté client)
     public: {
       apiBase: '/api',
       calLink: process.env.NUXT_PUBLIC_CAL_LINK ?? 'https://cal.com/ton-compte',
@@ -35,41 +35,32 @@ export default defineNuxtConfig({
     },
   },
 
-  // ── Head global minimal ──────────────────────────────
-  // @nuxtjs/seo gère title/description/og/* automatiquement via site{}
-  // useSeoMeta() dans chaque page surcharge au besoin
-  // Ne pas dupliquer ici ce que seo/og-image génèrent déjà
+  // ── Head global minimal ─────────────────────────────
   app: {
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap'
-        },
       ],
     },
   },
 
-  // ── SEO global (@nuxtjs/seo + nuxt-og-image) ─────────
-  // Source unique de vérité pour l'URL et le nom du site
+  // ── SEO global (@nuxtjs/seo + nuxt-og-image) ────────
   site: {
     url: 'https://adam-portfolio.vercel.app',
     name: 'Adam Abdel-Djamal | Full Stack Developer',
-    description: 'Portfolio of Adam Abdel-Djamal, Full Stack Developer specialized in Vue.js, Nuxt 3 and Laravel.',
+    description: 'Portfolio of Adam Abdel-Djamal, Full Stack Developer specialized in Vue.js, Nuxt and Laravel.',
     defaultLocale: 'en',
   },
 
-  // ── Sitemap (@nuxtjs/sitemap v8) ─────────────────────
-  // hostname et gzip supprimés (dépréciés) — l'URL vient de site.url
-  // Les routes dynamiques (blog/portfolio) sont découvertes automatiquement
+  // ── Sitemap (@nuxtjs/sitemap v8) ────────────────────
+  // Avec prefix_except_default + i18n, le sitemap génère automatiquement
+  // les URLs localisées avec les balises <xhtml:link hreflang="...">
+  // Condition : les routes Nuxt Content doivent être découvertes automatiquement
   sitemap: {},
 
-  // ── Robots (@nuxtjs/robots v5) ────────────────────────
-  // FIX: rules{} supprimé en v5, remplacé par groups[]
-  // sitemap en chemin relatif — résolu via site.url au runtime
+  // ── Robots (@nuxtjs/robots v5) ──────────────────────
   robots: {
     groups: [
       {
@@ -80,65 +71,92 @@ export default defineNuxtConfig({
     sitemap: ['/sitemap.xml'],
   },
 
-  // ── Internationalisation (@nuxtjs/i18n v9) ────────────
-  // FIX: iso → language (breaking change v9, confirmé dans migration guide)
-  // FIX: langDir mis à jour selon la nouvelle structure i18n/ de v9
-  //      Si tu gardes locales/ à la racine, ajoute restructureDir: false
+  // ── Internationalisation (@nuxtjs/i18n v10) ─────────
   i18n: {
-   // restructureDir: false, // conserve locales/ à la racine (hors i18n/)
+    // Les fichiers sont dans i18n/locales/ — correspond au restructureDir par défaut de v10
     langDir: 'locales/',
     defaultLocale: 'en',
+
+    // CRITIQUE pour le SEO international :
+    // prefix_except_default → URLs distinctes par langue
+    // → Google peut indexer /blog/article (EN), /fr/blog/article (FR), /de/blog/artikel (DE)
+    // → hreflang générés automatiquement par @nuxtjs/i18n
+    // → sans ça, toutes les langues partagent la même URL → Google indexe une seule version
+    strategy: 'prefix_except_default',
+
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-      alwaysRedirect: true,
+      // 'all' : détection sur chaque page, pas seulement sur /
+      // Un japonais qui clique un lien direct vers /blog/article sera redirigé vers /ja/blog/article
+      redirectOn: 'all',
+      // false : évite les boucles de redirection quand l'utilisateur change manuellement de langue
+      alwaysRedirect: false,
       fallbackLocale: 'en',
     },
+
     locales: [
       { code: 'en', language: 'en-US', file: 'en.json', name: 'English' },
       { code: 'fr', language: 'fr-FR', file: 'fr.json', name: 'Français' },
-      { code: 'ja', language: 'ja-JP', file: 'ja.json', name: '日本語' },
+      { code: 'de', language: 'de-DE', file: 'de.json', name: 'Deutsch' },
       { code: 'es', language: 'es-ES', file: 'es.json', name: 'Español' },
+      { code: 'ja', language: 'ja-JP', file: 'ja.json', name: '日本語' },
     ],
-    baseUrl: 'https://adam-portfolio.vercel.app',
-    strategy: 'no_prefix',
+
+    // baseUrl supprimé : redondant avec site.url
   },
 
-  // ── Nuxt Image ───────────────────────────────────────
-  image: {
-    // provider ipx par défaut (local)
-    // Décommente si tu veux des tailles d'écran prédéfinies :
-    // screens: { xs: 320, sm: 640, md: 768, lg: 1024, xl: 1280 },
-  },
+  // ── Nuxt Image ──────────────────────────────────────
+  image: {},
 
-  // ── Nuxt Content v3 ──────────────────────────────────
+  // ── Nuxt Content v3 ─────────────────────────────────
   content: {},
 
-  // ── Nuxt Umami ───────────────────────────────────────
-  // Passe par des variables d'env pour ne pas exposer l'ID en dur
+  // ── Nuxt Umami ──────────────────────────────────────
   umami: {
     host: process.env.NUXT_UMAMI_HOST ?? '',
     id: process.env.NUXT_UMAMI_ID ?? '',
     autoTrack: true,
-    ignoreLocalhost: true, // ne track pas les visites en dev
+    ignoreLocalhost: true,
   },
-    ogImage: {
-    componentOptions: {
-      renderer: 'satori' // ← fixe le choix, plus de question interactive
+
+  // ── OG Image (nuxt-og-image v6 + satori) ────────────
+  ogImage: {
+    compatibility: {
+      runtime: 'node',
     },
-    // Optionnel : désactive la génération dynamique si tu n'en as pas besoin
-    // zeroRuntime: true,
+    componentOptions: {
+      renderer: 'satori',
+    },
   },
+
+  // ── Vite optimizations ──────────────────────────────
   vite: {
     optimizeDeps: {
-      include: ['gsap', 'gsap/ScrollTrigger']
-    }
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+        'gsap',
+        'gsap/ScrollTrigger',
+      ],
+    },
   },
+
+  // ── Résolution automatique des composants ───────────
   components: [
-  {
-    path: '~/components',
-    pathPrefix: false
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
+  googleFonts: {
+  families: {
+    Outfit: [300, 400, 500, 600, 700],
+    Syne: [400, 500, 600, 700],
+    'JetBrains Mono': [400, 500],
   },
-],
+  display: 'swap',
+  download: true,   // télécharge les fonts au build → servies en local, pas depuis Google
+  preload: true,
+},
 })

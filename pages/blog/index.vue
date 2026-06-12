@@ -1,3 +1,4 @@
+<!-- pages/blog/index.vue -->
 <template>
   <div class="min-h-screen bg-background pt-24 pb-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -14,28 +15,33 @@
         <div v-for="i in 3" :key="i" class="h-80 animate-pulse rounded-card bg-surface" />
       </div>
 
-      <div v-else-if="articles.length" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div v-else-if="posts.length" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <BlogCard
-          v-for="article in articles"
-          :key="article.path"
-          :article="article"
+          v-for="post in posts"
+          :key="post.path"
+          :post="post"
         />
       </div>
 
       <div v-else class="py-20 text-center text-text-secondary">
-        No articles yet. Coming soon!
+        No posts yet. Coming soon!
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath()
 useHead({
   title: 'Blog',
   meta: [{ name: 'description', content: 'Articles and thoughts on web development by Adam Abdel-Djamal.' }]
 })
+const { locale } = useI18n()
 
-const { data: articles, pending } = await useAsyncData('blog-list', () =>
-  queryCollection('blog').order('date', 'DESC').all()
+const { data: posts, pending } = await useAsyncData('blog-list', () =>
+    queryCollection('blog')
+    .where('stem', 'LIKE', `blog/${locale.value}/%`)  // ← filtre par langue
+    .order('date', 'DESC')
+    .all()
 )
 </script>

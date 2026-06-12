@@ -254,7 +254,7 @@ export default defineAppConfig({
         'Scalabilité immédiate : vous passez de 100 à 10 000 utilisateurs sans refonte',
       ],
       techs: ['Vue.js / Nuxt', 'Laravel / PHP', 'TypeScript', 'Tailwind CSS', 'Docker'],
-      project: 'saab-ecommerce',
+      project: 'saas-ecommerce',
       testimonial: null,
       cta: 'Parlez-moi de votre projet',
     },
@@ -270,7 +270,7 @@ export default defineAppConfig({
         'Maintenance simplifiée : une seule base de code pour les deux plateformes',
       ],
       techs: ['React / React Native', 'Expo', 'Node.js', 'PostgreSQL'],
-      project: 'mobile-app-x',
+      project: 'mobile-x',
       testimonial: null,
       cta: 'Parlons de votre app mobile',
     },
@@ -294,7 +294,7 @@ export default defineAppConfig({
       icon: 'ph:robot',
       title: 'AI & Automatisation',
       category: 'ai',
-      painPoint: 'Votre équipe passe des heures sur des tâches répétitives (saisie, emails, rapports) qui pourraient être automatisées.',
+      painPoint: 'Votre équipe passe des heures sur des tâches (saisie, emails, rapports) qui pourraient être automatisées.',
       solution: 'J’intègre des assistants IA sur mesure et des pipelines d’automatisation pour vous rendre du temps et réduire les erreurs humaines.',
       results: [
         'Économisez jusqu’à 15 h / semaine par collaborateur (soit environ 8 000 € / an)',
@@ -323,20 +323,20 @@ export default defineAppConfig({
       category: "frontend", // for filtering
     },
     {
-      slug: "saab-ecommerce",
+      slug: "saas-ecommerce",
       title: "SaaS E‑commerce Platform",
       role: "Full-Stack Developer",
       year: "2025",
       description:
         "Multi-tenant SaaS with Laravel, Vue 3, Stripe integration, and Docker deployment.",
-      image: "/images/portfolio/saab.jpg", // add image
+      image: "/images/portfolio/saas.jpg", // add image
       stack: ["Laravel", "Vue.js", "Stripe", "PostgreSQL", "Docker"],
-      liveUrl: "https://saab.app",
+      liveUrl: "https://saas.app",
       repoUrl: null, // if private
       category: "backend",
     },
     {
-      slug: "mobile-app-x",
+      slug: "mobile-x",
       title: "Mobile App X",
       role: "React Native Developer",
       year: "2024",
@@ -356,7 +356,7 @@ export default defineAppConfig({
       year: "2026",
       description:
         "SQL query analyzer with execution plan visualization and optimization suggestions.",
-      image: "/images/portfolio/query-craft.png",
+      image: "/images/portfolio/query-craft.jpg",
       stack: ["Vue.js", "Node.js", "PostgreSQL", "Docker", "Tailwind"],
       liveUrl: "https://query-craft.vercel.app",
       repoUrl: "https://github.com/your-username/query-craft",
@@ -371,7 +371,7 @@ export default defineAppConfig({
       year: "2025",
       description:
         "CI/CD pipeline and containerized microservice with automated deployment and monitoring.",
-      image: "/images/portfolio/deploy-lab.png",
+      image: "/images/portfolio/deploy-lab.jpg",
       stack: ["Docker", "GitHub Actions", "Vercel", "Nginx", "Linux"],
       liveUrl: "https://deploy-lab.vercel.app",
       repoUrl: "https://github.com/your-username/deploy-lab",
@@ -386,7 +386,7 @@ export default defineAppConfig({
       year: "2026",
       description:
         "Article summarization tool using Claude API with prompt templates and MCP integration.",
-      image: "/images/portfolio/ai-autopilot.png",
+      image: "/images/portfolio/ai-autopilot.jpg",
       stack: [
         "Nuxt 4",
         "Claude API",

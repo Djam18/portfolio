@@ -1,4 +1,5 @@
-//SkillBar
+<!-- components/ui/SkillBar.vue -->
+
 <template>
   <div class="rounded-lg border border-border bg-surface p-5">
     <div class="mb-2 flex items-center justify-between">
@@ -11,5 +12,9 @@
   </div>
 </template>
 <script setup>
-defineProps({ name: String, level: Number })
+const { t } = useI18n();
+const ariaLabel = computed(
+  () => `${props.name} (${t("socialLink.opensInNewTab")})`,
+);
+defineProps({ name: String, level: Number });
 </script>

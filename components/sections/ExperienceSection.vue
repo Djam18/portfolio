@@ -1,10 +1,15 @@
+<!-- components/sections/ExperienceSection.vue -->
 <template>
   <section class="mx-auto max-w-4xl px-4 py-24">
-
     <div class="mb-12 flex items-end justify-between">
-      <h2 class="font-display text-3xl font-bold text-text-primary">Experience</h2>
-      <NuxtLink to="/experience" class="text-sm text-accent hover:underline">
-        View all →
+      <h2 class="font-display text-3xl font-bold text-text-primary">
+        {{ t("experience.title") }}
+      </h2>
+      <NuxtLink
+        :to="localePath('/experience')"
+        class="text-sm text-accent hover:underline"
+      >
+        {{ t("experience.viewAll") }} →
       </NuxtLink>
     </div>
 
@@ -15,7 +20,9 @@
         class="relative border-l-2 border-accent pl-8"
       >
         <!-- Dot timeline -->
-        <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-accent ring-4 ring-background" />
+        <span
+          class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-accent ring-4 ring-background"
+        />
 
         <!-- Header -->
         <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
@@ -25,7 +32,7 @@
             v-if="job.current"
             class="rounded-full bg-accent/10 px-3 py-1 font-mono text-xs text-accent"
           >
-            Current
+            {{ t("experience.current") }}
           </span>
         </div>
 
@@ -52,10 +59,11 @@
         </div>
       </div>
     </div>
-
   </section>
 </template>
 
 <script setup>
-const { experience } = useAppConfig()
+const { t } = useI18n()
+const localePath = useLocalePath();
+const { experience } = useAppConfig();
 </script>
