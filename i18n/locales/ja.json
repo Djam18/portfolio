@@ -152,5 +152,18 @@
         "sendEmail": "メールを送信",
         "copyEmail": "アドレスをコピー",
         "copied": "コピー完了"
-    }
+    },
+    "cookies": {
+  "message": "Cookieを使用して、言語設定を記憶し、匿名トラフィックを測定します。",
+  "learnMore": "詳細を見る",
+  "accept": "同意する",
+  "decline": "拒否する"
+},"privacy": {
+  "title": "プライバシーポリシー",
+  "cookies": "このサイトは、言語設定（i18n_redirected）を記憶し、Umami Analyticsによる匿名トラフィックを測定する目的でのみCookieを使用します。個人データは収集も販売もされません。"
+}, "metaTitles": {
+  "experiencePage": "職歴 | {author} ",
+  "contactPage": "お問い合わせ | {author} ",
+  "blogPage": "ブログ | {author} "
+}
 }

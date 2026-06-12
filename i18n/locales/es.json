@@ -102,7 +102,6 @@
         "subtitle": "Mi trayectoria profesional",
         "viewAll": "Ver todo",
         "current": "Actual",
-        "metaTitle": "Experiencia | Adam Abdel-Djamal",
         "jobs": [
             {
                 "role": "Desarrollador web freelance",
@@ -152,5 +151,20 @@
         "sendEmail": "Enviar email",
         "copyEmail": "Copiar correo",
         "copied": "¡Copiado!"
+    },
+    "cookies": {
+        "message": "Usamos cookies para recordar tu preferencia de idioma y medir tráfico anónimo.",
+        "learnMore": "Más información",
+        "accept": "Aceptar",
+        "decline": "Rechazar"
+    },
+    "privacy": {
+        "title": "Política de privacidad",
+        "cookies": "Este sitio utiliza cookies únicamente para recordar tu preferencia de idioma (i18n_redirected) y medir tráfico anónimo mediante Umami Analytics. No se recopila ni vende ningún dato personal."
+    },
+    "metaTitles": {
+        "experiencePage": "Experiencia | {author} ",
+        "contactPage": "Contacto | {author} ",
+        "blogPage": "Blog | {author} "
     }
 }

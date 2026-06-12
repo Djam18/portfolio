@@ -76,7 +76,7 @@
         "challenges": "Défis",
         "solution": "Solution",
         "results": "Résultats",
-        "featuredProjects": "Projets en vedette",
+        "featuredProjects": "Projects à présenter",
         "viewAll": "Voir tout",
         "noProjects": "Aucun projet pour le moment. Ajoutez le premier dans",
         "goToPortfolio": "Aller à la page Portfolio",
@@ -102,7 +102,6 @@
         "subtitle": "Mon parcours professionnel",
         "viewAll": "Voir tout",
         "current": "En poste",
-        "metaTitle": "Expérience | Adam Abdel-Djamal",
         "jobs": [
             {
                 "role": "Développeur web freelance",
@@ -152,5 +151,20 @@
         "sendEmail": "Envoyer un email",
         "copyEmail": "Copier l'adresse",
         "copied": "Copié !"
+    },
+    "cookies": {
+        "message": "Nous utilisons des cookies pour mémoriser votre préférence de langue et mesurer le trafic anonyme.",
+        "learnMore": "En savoir plus",
+        "accept": "Accepter",
+        "decline": "Refuser"
+    },
+    "privacy": {
+        "title": "Politique de confidentialité",
+        "cookies": "Ce site utilise uniquement des cookies pour mémoriser votre préférence de langue (i18n_redirected) et mesurer le trafic anonyme via Umami Analytics. Aucune donnée personnelle n'est collectée ou vendue."
+    },
+    "metaTitles": {
+        "experiencePage": "Expérience | {author} ",
+        "contactPage": "Contact | {author} ",
+        "blogPage": "Blog | {author} "
     }
 }

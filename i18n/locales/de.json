@@ -102,7 +102,6 @@
         "subtitle": "Mein beruflicher Werdegang",
         "viewAll": "Alle anzeigen",
         "current": "Aktuell",
-        "metaTitle": "Berufserfahrung | Adam Abdel-Djamal",
         "jobs": [
             {
                 "role": "Freiberuflicher Webentwickler",
@@ -152,5 +151,20 @@
         "sendEmail": "E-Mail senden",
         "copyEmail": "Adresse kopieren",
         "copied": "Kopiert!"
+    },
+    "cookies": {
+        "message": "Wir verwenden Cookies, um Ihre Sprachpräferenz zu speichern und anonymen Traffic zu messen.",
+        "learnMore": "Mehr erfahren",
+        "accept": "Akzeptieren",
+        "decline": "Ablehnen"
+    },
+    "privacy": {
+        "title": "Datenschutzerklärung",
+        "cookies": "Diese Website verwendet Cookies ausschließlich, um Ihre Sprachpräferenz (i18n_redirected) zu speichern und anonymen Traffic über Umami Analytics zu messen. Es werden keine persönlichen Daten erfasst oder verkauft."
+    },
+    "metaTitles": {
+        "experiencePage": "Berufserfahrung | {author} ",
+        "contactPage": "Kontakt | {author} ",
+        "blogPage": "Blog | {author} "
     }
 }
