@@ -154,16 +154,122 @@
         "copied": "コピー完了"
     },
     "cookies": {
-  "message": "Cookieを使用して、言語設定を記憶し、匿名トラフィックを測定します。",
-  "learnMore": "詳細を見る",
-  "accept": "同意する",
-  "decline": "拒否する"
-},"privacy": {
-  "title": "プライバシーポリシー",
-  "cookies": "このサイトは、言語設定（i18n_redirected）を記憶し、Umami Analyticsによる匿名トラフィックを測定する目的でのみCookieを使用します。個人データは収集も販売もされません。"
-}, "metaTitles": {
-  "experiencePage": "職歴 | {author} ",
-  "contactPage": "お問い合わせ | {author} ",
-  "blogPage": "ブログ | {author} "
-}
+        "message": "Cookieを使用して、言語設定を記憶し、匿名トラフィックを測定します。",
+        "learnMore": "詳細を見る",
+        "accept": "同意する",
+        "decline": "拒否する"
+    },
+    "privacy": {
+        "title": "プライバシーポリシー",
+        "cookies": "このサイトは、言語設定（i18n_redirected）を記憶し、Umami Analyticsによる匿名トラフィックを測定する目的でのみCookieを使用します。個人データは収集も販売もされません。"
+    },
+    "metaTitles": {
+        "experiencePage": "職歴 | {author} ",
+        "contactPage": "お問い合わせ | {author} ",
+        "blogPage": "ブログ | {author} "
+    },
+    "profile": {
+        "identity": {
+            "title": "フルスタック開発者",
+            "tagline": "高速でスケーラブルなSaaSプロダクトを構築 — Laravel, Vue/Nuxt, Node.js & 決済連携",
+            "bio": "ベナン、コトヌーを拠点とするフルスタック開発者。高速でアクセシブル、スケーラブルなWebアプリケーションを構築します。Laravel/Node.js APIからVue/Nuxtフロントエンドまで、スタック全体に対応し、決済連携とSaaSアーキテクチャに重点を置いています。"
+        },
+        "experience": {
+            "infraxdev": {
+                "description": "様々なクライアント向けにフルスタックWebアプリケーションを設計・構築。SaaSアーキテクチャ、決済連携、クラウドインフラへのデプロイメントまで対応。"
+            },
+            "osiGroup": {
+                "description": "React.jsを使用した内部ツールの開発と保守。設計、統合、テスト、納品までの全開発サイクルをカバーし、チームでの協働環境で実施。"
+            },
+            "rintio": {
+                "description": "最終学年のインターンシップで技術チームに所属。AngularによるWebアプリケーション開発、Angular Materialでのインターフェース設計、Ionicによるハイブリッドモバイルの探求 — プロフェッショナル環境での初めての実践経験。"
+            }
+        },
+        "services": {
+            "webApplications": {
+                "painPoint": "アプリケーションが遅く、保守が難しく、ユーザーが競合他社に離れています。",
+                "solution": "高速でスケーラブル、かつ保守が容易なカスタムWebアプリケーションを構築します — スムーズなフロントエンドと堅牢なクラウドアーキテクチャ。",
+                "results": [
+                    "3倍高速な読み込みによる最大+20%のコンバージョン向上",
+                    "長期的な保守コストを30〜50%削減",
+                    "再構築なしで100人から10,000ユーザーまでスケール"
+                ],
+                "cta": "プロジェクトについて相談する"
+            },
+            "mobileApps": {
+                "painPoint": "iOSとAndroidを別々に開発すると、コストと期間が2倍になります。",
+                "solution": "単一のReact Nativeアプリを構築 — 高速でネイティブのような体験、両ストアにデプロイ、保守可能なコードベースとスムーズなユーザー体験。",
+                "results": [
+                    "2つのネイティブ開発と比較して40%の予算削減",
+                    "単一コードベースによる市場投入までの時間を30%短縮",
+                    "保守の簡素化 — 両プラットフォームで一つのコードベース"
+                ],
+                "cta": "モバイルアプリについて話し合いましょう"
+            },
+            "seoPerformance": {
+                "painPoint": "サイトがGoogleで見つからず、遅すぎて訪問者がコンテンツを見る前に離脱します。",
+                "solution": "完全な技術監査（Core Web Vitals、アクセシビリティ、SEO）を実行し、超高速サイトに必要な最適化を適用します。",
+                "results": [
+                    "読み込み時間2秒未満 → 直帰率40%低下",
+                    "優れた技術的SEOスコア → インデックス改善、オーガニックトラフィック増加",
+                    "読み込み時間1秒短縮ごとにコンバージョン率+2%"
+                ],
+                "cta": "サイトを監査する"
+            },
+            "aiAutomation": {
+                "painPoint": "チームがデータ入力、メール、レポートなど、自動化可能なタスクに何時間も費やしています。",
+                "solution": "時間を節約し、人為的ミスを減らすカスタムAIアシスタントと自動化パイプラインを構築します。",
+                "results": [
+                    "チームメンバー1人あたり週最大15時間の節約（年間約8,500ドル）",
+                    "データ入力エラーを90%削減",
+                    "チームは書類作業ではなく高価値な業務に集中"
+                ],
+                "cta": "ワークフローを自動化する"
+            }
+        },
+        "projects": {
+            "adamPortfolio": {
+                "description": "動的コンテンツ、i18n、ブログ、GitHub ActionsによるCI/CDを備えたNuxt 4ポートフォリオ。"
+            },
+            "saasEcommerce": {
+                "description": "LaravelとVue 3で構築されたマルチテナントSaaSプラットフォーム。Stripe統合とDockerデプロイメントを搭載。"
+            },
+            "mobileX": {
+                "description": "フィールドエージェント向けクロスプラットフォームモバイルアプリ。オフラインファースト同期とリアルタイムダッシュボード。"
+            },
+            "queryCraft": {
+                "description": "実行計画の可視化と最適化提案を行うSQLクエリアナライザー。"
+            },
+            "deployLab": {
+                "description": "自動デプロイと監視を備えたCI/CDパイプラインとコンテナ化マイクロサービス。"
+            },
+            "aiBlogAutopilot": {
+                "description": "Claude APIを利用した記事要約ツール。プロンプトテンプレートとMCP統合を搭載。"
+            }
+        },
+        "education": {
+            "smartel": {
+                "degree": "Webアプリケーション開発・設計",
+                "description": "モダンなWebアプリケーションの構築とアーキテクチャに焦点を当てた、実践的な集中トレーニングプログラム。チームベースの実践プロジェクト。"
+            },
+            "eneam": {
+                "degree": "計算機科学学士号",
+                "description": "プログラミングと情報システム設計を専門とする計算機科学の学位。チーム開発プロジェクトと実践的なプログラミング作業を含む。"
+            }
+        },
+        "certifications": {
+            "aiFluency": {
+                "title": "AI Fluency: Framework & Foundations",
+                "description": "AIモデルとの効果的で倫理的かつ安全なインタラクションに関する実践的トレーニング。University College CorkとRingling Collegeの学識経験者と共同開発。"
+            },
+            "claudeCode101": {
+                "title": "Claude Code 101",
+                "description": "開発エージェントとしてのClaude Codeの習得 — インストール、日常ワークフロー、高度なカスタマイズ。"
+            },
+            "claudeCodeInAction": {
+                "title": "Claude Code in Action",
+                "description": "高度なAIコーディングエージェントのアーキテクチャ、コンテキスト管理、MCPサーバーとGitHub統合による拡張性。"
+            }
+        }
+    }
 }

@@ -166,5 +166,109 @@
         "experiencePage": "Experiencia | {author} ",
         "contactPage": "Contacto | {author} ",
         "blogPage": "Blog | {author} "
+    },
+    "profile": {
+        "identity": {
+            "title": "Desarrollador Full-Stack",
+            "tagline": "Construyendo productos SaaS rápidos y escalables — Laravel, Vue/Nuxt, Node.js e integraciones de pago",
+            "bio": "Desarrollador Full-Stack con base en Cotonú, Benín. Creo aplicaciones web rápidas, accesibles y escalables. Trabajo en toda la pila — desde APIs con Laravel/Node.js hasta frontends con Vue/Nuxt — con enfoque en integraciones de pago y arquitectura SaaS."
+        },
+        "experience": {
+            "infraxdev": {
+                "description": "Diseño y construcción de aplicaciones web full-stack para diversos clientes: arquitectura SaaS, integraciones de pago, despliegue en infraestructura cloud."
+            },
+            "osiGroup": {
+                "description": "Desarrollo y mantenimiento de herramientas internas con React.js, cubriendo todo el ciclo de desarrollo — diseño, integración, pruebas y entrega — en un entorno colaborativo."
+            },
+            "rintio": {
+                "description": "Prácticas de fin de carrera en el equipo técnico. Desarrollo de una aplicación web con Angular, diseño de interfaces con Angular Material, exploración de Ionic para móvil híbrido — primera experiencia práctica en un entorno profesional."
+            }
+        },
+        "services": {
+            "webApplications": {
+                "painPoint": "Tu aplicación es lenta, difícil de mantener y los usuarios se van a la competencia.",
+                "solution": "Construyo aplicaciones web personalizadas, rápidas, escalables y fáciles de mantener — con un frontend fluido y una arquitectura cloud robusta.",
+                "results": [
+                    "Hasta +20% de conversiones gracias a una carga 3 veces más rápida",
+                    "Reducción del 30-50% en costes de mantenimiento a largo plazo",
+                    "Escala de 100 a 10,000 usuarios sin necesidad de reconstruir"
+                ],
+                "cta": "Cuéntame sobre tu proyecto"
+            },
+            "mobileApps": {
+                "painPoint": "Desarrollar por separado para iOS y Android duplica costes y plazos.",
+                "solution": "Construyo una única app con React Native — rápida, con aspecto nativo, desplegada en ambas tiendas — con una base de código mantenible y una experiencia de usuario fluida.",
+                "results": [
+                    "Presupuesto 40% menor frente a dos desarrollos nativos",
+                    "Salida al mercado 30% más rápida con una sola base de código",
+                    "Mantenimiento simplificado — una base de código para ambas plataformas"
+                ],
+                "cta": "Hablemos sobre tu app móvil"
+            },
+            "seoPerformance": {
+                "painPoint": "Tu sitio es invisible en Google y tan lento que los visitantes se van antes de ver tu contenido.",
+                "solution": "Realizo una auditoría técnica completa (Core Web Vitals, accesibilidad, SEO) y aplico las optimizaciones necesarias para un sitio ultrarrápido.",
+                "results": [
+                    "Carga en menos de 2s → reducción del 40% en la tasa de rebote",
+                    "Puntuación técnica SEO perfecta → mejor indexación, más tráfico orgánico",
+                    "Cada segundo ahorrado = +2% en tasa de conversión"
+                ],
+                "cta": "Auditar mi sitio"
+            },
+            "aiAutomation": {
+                "painPoint": "Tu equipo pasa horas en tareas (ingreso de datos, correos, informes) que podrían automatizarse.",
+                "solution": "Construyo asistentes de IA personalizados y pipelines de automatización que te devuelven el tiempo y reducen errores humanos.",
+                "results": [
+                    "Ahorra hasta 15h/semana por miembro del equipo (≈ $8,500/año)",
+                    "90% menos errores de ingreso de datos",
+                    "Tu equipo se enfoca en trabajo de alto valor, no en papeleo"
+                ],
+                "cta": "Automatiza tus flujos de trabajo"
+            }
+        },
+        "projects": {
+            "adamPortfolio": {
+                "description": "Portafolio con Nuxt 4, contenido dinámico, i18n, blog y CI/CD mediante GitHub Actions."
+            },
+            "saasEcommerce": {
+                "description": "Plataforma SaaS multiinquilino construida con Laravel y Vue 3, con integración de Stripe y despliegue con Docker."
+            },
+            "mobileX": {
+                "description": "App móvil multiplataforma para agentes de campo, con sincronización offline-first y panel en tiempo real."
+            },
+            "queryCraft": {
+                "description": "Analizador de consultas SQL con visualización del plan de ejecución y sugerencias de optimización."
+            },
+            "deployLab": {
+                "description": "Pipeline CI/CD y microservicio contenerizado con despliegue automatizado y monitoreo."
+            },
+            "aiBlogAutopilot": {
+                "description": "Herramienta de resumen de artículos impulsada por la API de Claude, usando plantillas de prompt e integración MCP."
+            }
+        },
+        "education": {
+            "smartel": {
+                "degree": "Desarrollo y Diseño de Aplicaciones Web",
+                "description": "Programa de formación intensivo y práctico enfocado en la construcción y arquitectura de aplicaciones web modernas, con proyectos prácticos en equipo."
+            },
+            "eneam": {
+                "degree": "Licenciatura en Informática",
+                "description": "Licenciatura en informática con especialización en programación y diseño de sistemas de información, incluyendo proyectos de desarrollo en equipo y trabajos prácticos de programación."
+            }
+        },
+        "certifications": {
+            "aiFluency": {
+                "title": "AI Fluency: Framework & Foundations",
+                "description": "Capacitación práctica en interacción efectiva, ética y segura con modelos de IA, desarrollada con expertos académicos de University College Cork y Ringling College."
+            },
+            "claudeCode101": {
+                "title": "Claude Code 101",
+                "description": "Dominio de Claude Code como agente de desarrollo — instalación, flujo de trabajo diario y personalización avanzada."
+            },
+            "claudeCodeInAction": {
+                "title": "Claude Code in Action",
+                "description": "Arquitectura avanzada de asistentes de codificación IA, gestión de contexto y extensibilidad mediante servidores MCP e integración con GitHub."
+            }
+        }
     }
 }

@@ -166,5 +166,109 @@
         "experiencePage": "Experience | {author} ",
         "contactPage": "Contact | {author} ",
         "blogPage": "Blog | {author} "
+    },
+    "profile": {
+        "identity": {
+            "title": "Full-Stack Developer",
+            "tagline": "Building fast, scalable SaaS products — Laravel, Vue/Nuxt, Node.js & payment integrations",
+            "bio": "Full-Stack Developer based in Cotonou, Benin, building fast, accessible, and scalable web applications. I work across the stack — from Laravel and Node.js APIs to Vue/Nuxt frontends — with a focus on payment integrations and SaaS architecture."
+        },
+        "experience": {
+            "infraxdev": {
+                "description": "Designing and building full-stack web applications for a range of clients, from SaaS architecture and payment integrations to deployment on cloud infrastructure."
+            },
+            "osiGroup": {
+                "description": "Built and maintained internal tools with React.js, covering the full development cycle — design, integration, testing, and delivery — in a collaborative team environment."
+            },
+            "rintio": {
+                "description": "Final-year internship on the technical team. Built a web application with Angular, designed interfaces with Angular Material, and explored Ionic for hybrid mobile — my first hands-on experience in a professional environment."
+            }
+        },
+        "services": {
+            "webApplications": {
+                "painPoint": "Your application is slow, hard to maintain, and users are leaving for competitors.",
+                "solution": "I build custom web applications that are fast, scalable, and easy to maintain — with a smooth frontend and a robust cloud architecture.",
+                "results": [
+                    "Up to +20% conversions from a 3x faster load time",
+                    "30-50% lower long-term maintenance costs",
+                    "Scales from 100 to 10,000 users with no rebuild needed"
+                ],
+                "cta": "Tell me about your project"
+            },
+            "mobileApps": {
+                "painPoint": "Building separately for iOS and Android doubles your costs and timelines.",
+                "solution": "I build a single React Native app — fast, native-like, and deployed to both stores — with a maintainable codebase and a smooth user experience.",
+                "results": [
+                    "40% lower budget vs. two separate native builds",
+                    "30% faster time to market with a single codebase",
+                    "Simplified maintenance — one codebase for both platforms"
+                ],
+                "cta": "Let's talk about your mobile app"
+            },
+            "seoPerformance": {
+                "painPoint": "Your site is invisible on Google and so slow that visitors leave before they even see your content.",
+                "solution": "I run a full technical audit (Core Web Vitals, accessibility, SEO) and apply the optimizations needed for a lightning-fast site.",
+                "results": [
+                    "Under 2s load time → 40% lower bounce rate",
+                    "Strong technical SEO score → better indexing, more organic traffic",
+                    "Every second saved on load time = +2% conversion rate"
+                ],
+                "cta": "Audit my site"
+            },
+            "aiAutomation": {
+                "painPoint": "Your team spends hours on tasks — data entry, emails, reports — that could be automated.",
+                "solution": "I build custom AI assistants and automation pipelines that give you back your time and cut down on human error.",
+                "results": [
+                    "Save up to 15h/week per team member (roughly $8,500/year)",
+                    "90% fewer data entry errors",
+                    "Your team refocused on high-value work, not paperwork"
+                ],
+                "cta": "Automate your workflows"
+            }
+        },
+        "projects": {
+            "adamPortfolio": {
+                "description": "Nuxt 4 portfolio with dynamic content, i18n, a blog, and CI/CD via GitHub Actions."
+            },
+            "saasEcommerce": {
+                "description": "Multi-tenant SaaS platform built with Laravel and Vue 3, featuring Stripe integration and Docker deployment."
+            },
+            "mobileX": {
+                "description": "Cross-platform mobile app for field agents, with offline-first sync and a real-time dashboard."
+            },
+            "queryCraft": {
+                "description": "SQL query analyzer with execution plan visualization and optimization suggestions."
+            },
+            "deployLab": {
+                "description": "CI/CD pipeline and containerized microservice with automated deployment and monitoring."
+            },
+            "aiBlogAutopilot": {
+                "description": "Article summarization tool powered by the Claude API, using prompt templates and MCP integration."
+            }
+        }
+    },
+    "education": {
+        "smartel": {
+            "degree": "Web Application Development & Design",
+            "description": "Intensive, hands-on training program focused on building and architecting modern web applications, with team-based practical projects."
+        },
+        "eneam": {
+            "degree": "Bachelor's Degree in Computer Science",
+            "description": "Computer science degree specializing in programming and information systems design, including team development projects and hands-on programming work."
+        }
+    },
+    "certifications": {
+        "aiFluency": {
+            "title": "AI Fluency: Framework & Foundations",
+            "description": "Hands-on training in effective, ethical, and safe interaction with AI models, developed with academic experts from University College Cork and Ringling College."
+        },
+        "claudeCode101": {
+            "title": "Claude Code 101",
+            "description": "Mastery of Claude Code as a development agent — installation, daily workflow, and advanced customization."
+        },
+        "claudeCodeInAction": {
+            "title": "Claude Code in Action",
+            "description": "Advanced AI coding agent architecture, context management, and extensibility via MCP servers and GitHub integration."
+        }
     }
 }

@@ -14,11 +14,11 @@ export default defineAppConfig({
 
   // ── Liens ────────────────────────────────────────────
   links: {
-    github: "https://github.com/ton-user", // à remplacer
+    github: "https://github.com/Djam18",
     linkedin: "https://linkedin.com/in/abdel-djamal-adam-b952381b2",
-    cal: "https://cal.com/ton-compte", // à remplacer
-    whatsapp: "https://wa.me/XXXX", // à remplacer
-    email: "ton@email.com", // à remplacer
+    cal: "https://cal.com/ton-compte",
+    whatsapp: "https://wa.me/22966646310", 
+    email: "adamdjamal18@gmail.com",
   },
 
   // ── Expériences professionnelles ─────────────────────

@@ -121,8 +121,8 @@ function getProjectLink(tech: any): string | null {
   // Fallback: manual mapping if you haven't added the project field yet
   const map: Record<string, string> = {
     'Vue.js / Nuxt': 'adam-portfolio',
-    'Laravel / PHP': 'saab-ecommerce',
-    'React / React Native': 'mobile-app-x',
+    'Laravel / PHP': 'saas-ecommerce',
+    'React / React Native': 'mobile-x',
     'Claude Code': 'adam-portfolio'
   }
   const slug = map[tech.name]
