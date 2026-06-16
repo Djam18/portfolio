@@ -35,6 +35,7 @@ export default defineContentConfig({
         image: z.string().optional(),
         author: z.string().optional(),
         readingTime: z.number().optional(),
+        slug: z.string(),
       })
     })
   }

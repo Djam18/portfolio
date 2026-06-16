@@ -5,6 +5,7 @@ date: "2025-01-01"
 stack: ["Laravel", "Vue.js", "Stripe", "PostgreSQL", "Docker"]
 image: "/images/portfolio/mobile-x.jpg"
 link: "https://mobile-x.app"
+slug: "mobile-x"
 featured: true
 ---
 

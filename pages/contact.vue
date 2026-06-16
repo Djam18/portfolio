@@ -56,5 +56,7 @@ const copyEmail = async () => {
     console.error('Copy failed', err)
   }
 }
-useHead( title: computed(() => t('metaTitles.contactPage', { author: 'Adam Abdel-Djamal' })));
+useHead({
+  title: computed(() => t('metaTitles.contactPage', { author: 'Adam Abdel-Djamal' }))
+});
 </script>

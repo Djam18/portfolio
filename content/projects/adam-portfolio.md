@@ -6,6 +6,7 @@ stack: ["Nuxt 4", "Vue 3", "Tailwind CSS", "TypeScript", "Nuxt Content"]
 image: "/images/portfolio/portfolio-v2.jpg"
 link: "https://portfolio-phi-virid-73.vercel.app/"
 github: "https://github.com/ton-user/portfolio"
+slug: "portfolio"
 featured: true
 ---
 

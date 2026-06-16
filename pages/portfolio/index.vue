@@ -35,8 +35,9 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
 const appConfig = useAppConfig()
+const { t } = useI18n()
+
 // Ideally, fetch projects from a content collection or a composable.
 // For now, define them directly (or load from content/projects via queryContent)
 const projects = appConfig.projects
@@ -46,7 +47,8 @@ const categories = ['all', 'frontend', 'backend', 'devops', 'ai'] // adjust base
 const activeFilter = ref('all')
 
 const filteredProjects = computed(() => {
-  if (activeFilter.value === 'all') return projects
-  return projects.filter(p => p.category === activeFilter.value)
+  if (!projects.value) return []
+  if (activeFilter.value === 'all') return projects.value
+  return projects.value.filter(p => p.category === activeFilter.value)
 })
 </script>

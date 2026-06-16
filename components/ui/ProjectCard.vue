@@ -31,7 +31,7 @@
       </p>
       <div class="flex flex-wrap items-center gap-4">
         <NuxtLink
-          :to="`/portfolio/${project?.slug}`"
+          :to="`/portfolio/${projectSlug}`"
           class="text-sm font-medium text-accent hover:underline"
         >
           {{ t('projectCard.caseStudy') }} →
@@ -61,5 +61,9 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
-defineProps({ project: Object })
+const props = defineProps({ project: Object })
+const projectSlug = computed(() =>
+  props.project?.path?.split('/').pop() ?? props.project?.slug
+)
+
 </script>

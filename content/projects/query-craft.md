@@ -4,6 +4,7 @@ description: "Multi-tenant SaaS with Laravel, Vue 3, Stripe integration, and Doc
 date: "2025-01-01"
 stack: ["Laravel", "Vue.js", "Stripe", "PostgreSQL", "Docker"]
 image: "/images/portfolio/query-craft.jpg"
+slug: "query-craft"
 link: "https://query-craft.app"
 featured: true
 ---

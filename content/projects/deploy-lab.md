@@ -1,10 +1,11 @@
 ---
-title: "SaaS E‑commerce Platform"
-description: "Multi-tenant SaaS with Laravel, Vue 3, Stripe integration, and Docker deployment."
+title: "Deploy lab"
+description: "Deployment."
 date: "2025-01-01"
-stack: ["Laravel", "Vue.js", "Stripe", "PostgreSQL", "Docker"]
-image: "/images/portfolio/saas.jpg"
-link: "https://saas.app"
+stack: ["Git", "Gitlab"]
+image: "/images/portfolio/deploy-lab.jpg"
+slug: "deploy-lab"
+link: ""
 featured: true
 ---
 
