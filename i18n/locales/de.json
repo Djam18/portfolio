@@ -167,107 +167,161 @@
         "contactPage": "Kontakt | {author} ",
         "blogPage": "Blog | {author} "
     },
-    "profile": {
+ "portfolioData": {
         "identity": {
+            "name": "Adam Abdel-Djamal",
             "title": "Full-Stack-Entwickler",
-            "tagline": "Schnelle, skalierbare SaaS-Produkte entwickeln — Laravel, Vue/Nuxt, Node.js & Zahlungsintegrationen",
-            "bio": "Full-Stack-Entwickler mit Sitz in Cotonou, Benin. Ich entwickle schnelle, zugängliche und skalierbare Webanwendungen – vom Laravel/Node.js-Backend bis zum Vue/Nuxt-Frontend – mit Fokus auf Zahlungsintegrationen und SaaS-Architektur."
+            "tagline": "Laravel · Vue.js · Node.js · REST-APIs · SaaS · Zahlungsintegrationen",
+            "bio": "Full-Stack-Entwickler mit Sitz in Cotonou, Benin. Ich entwickle schnelle, zugängliche und skalierbare Webanwendungen – von Laravel/Node.js-Backends bis hin zu Vue/Nuxt-Frontends, einschließlich Zahlungsintegrationen und SaaS-Architekturen.",
+            "location": "Cotonou, Benin"
         },
         "experience": {
             "infraxdev": {
-                "description": "Design und Entwicklung von Full-Stack-Webanwendungen für verschiedene Kunden – von SaaS-Architektur über Zahlungsintegrationen bis zum Deployment auf Cloud-Infrastruktur."
+                "role": "Freiberuflicher Webentwickler",
+                "company": "Infraxdev",
+                "type": "Freiberuflich · Hybrid",
+                "location": "Cotonou, Benin",
+                "period": "Januar 2023 — Heute",
+                "description": "Entwurf und Entwicklung von Full-Stack-Webanwendungen für verschiedene Kunden. SaaS-Lösungsarchitektur, Zahlungsintegrationen und Bereitstellung in Cloud-Umgebungen."
             },
             "osiGroup": {
-                "description": "Entwicklung und Wartung interner Tools mit React.js – vom Design über Integration, Tests bis zur Auslieferung – in einem kollaborativen Teamumfeld."
+                "role": "Entwickler-Praktikant",
+                "company": "OSI Group Sarl",
+                "type": "Praktikum · Vor Ort",
+                "location": "Cotonou, Benin",
+                "period": "März 2022 — November 2022",
+                "description": "Entwicklung und Wartung interner Tools mit React.js. Teilnahme am gesamten Entwicklungszyklus: Design, Integration, Tests und Auslieferung. Teamarbeit an realen Projekten in einer professionellen Umgebung."
             },
             "rintio": {
-                "description": "Abschlusspraktikum im technischen Team. Entwicklung einer Webanwendung mit Angular, Interface-Design mit Angular Material, Erkundung von Ionic für hybride mobile Apps – erste praktische Erfahrungen in einer professionellen Umgebung."
-            }
-        },
-        "services": {
-            "webApplications": {
-                "painPoint": "Ihre Anwendung ist langsam, schwer zu warten und Nutzer wechseln zur Konkurrenz.",
-                "solution": "Ich entwickle maßgeschneiderte Webanwendungen – schnell, skalierbar und wartungsfreundlich – mit flüssigem Frontend und robuster Cloud-Architektur.",
-                "results": [
-                    "Bis zu +20% Conversions durch 3-fach schnellere Ladezeit",
-                    "30-50% geringere langfristige Wartungskosten",
-                    "Skaliert von 100 auf 10.000 Nutzer ohne Neuentwicklung"
-                ],
-                "cta": "Erzählen Sie mir von Ihrem Projekt"
-            },
-            "mobileApps": {
-                "painPoint": "Getrennte Entwicklung für iOS und Android verdoppelt Kosten und Zeitaufwand.",
-                "solution": "Ich entwickle eine einzige React Native App – schnell, naturnah, für beide Stores – mit wartbarer Codebasis und flüssiger Benutzererfahrung.",
-                "results": [
-                    "40% niedrigeres Budget im Vergleich zu zwei nativen Entwicklungen",
-                    "30% schnellere Markteinführung dank einer Codebasis",
-                    "Vereinfachte Wartung – eine Codebasis für beide Plattformen"
-                ],
-                "cta": "Sprechen Sie über Ihre Mobile-App"
-            },
-            "seoPerformance": {
-                "painPoint": "Ihre Seite ist unsichtbar bei Google und so langsam, dass Besucher abspringen, bevor sie Ihren Inhalt sehen.",
-                "solution": "Ich führe ein vollständiges technisches Audit durch (Core Web Vitals, Barrierefreiheit, SEO) und optimiere für blitzschnelle Seiten.",
-                "results": [
-                    "Ladezeit unter 2s → 40% niedrigere Absprungrate",
-                    "Hervorragender technischer SEO-Score → bessere Indexierung, mehr organischer Traffic",
-                    "Jede gesparte Sekunde = +2% Conversion-Rate"
-                ],
-                "cta": "Meine Seite auditiert"
-            },
-            "aiAutomation": {
-                "painPoint": "Ihr Team verbringt Stunden mit Aufgaben (Datenerfassung, E-Mails, Berichte), die automatisiert werden könnten.",
-                "solution": "Ich baue maßgeschneiderte KI-Assistenten und Automatisierungspipelines, die Ihnen Zeit zurückgeben und menschliche Fehler reduzieren.",
-                "results": [
-                    "Sparen Sie bis zu 15h/Woche pro Teammitglied (ca. 8.500 $/Jahr)",
-                    "90% weniger Datenerfassungsfehler",
-                    "Ihr Team konzentriert sich auf wertschöpfende Aufgaben, nicht auf Bürokratie"
-                ],
-                "cta": "Automatisieren Sie Ihre Workflows"
-            }
-        },
-        "projects": {
-            "adamPortfolio": {
-                "description": "Nuxt-4-Portfolio mit dynamischen Inhalten, i18n, Blog und CI/CD über GitHub Actions."
-            },
-            "saasEcommerce": {
-                "description": "Multi-Tenant-SaaS-Plattform mit Laravel und Vue 3, Stripe-Integration und Docker-Deployment."
-            },
-            "mobileX": {
-                "description": "Plattformübergreifende Mobile-App für Außendienstmitarbeiter mit Offline-First-Synchronisierung und Echtzeit-Dashboard."
-            },
-            "queryCraft": {
-                "description": "SQL-Query-Analyzer mit Visualisierung von Ausführungsplänen und Optimierungsvorschlägen."
-            },
-            "deployLab": {
-                "description": "CI/CD-Pipeline und containerisierter Microservice mit automatisiertem Deployment und Monitoring."
-            },
-            "aiBlogAutopilot": {
-                "description": "Artikel-Zusammenfassungstool mit Claude API, Prompt-Vorlagen und MCP-Integration."
+                "role": "Entwickler-Praktikant",
+                "company": "RINTIO",
+                "type": "Abschlusspraktikum · Vor Ort",
+                "location": "Cotonou, Benin",
+                "period": "September 2019 — Dezember 2019",
+                "description": "Abschlusspraktikum im technischen Team. Entwicklung einer Webanwendung mit Angular, Oberflächendesign mit Angular Material, Erkundung von Ionic für hybride Mobile-Apps. Erster Kontakt mit einer echten professionellen Umgebung."
             }
         },
         "education": {
             "smartel": {
+                "institution": "Smartel",
                 "degree": "Webanwendungsentwicklung & -design",
-                "description": "Intensives, praxisorientiertes Trainingsprogramm für den Aufbau moderner Webanwendungen mit teamorientierten Projekten."
+                "level": "Intensivausbildung",
+                "period": "Februar 2023 — Juli 2024",
+                "description": "Praxisorientierte Intensivausbildung in der Entwicklung und Gestaltung von Webanwendungen. Praxisnahe Teamprojekte."
             },
             "eneam": {
+                "institution": "ENEAM",
                 "degree": "Bachelor in Informatik",
-                "description": "Informatikabschluss mit Spezialisierung auf Programmierung und Informationssystemdesign, einschließlich Teamprojekten und praktischer Programmierarbeit."
+                "level": "Bachelorabschluss",
+                "period": "Januar 2017 — Dezember 2019",
+                "description": "Bachelorabschluss in Informatik mit Spezialisierung auf Programmierung und Informationssystemdesign. Team-Entwicklungsprojekte, praktische Programmierarbeit."
             }
         },
         "certifications": {
             "aiFluency": {
-                "title": "AI Fluency: Framework & Foundations",
-                "description": "Praktische Schulung für effektive, ethische und sichere Interaktion mit KI-Modellen, entwickelt mit akademischen Experten des University College Cork und Ringling College."
+                "title": "AI Fluency: Framework & Grundlagen",
+                "date": "Mai 2026",
+                "description": "Praktische Schulung zur effektiven, ethischen und sicheren Interaktion mit KI-Modellen. Entwickelt mit akademischen Experten des University College Cork und des Ringling College."
             },
             "claudeCode101": {
                 "title": "Claude Code 101",
-                "description": "Beherrschung von Claude Code als Entwicklungsagent – Installation, täglicher Workflow und erweiterte Anpassung."
+                "date": "Mai 2026",
+                "description": "Beherrschung von Claude Code als Entwicklungsagent: Installation, täglicher Workflow, erweiterte Anpassung."
             },
             "claudeCodeInAction": {
-                "title": "Claude Code in Action",
-                "description": "Fortgeschrittene Architektur von KI-Coding-Assistenten, Kontextverwaltung und Erweiterbarkeit über MCP-Server und GitHub-Integration."
+                "title": "Claude Code in Aktion",
+                "date": "April 2026",
+                "description": "Fortgeschrittene Architektur von KI-Codierungsassistenten, Kontextverwaltung, Erweiterung über MCP-Server und GitHub-Integration."
+            },
+            "googleDigital": {
+                "title": "Google Digital Pack (Ads, SEO, Analytics, My Business)",
+                "date": "Januar 2024"
+            },
+            "chatgptMidjourney": {
+                "title": "ChatGPT, GPT4, Midjourney — Komplette KI-Schulung 2023",
+                "date": "Januar 2024"
+            },
+            "formationWeb": {
+                "title": "Komplette Webentwickler-Schulung",
+                "date": "Januar 2024"
+            }
+        },
+        "services": {
+            "webApplications": {
+                "title": "Webanwendungen",
+                "painPoint": "Ihre Anwendung ist langsam, schwer zu warten und Ihre Nutzer wechseln zur Konkurrenz.",
+                "solution": "Ich entwickle maßgeschneiderte Webanwendungen, die schnell, skalierbar und wartbar sind, mit einem flüssigen Frontend und einer robusten Cloud-Architektur.",
+                "results": [
+                    "Bis zu +20 % Conversion dank 3-fach reduzierter Ladezeit",
+                    "30 bis 50 % Reduzierung der langfristigen Wartungskosten",
+                    "Sofortige Skalierbarkeit: von 100 auf 10.000 Nutzer ohne Neuentwicklung"
+                ],
+                "cta": "Erzählen Sie mir von Ihrem Projekt"
+            },
+            "mobileApps": {
+                "title": "Mobile Apps",
+                "painPoint": "Die separate Entwicklung für iOS und Android verdoppelt Ihre Kosten und Zeitpläne.",
+                "solution": "Ich entwickle eine einzige, leistungsstarke, nativ anmutende React Native App, die in beiden Stores veröffentlicht wird, mit wartbarem Code und einer reibungslosen Benutzererfahrung.",
+                "results": [
+                    "40 % geringeres Budget im Vergleich zu zwei separaten nativen Builds",
+                    "30 % schnellere Markteinführung (einheitlicher Entwicklungsaufwand)",
+                    "Vereinfachte Wartung: eine Codebasis für beide Plattformen"
+                ],
+                "cta": "Sprechen wir über Ihre mobile App"
+            },
+            "seoPerformance": {
+                "title": "SEO & Performance",
+                "painPoint": "Ihre Website ist bei Google unsichtbar und so langsam, dass Besucher abspringen, bevor sie Ihren Inhalt sehen.",
+                "solution": "Ich führe ein umfassendes technisches Audit (Core Web Vitals, Barrierefreiheit, SEO) durch und wende die notwendigen Optimierungen für eine blitzschnelle Website an.",
+                "results": [
+                    "Ladezeit unter 2 Sek. → 40 % niedrigere Absprungrate",
+                    "Perfekter technischer SEO-Score → bessere Indexierung, vervielfachter organischer Traffic",
+                    "Jede gesparte Sekunde Ladezeit = +2 % Conversion-Rate"
+                ],
+                "cta": "Lassen Sie Ihre Website prüfen"
+            },
+            "aiAutomation": {
+                "title": "KI & Automatisierung",
+                "painPoint": "Ihr Team verbringt Stunden mit Aufgaben (Dateneingabe, E-Mails, Berichte), die automatisiert werden könnten.",
+                "solution": "Ich integriere maßgeschneiderte KI-Assistenten und Automatisierungspipelines, um Ihnen Zeit zurückzugeben und menschliche Fehler zu reduzieren.",
+                "results": [
+                    "Sparen Sie bis zu 15 Std./Woche pro Teammitglied (ca. 8.000 €/Jahr)",
+                    "90 % Reduzierung von Dateneingabefehlern",
+                    "Ihr Team konzentriert sich wieder auf Wertschöpfung, nicht auf Bürokratie"
+                ],
+                "cta": "Automatisieren Sie Ihre Prozesse"
+            }
+        },
+        "projects": {
+            "adamPortfolio": {
+                "title": "Adam Portfolio",
+                "role": "Lead Full-Stack Developer",
+                "description": "Nuxt 4 Portfolio mit dynamischen Inhalten, i18n, Blog und CI/CD über GitHub Actions."
+            },
+            "saasEcommerce": {
+                "title": "SaaS E‑commerce Plattform",
+                "role": "Full-Stack Developer",
+                "description": "Multi-Tenant-SaaS mit Laravel, Vue 3, Stripe-Integration und Docker-Deployment."
+            },
+            "mobileX": {
+                "title": "Mobile App X",
+                "role": "React Native Developer",
+                "description": "Plattformübergreifende Mobile-App für Außendienstmitarbeiter mit Offline-First-Synchronisation und Echtzeit-Dashboard."
+            },
+            "queryCraft": {
+                "title": "Query Craft",
+                "role": "Full-Stack Developer",
+                "description": "SQL-Query-Analyzer mit Visualisierung des Ausführungsplans und Optimierungsvorschlägen."
+            },
+            "deployLab": {
+                "title": "Deploy Lab",
+                "role": "DevOps Engineer",
+                "description": "CI/CD-Pipeline und containerisierter Microservice mit automatisierter Bereitstellung und Überwachung."
+            },
+            "aiBlogAutopilot": {
+                "title": "AI Blog Autopilot",
+                "role": "AI Developer",
+                "description": "Tool zur Artikelzusammenfassung mit der Claude-API, Prompt-Vorlagen und MCP-Integration."
             }
         }
     }

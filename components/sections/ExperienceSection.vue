@@ -3,51 +3,53 @@
   <section class="mx-auto max-w-4xl px-4 py-24">
     <div class="mb-12 flex items-end justify-between">
       <h2 class="font-display text-3xl font-bold text-text-primary">
-        {{ t("experience.title") }}
+        {{ t('experience.title') }}
       </h2>
       <NuxtLink
         :to="localePath('/experience')"
         class="text-sm text-accent hover:underline"
       >
-        {{ t("experience.viewAll") }} →
+        {{ t('experience.viewAll') }} →
       </NuxtLink>
     </div>
 
     <div class="space-y-10">
       <div
         v-for="job in experience.slice(0, 2)"
-        :key="job.company"
+        :key="job.slug"
         class="relative border-l-2 border-accent pl-8"
       >
-        <!-- Dot timeline -->
-        <span
-          class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-accent ring-4 ring-background"
-        />
+        <!-- Pastille timeline — balise fermée explicitement, pas auto-fermante -->
+        <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-accent ring-4 ring-background"></span>
 
-        <!-- Header -->
         <div class="mb-1 flex flex-wrap items-center justify-between gap-2">
-          <h3 class="text-xl font-bold text-text-primary">{{ job.role }}</h3>
-          <!-- Badge "current" -->
+          <h3 class="text-xl font-bold text-text-primary">
+            {{ t(`portfolioData.experience.${job.slug}.role`) }}
+          </h3>
           <span
             v-if="job.current"
             class="rounded-full bg-accent/10 px-3 py-1 font-mono text-xs text-accent"
           >
-            {{ t("experience.current") }}
+            {{ t('experience.current') }}
           </span>
         </div>
 
-        <!-- Entreprise + période -->
         <p class="mb-1 text-sm font-medium text-accent">
-          {{ job.company }} · {{ job.type }}
+          {{ t(`portfolioData.experience.${job.slug}.company`) }}
+          ·
+          {{ t(`portfolioData.experience.${job.slug}.type`) }}
         </p>
+
         <p class="mb-3 font-mono text-xs text-text-secondary">
-          {{ job.period }} · {{ job.location }}
+          {{ t(`portfolioData.experience.${job.slug}.period`) }}
+          ·
+          {{ t(`portfolioData.experience.${job.slug}.location`) }}
         </p>
 
-        <!-- Description -->
-        <p class="mb-4 text-text-secondary">{{ job.description }}</p>
+        <p class="mb-4 text-text-secondary">
+          {{ t(`portfolioData.experience.${job.slug}.description`) }}
+        </p>
 
-        <!-- Skills -->
         <div class="flex flex-wrap gap-2">
           <span
             v-for="skill in job.skills"
@@ -62,8 +64,10 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { t } = useI18n()
-const localePath = useLocalePath();
-const { experience } = useAppConfig();
+const localePath = useLocalePath()
+
+// experience vient de app.config.ts — chaque item a maintenant un slug
+const { experience } = useAppConfig()
 </script>

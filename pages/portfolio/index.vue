@@ -1,6 +1,6 @@
-<!-- pages/portfolio/index.vue -->
 <template>
   <div class="mx-auto max-w-5xl px-4 py-24">
+
     <div class="mb-16">
       <h1 class="mb-4 font-display text-4xl font-bold text-text-primary">
         {{ t('portfolio.title') }}
@@ -10,27 +10,32 @@
       </p>
     </div>
 
-    <!-- Optional filters (if you have many projects) -->
+    <!-- Filtres -->
     <div v-if="categories.length > 1" class="mb-12 flex flex-wrap gap-3">
       <button
         v-for="cat in categories"
         :key="cat"
-        @click="activeFilter = cat"
         :class="[
           'rounded-full border px-4 py-1.5 text-sm font-medium transition',
           activeFilter === cat
             ? 'border-accent bg-accent/10 text-accent'
             : 'border-border text-text-secondary hover:text-text-primary'
         ]"
+        @click="activeFilter = cat"
       >
         {{ cat === 'all' ? t('portfolio.all') : t(`skills.categories.${cat}`) }}
       </button>
     </div>
 
-    <!-- Project grid -->
+    <!-- Grille projets -->
     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <ProjectCard v-for="project in filteredProjects" :key="project.slug" :project="project" />
+      <ProjectCard
+        v-for="project in filteredProjects"
+        :key="project.slug"
+        :project="project"
+      />
     </div>
+
   </div>
 </template>
 
@@ -38,17 +43,16 @@
 const appConfig = useAppConfig()
 const { t } = useI18n()
 
-// Ideally, fetch projects from a content collection or a composable.
-// For now, define them directly (or load from content/projects via queryContent)
+// app.config retourne des valeurs plain (pas des refs) — pas de .value
 const projects = appConfig.projects
 
-// Filtering logic
-const categories = ['all', 'frontend', 'backend', 'devops', 'ai'] // adjust based on actual categories
+const categories = ['all', 'frontend', 'backend', 'devops', 'ai', 'database']
 const activeFilter = ref('all')
 
 const filteredProjects = computed(() => {
-  if (!projects.value) return []
-  if (activeFilter.value === 'all') return projects.value
-  return projects.value.filter(p => p.category === activeFilter.value)
+  // Pas de .value ici — projects est déjà un tableau plain
+  if (!projects) return []
+  if (activeFilter.value === 'all') return projects
+  return projects.filter((p: { category: string }) => p.category === activeFilter.value)
 })
 </script>

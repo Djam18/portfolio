@@ -167,108 +167,162 @@
         "contactPage": "Contact | {author} ",
         "blogPage": "Blog | {author} "
     },
-    "profile": {
+    "portfolioData": {
         "identity": {
+            "name": "Adam Abdel-Djamal",
             "title": "Full-Stack Developer",
-            "tagline": "Building fast, scalable SaaS products — Laravel, Vue/Nuxt, Node.js & payment integrations",
-            "bio": "Full-Stack Developer based in Cotonou, Benin, building fast, accessible, and scalable web applications. I work across the stack — from Laravel and Node.js APIs to Vue/Nuxt frontends — with a focus on payment integrations and SaaS architecture."
+            "tagline": "Laravel · Vue.js · Node.js · REST APIs · SaaS · Payment Integrations",
+            "bio": "Full-Stack Developer based in Cotonou, Benin. I build fast, accessible, and scalable web applications — from Laravel/Node.js backends to Vue/Nuxt frontends, including payment integrations and SaaS architectures.",
+            "location": "Cotonou, Benin"
         },
         "experience": {
             "infraxdev": {
-                "description": "Designing and building full-stack web applications for a range of clients, from SaaS architecture and payment integrations to deployment on cloud infrastructure."
+                "role": "Freelance Web Developer",
+                "company": "Infraxdev",
+                "type": "Freelance · Hybrid",
+                "location": "Cotonou, Benin",
+                "period": "January 2023 — Present",
+                "description": "Design and development of full-stack web applications for various clients. SaaS solution architecture, payment integrations, and deployment on cloud environments."
             },
             "osiGroup": {
-                "description": "Built and maintained internal tools with React.js, covering the full development cycle — design, integration, testing, and delivery — in a collaborative team environment."
+                "role": "Developer Intern",
+                "company": "OSI Group Sarl",
+                "type": "Internship · On-site",
+                "location": "Cotonou, Benin",
+                "period": "March 2022 — November 2022",
+                "description": "Development and maintenance of internal tools with React.js. Participation in the full development cycle: design, integration, testing, and delivery. Team collaboration on real projects in a professional environment."
             },
             "rintio": {
-                "description": "Final-year internship on the technical team. Built a web application with Angular, designed interfaces with Angular Material, and explored Ionic for hybrid mobile — my first hands-on experience in a professional environment."
+                "role": "Developer Intern",
+                "company": "RINTIO",
+                "type": "Final-year internship · On-site",
+                "location": "Cotonou, Benin",
+                "period": "September 2019 — December 2019",
+                "description": "Final-year internship within the technical team. Development of a web application with Angular, interface design with Angular Material, exploration of Ionic for hybrid mobile. First contact with a real professional environment."
+            }
+        },
+        "education": {
+            "smartel": {
+                "institution": "Smartel",
+                "degree": "Web Application Development & Design",
+                "level": "Intensive training",
+                "period": "February 2023 — July 2024",
+                "description": "Practice-oriented intensive training on web application development and design. Hands-on team projects."
+            },
+            "eneam": {
+                "institution": "ENEAM",
+                "degree": "Bachelor's Degree in Computer Science",
+                "level": "Bachelor's degree",
+                "period": "January 2017 — December 2019",
+                "description": "Bachelor's degree in computer science specializing in programming and information systems design. Team development projects, hands-on programming work."
+            }
+        },
+        "certifications": {
+            "aiFluency": {
+                "title": "AI Fluency: Framework & Foundations",
+                "date": "May 2026",
+                "description": "Practical training on effective, ethical, and safe interaction with AI models. Designed with academic experts from University College Cork and Ringling College."
+            },
+            "claudeCode101": {
+                "title": "Claude Code 101",
+                "date": "May 2026",
+                "description": "Mastery of Claude Code as a development agent: installation, daily workflow, advanced customization."
+            },
+            "claudeCodeInAction": {
+                "title": "Claude Code in Action",
+                "date": "April 2026",
+                "description": "Advanced architecture of AI coding assistants, context management, extension via MCP servers, and GitHub integration."
+            },
+            "googleDigital": {
+                "title": "Google Digital Pack (Ads, SEO, Analytics, My Business)",
+                "date": "January 2024"
+            },
+            "chatgptMidjourney": {
+                "title": "ChatGPT, GPT4, Midjourney — Complete AI Training 2023",
+                "date": "January 2024"
+            },
+            "formationWeb": {
+                "title": "Complete Web Developer Training",
+                "date": "January 2024"
             }
         },
         "services": {
             "webApplications": {
-                "painPoint": "Your application is slow, hard to maintain, and users are leaving for competitors.",
-                "solution": "I build custom web applications that are fast, scalable, and easy to maintain — with a smooth frontend and a robust cloud architecture.",
+                "title": "Web Applications",
+                "painPoint": "Your application is slow, hard to maintain, and your users are leaving for competitors.",
+                "solution": "I build custom web applications that are fast, scalable, and maintainable, with a smooth frontend and a robust cloud architecture.",
                 "results": [
-                    "Up to +20% conversions from a 3x faster load time",
-                    "30-50% lower long-term maintenance costs",
-                    "Scales from 100 to 10,000 users with no rebuild needed"
+                    "Up to +20% conversions thanks to load time cut by 3x",
+                    "30 to 50% reduction in long-term maintenance costs",
+                    "Immediate scalability: go from 100 to 10,000 users without a rebuild"
                 ],
                 "cta": "Tell me about your project"
             },
             "mobileApps": {
-                "painPoint": "Building separately for iOS and Android doubles your costs and timelines.",
-                "solution": "I build a single React Native app — fast, native-like, and deployed to both stores — with a maintainable codebase and a smooth user experience.",
+                "title": "Mobile Apps",
+                "painPoint": "Developing separately for iOS and Android doubles your costs and timelines.",
+                "solution": "I build a single, high-performance, native-like React Native app, deployed to both stores, with maintainable code and a smooth experience.",
                 "results": [
-                    "40% lower budget vs. two separate native builds",
-                    "30% faster time to market with a single codebase",
-                    "Simplified maintenance — one codebase for both platforms"
+                    "40% lower budget compared to two separate native builds",
+                    "30% faster time to market (single development effort)",
+                    "Simplified maintenance: one codebase for both platforms"
                 ],
                 "cta": "Let's talk about your mobile app"
             },
             "seoPerformance": {
-                "painPoint": "Your site is invisible on Google and so slow that visitors leave before they even see your content.",
+                "title": "SEO & Performance",
+                "painPoint": "Your site is invisible on Google and so slow that visitors leave before even seeing your content.",
                 "solution": "I run a full technical audit (Core Web Vitals, accessibility, SEO) and apply the optimizations needed for a lightning-fast site.",
                 "results": [
-                    "Under 2s load time → 40% lower bounce rate",
-                    "Strong technical SEO score → better indexing, more organic traffic",
-                    "Every second saved on load time = +2% conversion rate"
+                    "Load time under 2s → 40% lower bounce rate",
+                    "Perfect technical SEO score → better indexing, multiplied organic traffic",
+                    "Every second saved in load time = +2% conversion rate"
                 ],
-                "cta": "Audit my site"
+                "cta": "Audit your site"
             },
             "aiAutomation": {
-                "painPoint": "Your team spends hours on tasks — data entry, emails, reports — that could be automated.",
-                "solution": "I build custom AI assistants and automation pipelines that give you back your time and cut down on human error.",
+                "title": "AI & Automation",
+                "painPoint": "Your team spends hours on tasks (data entry, emails, reports) that could be automated.",
+                "solution": "I integrate custom AI assistants and automation pipelines to give you back time and reduce human error.",
                 "results": [
-                    "Save up to 15h/week per team member (roughly $8,500/year)",
-                    "90% fewer data entry errors",
-                    "Your team refocused on high-value work, not paperwork"
+                    "Save up to 15h/week per team member (around €8,000/year)",
+                    "90% reduction in data entry errors",
+                    "Your team refocused on value creation, not paperwork"
                 ],
-                "cta": "Automate your workflows"
+                "cta": "Automate your processes"
             }
         },
         "projects": {
             "adamPortfolio": {
-                "description": "Nuxt 4 portfolio with dynamic content, i18n, a blog, and CI/CD via GitHub Actions."
+                "title": "Adam Portfolio",
+                "role": "Lead Full-Stack Developer",
+                "description": "Nuxt 4 portfolio with dynamic content, i18n, blog, and CI/CD via GitHub Actions."
             },
             "saasEcommerce": {
-                "description": "Multi-tenant SaaS platform built with Laravel and Vue 3, featuring Stripe integration and Docker deployment."
+                "title": "SaaS E‑commerce Platform",
+                "role": "Full-Stack Developer",
+                "description": "Multi-tenant SaaS with Laravel, Vue 3, Stripe integration, and Docker deployment."
             },
             "mobileX": {
-                "description": "Cross-platform mobile app for field agents, with offline-first sync and a real-time dashboard."
+                "title": "Mobile App X",
+                "role": "React Native Developer",
+                "description": "Cross-platform mobile app for field agents with offline-first sync and real-time dashboard."
             },
             "queryCraft": {
+                "title": "Query Craft",
+                "role": "Full-Stack Developer",
                 "description": "SQL query analyzer with execution plan visualization and optimization suggestions."
             },
             "deployLab": {
+                "title": "Deploy Lab",
+                "role": "DevOps Engineer",
                 "description": "CI/CD pipeline and containerized microservice with automated deployment and monitoring."
             },
             "aiBlogAutopilot": {
-                "description": "Article summarization tool powered by the Claude API, using prompt templates and MCP integration."
+                "title": "AI Blog Autopilot",
+                "role": "AI Developer",
+                "description": "Article summarization tool using Claude API with prompt templates and MCP integration."
             }
-        }
-    },
-    "education": {
-        "smartel": {
-            "degree": "Web Application Development & Design",
-            "description": "Intensive, hands-on training program focused on building and architecting modern web applications, with team-based practical projects."
-        },
-        "eneam": {
-            "degree": "Bachelor's Degree in Computer Science",
-            "description": "Computer science degree specializing in programming and information systems design, including team development projects and hands-on programming work."
-        }
-    },
-    "certifications": {
-        "aiFluency": {
-            "title": "AI Fluency: Framework & Foundations",
-            "description": "Hands-on training in effective, ethical, and safe interaction with AI models, developed with academic experts from University College Cork and Ringling College."
-        },
-        "claudeCode101": {
-            "title": "Claude Code 101",
-            "description": "Mastery of Claude Code as a development agent — installation, daily workflow, and advanced customization."
-        },
-        "claudeCodeInAction": {
-            "title": "Claude Code in Action",
-            "description": "Advanced AI coding agent architecture, context management, and extensibility via MCP servers and GitHub integration."
         }
     }
 }

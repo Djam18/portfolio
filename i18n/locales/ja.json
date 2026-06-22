@@ -168,108 +168,162 @@
         "contactPage": "お問い合わせ | {author} ",
         "blogPage": "ブログ | {author} "
     },
-    "profile": {
+
+ "portfolioData": {
         "identity": {
+            "name": "Adam Abdel-Djamal",
             "title": "フルスタック開発者",
-            "tagline": "高速でスケーラブルなSaaSプロダクトを構築 — Laravel, Vue/Nuxt, Node.js & 決済連携",
-            "bio": "ベナン、コトヌーを拠点とするフルスタック開発者。高速でアクセシブル、スケーラブルなWebアプリケーションを構築します。Laravel/Node.js APIからVue/Nuxtフロントエンドまで、スタック全体に対応し、決済連携とSaaSアーキテクチャに重点を置いています。"
+            "tagline": "Laravel · Vue.js · Node.js · REST API · SaaS · 決済連携",
+            "bio": "ベナン・コトヌー在住のフルスタック開発者。Laravel/Node.js のバックエンドから Vue/Nuxt のフロントエンドまで、高速でアクセスしやすくスケーラブルな Web アプリケーションを構築します。決済連携や SaaS アーキテクチャも対応。",
+            "location": "ベナン・コトヌー"
         },
         "experience": {
             "infraxdev": {
-                "description": "様々なクライアント向けにフルスタックWebアプリケーションを設計・構築。SaaSアーキテクチャ、決済連携、クラウドインフラへのデプロイメントまで対応。"
+                "role": "フリーランスWeb開発者",
+                "company": "Infraxdev",
+                "type": "フリーランス · ハイブリッド",
+                "location": "ベナン・コトヌー",
+                "period": "2023年1月 — 現在",
+                "description": "様々なクライアント向けにフルスタックWebアプリケーションの設計・開発。SaaSソリューションのアーキテクチャ、決済連携、クラウド環境へのデプロイを担当。"
             },
             "osiGroup": {
-                "description": "React.jsを使用した内部ツールの開発と保守。設計、統合、テスト、納品までの全開発サイクルをカバーし、チームでの協働環境で実施。"
+                "role": "開発インターン",
+                "company": "OSI Group Sarl",
+                "type": "インターンシップ · オンサイト",
+                "location": "ベナン・コトヌー",
+                "period": "2022年3月 — 2022年11月",
+                "description": "React.js を用いた内部ツールの開発と保守。設計、統合、テスト、納品まで開発サイクル全体に参加。プロフェッショナル環境での実践的なチーム開発を経験。"
             },
             "rintio": {
-                "description": "最終学年のインターンシップで技術チームに所属。AngularによるWebアプリケーション開発、Angular Materialでのインターフェース設計、Ionicによるハイブリッドモバイルの探求 — プロフェッショナル環境での初めての実践経験。"
+                "role": "開発インターン",
+                "company": "RINTIO",
+                "type": "最終学年インターンシップ · オンサイト",
+                "location": "ベナン・コトヌー",
+                "period": "2019年9月 — 2019年12月",
+                "description": "技術チームでの最終学年インターンシップ。Angular を用いたWebアプリケーション開発、Angular Material によるインターフェース設計、ハイブリッドモバイル向け Ionic の探索。実際のプロフェッショナル環境への初めての接触。"
+            }
+        },
+        "education": {
+            "smartel": {
+                "institution": "Smartel",
+                "degree": "Webアプリケーション開発・デザイン",
+                "level": "集中トレーニング",
+                "period": "2023年2月 — 2024年7月",
+                "description": "Webアプリケーションの開発とデザインに特化した実践重視の集中トレーニング。実践的なチームプロジェクトを実施。"
+            },
+            "eneam": {
+                "institution": "ENEAM",
+                "degree": "情報科学学士号",
+                "level": "学士号",
+                "period": "2017年1月 — 2019年12月",
+                "description": "プログラミングおよび情報システム設計を専門とする情報科学の学士号。チーム開発プロジェクト、実践的なプログラミング作業を経験。"
+            }
+        },
+        "certifications": {
+            "aiFluency": {
+                "title": "AI Fluency: フレームワークと基礎",
+                "date": "2026年5月",
+                "description": "AIモデルと効果的・倫理的・安全に対話するための実践的トレーニング。コーク大学（アイルランド）とリンリングカレッジの学術専門家と共同設計。"
+            },
+            "claudeCode101": {
+                "title": "Claude Code 101",
+                "date": "2026年5月",
+                "description": "開発エージェントとしての Claude Code の習得：インストール、日常ワークフロー、高度なカスタマイズ。"
+            },
+            "claudeCodeInAction": {
+                "title": "Claude Code 実践編",
+                "date": "2026年4月",
+                "description": "AIコーディングアシスタントの高度なアーキテクチャ、コンテキスト管理、MCPサーバーによる拡張、GitHub連携。"
+            },
+            "googleDigital": {
+                "title": "Google デジタルパック（広告・SEO・アナリティクス・マイビジネス）",
+                "date": "2024年1月"
+            },
+            "chatgptMidjourney": {
+                "title": "ChatGPT・GPT4・Midjourney — 完全AIトレーニング 2023",
+                "date": "2024年1月"
+            },
+            "formationWeb": {
+                "title": "Web開発者完全トレーニング",
+                "date": "2024年1月"
             }
         },
         "services": {
             "webApplications": {
-                "painPoint": "アプリケーションが遅く、保守が難しく、ユーザーが競合他社に離れています。",
-                "solution": "高速でスケーラブル、かつ保守が容易なカスタムWebアプリケーションを構築します — スムーズなフロントエンドと堅牢なクラウドアーキテクチャ。",
+                "title": "Webアプリケーション",
+                "painPoint": "アプリケーションが遅く、保守が困難で、ユーザーが競合他社に流出しています。",
+                "solution": "高速でスケーラブルかつ保守しやすいカスタムWebアプリケーションを構築します。スムーズなフロントエンドと堅牢なクラウドアーキテクチャを提供。",
                 "results": [
-                    "3倍高速な読み込みによる最大+20%のコンバージョン向上",
+                    "読み込み時間を3倍短縮 → コンバージョン最大+20%",
                     "長期的な保守コストを30〜50%削減",
-                    "再構築なしで100人から10,000ユーザーまでスケール"
+                    "即時スケーラビリティ：再構築せずに100人から10,000人へ拡張可能"
                 ],
-                "cta": "プロジェクトについて相談する"
+                "cta": "プロジェクトについて教えてください"
             },
             "mobileApps": {
-                "painPoint": "iOSとAndroidを別々に開発すると、コストと期間が2倍になります。",
-                "solution": "単一のReact Nativeアプリを構築 — 高速でネイティブのような体験、両ストアにデプロイ、保守可能なコードベースとスムーズなユーザー体験。",
+                "title": "モバイルアプリ",
+                "painPoint": "iOSとAndroidを別々に開発すると、コストと納期が倍増します。",
+                "solution": "高性能でネイティブに近いReact Nativeアプリを1つ構築し、両方のストアに展開。保守可能なコードとシームレスな体験を提供。",
                 "results": [
-                    "2つのネイティブ開発と比較して40%の予算削減",
-                    "単一コードベースによる市場投入までの時間を30%短縮",
-                    "保守の簡素化 — 両プラットフォームで一つのコードベース"
+                    "ネイティブ2本開発と比較して予算を40%削減",
+                    "市場投入までの時間を30%短縮（開発工数が一本化）",
+                    "メンテナンスが簡素化：両プラットフォームで1つのコードベース"
                 ],
-                "cta": "モバイルアプリについて話し合いましょう"
+                "cta": "モバイルアプリについて相談する"
             },
             "seoPerformance": {
-                "painPoint": "サイトがGoogleで見つからず、遅すぎて訪問者がコンテンツを見る前に離脱します。",
-                "solution": "完全な技術監査（Core Web Vitals、アクセシビリティ、SEO）を実行し、超高速サイトに必要な最適化を適用します。",
+                "title": "SEO & パフォーマンス",
+                "painPoint": "サイトがGoogleで見つからず、遅すぎて訪問者がコンテンツを見る前に離脱してしまいます。",
+                "solution": "Core Web Vitals、アクセシビリティ、SEOを含む完全な技術監査を実施し、超高速サイトに必要な最適化を適用します。",
                 "results": [
-                    "読み込み時間2秒未満 → 直帰率40%低下",
-                    "優れた技術的SEOスコア → インデックス改善、オーガニックトラフィック増加",
+                    "読み込み時間2秒未満 → 直帰率を40%低下",
+                    "完璧な技術的SEOスコア → インデックス改善、オーガニックトラフィックが倍増",
                     "読み込み時間1秒短縮ごとにコンバージョン率+2%"
                 ],
                 "cta": "サイトを監査する"
             },
             "aiAutomation": {
-                "painPoint": "チームがデータ入力、メール、レポートなど、自動化可能なタスクに何時間も費やしています。",
-                "solution": "時間を節約し、人為的ミスを減らすカスタムAIアシスタントと自動化パイプラインを構築します。",
+                "title": "AI & 自動化",
+                "painPoint": "チームが手動データ入力・メール・レポートなど、自動化できるタスクに何時間も費やしています。",
+                "solution": "カスタムAIアシスタントと自動化パイプラインを統合し、時間を節約し人為的ミスを削減します。",
                 "results": [
-                    "チームメンバー1人あたり週最大15時間の節約（年間約8,500ドル）",
+                    "チームメンバー1人あたり週最大15時間（年間約8,000ユーロ相当）を節約",
                     "データ入力エラーを90%削減",
-                    "チームは書類作業ではなく高価値な業務に集中"
+                    "チームは事務作業ではなく価値創造に集中できる"
                 ],
-                "cta": "ワークフローを自動化する"
+                "cta": "プロセスを自動化する"
             }
         },
         "projects": {
             "adamPortfolio": {
-                "description": "動的コンテンツ、i18n、ブログ、GitHub ActionsによるCI/CDを備えたNuxt 4ポートフォリオ。"
+                "title": "Adam ポートフォリオ",
+                "role": "リードフルスタック開発者",
+                "description": "Nuxt 4 を使用したポートフォリオサイト。動的コンテンツ、i18n、ブログ、GitHub Actions による CI/CD を実装。"
             },
             "saasEcommerce": {
-                "description": "LaravelとVue 3で構築されたマルチテナントSaaSプラットフォーム。Stripe統合とDockerデプロイメントを搭載。"
+                "title": "SaaS Eコマースプラットフォーム",
+                "role": "フルスタック開発者",
+                "description": "Laravel、Vue 3、Stripe連携、Dockerデプロイを採用したマルチテナントSaaS。"
             },
             "mobileX": {
-                "description": "フィールドエージェント向けクロスプラットフォームモバイルアプリ。オフラインファースト同期とリアルタイムダッシュボード。"
+                "title": "モバイルアプリ X",
+                "role": "React Native 開発者",
+                "description": "フィールドエージェント向けクロスプラットフォームモバイルアプリ。オフラインファースト同期とリアルタイムダッシュボードを実装。"
             },
             "queryCraft": {
-                "description": "実行計画の可視化と最適化提案を行うSQLクエリアナライザー。"
+                "title": "Query Craft",
+                "role": "フルスタック開発者",
+                "description": "SQLクエリアナライザー。実行計画の可視化と最適化提案を提供。"
             },
             "deployLab": {
-                "description": "自動デプロイと監視を備えたCI/CDパイプラインとコンテナ化マイクロサービス。"
+                "title": "Deploy Lab",
+                "role": "DevOps エンジニア",
+                "description": "CI/CDパイプラインとコンテナ化されたマイクロサービス。自動デプロイと監視を実装。"
             },
             "aiBlogAutopilot": {
-                "description": "Claude APIを利用した記事要約ツール。プロンプトテンプレートとMCP統合を搭載。"
-            }
-        },
-        "education": {
-            "smartel": {
-                "degree": "Webアプリケーション開発・設計",
-                "description": "モダンなWebアプリケーションの構築とアーキテクチャに焦点を当てた、実践的な集中トレーニングプログラム。チームベースの実践プロジェクト。"
-            },
-            "eneam": {
-                "degree": "計算機科学学士号",
-                "description": "プログラミングと情報システム設計を専門とする計算機科学の学位。チーム開発プロジェクトと実践的なプログラミング作業を含む。"
-            }
-        },
-        "certifications": {
-            "aiFluency": {
-                "title": "AI Fluency: Framework & Foundations",
-                "description": "AIモデルとの効果的で倫理的かつ安全なインタラクションに関する実践的トレーニング。University College CorkとRingling Collegeの学識経験者と共同開発。"
-            },
-            "claudeCode101": {
-                "title": "Claude Code 101",
-                "description": "開発エージェントとしてのClaude Codeの習得 — インストール、日常ワークフロー、高度なカスタマイズ。"
-            },
-            "claudeCodeInAction": {
-                "title": "Claude Code in Action",
-                "description": "高度なAIコーディングエージェントのアーキテクチャ、コンテキスト管理、MCPサーバーとGitHub統合による拡張性。"
+                "title": "AIブログオートパイロット",
+                "role": "AI開発者",
+                "description": "Claude API を使用した記事要約ツール。プロンプトテンプレートと MCP 連携を実装。"
             }
         }
-    }
-}
+    }}

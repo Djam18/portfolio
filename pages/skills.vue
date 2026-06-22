@@ -1,6 +1,7 @@
 <!-- pages/skills.vue -->
 <template>
   <div class="mx-auto max-w-5xl px-4 py-24">
+
     <!-- Header -->
     <div class="mb-16">
       <h1 class="mb-4 font-display text-4xl font-bold text-text-primary">
@@ -16,13 +17,13 @@
       <button
         v-for="cat in categories"
         :key="cat.id"
-        @click="activeCategory = cat.id"
         :class="[
           'rounded-card border border-border p-6 text-left transition',
           activeCategory === cat.id
             ? 'bg-surface border-accent'
             : 'hover:bg-surface/50'
         ]"
+        @click="activeCategory = cat.id"
       >
         <div class="mb-2 flex items-center gap-3">
           <Icon :name="cat.icon" class="text-2xl text-accent" />
@@ -45,7 +46,6 @@
       <h2 class="mb-6 font-display text-2xl font-bold text-text-primary">
         {{ t(`skills.categories.${activeCategory}`) }}
       </h2>
-
       <div class="space-y-4">
         <div
           v-for="tech in skills[activeCategory]"
@@ -56,9 +56,10 @@
             <Icon :name="tech.icon" class="text-xl text-text-primary" />
             <div>
               <span class="font-medium text-text-primary">{{ tech.name }}</span>
+              <!-- localePath() assure le bon préfixe de langue sur chaque lien -->
               <NuxtLink
                 v-if="getProjectLink(tech)"
-                :to="getProjectLink(tech)"
+                :to="localePath(getProjectLink(tech))"
                 class="ml-2 text-sm text-accent hover:underline"
               >
                 → {{ t('skills.seeProject') }}
@@ -81,51 +82,43 @@
         </BadgeTag>
       </div>
     </div>
+
   </div>
 </template>
 
 <script setup lang="ts">
 const { t } = useI18n()
+const localePath = useLocalePath()   // ← ajout pour les liens localisés
 const appConfig = useAppConfig()
 const skills = appConfig.skills
 
-// Category definitions (level is the overall level for that category)
 const categories = [
-  { id: 'frontend', level: 'expert', icon: 'ph:monitor' },
-  { id: 'backend', level: 'expert', icon: 'ph:server' },
+  { id: 'frontend', level: 'expert',     icon: 'ph:monitor'  },
+  { id: 'backend',  level: 'expert',     icon: 'ph:server'   },
   { id: 'database', level: 'proficient', icon: 'ph:database' },
-  { id: 'devops', level: 'proficient', icon: 'ph:cloud' },
-  { id: 'ai', level: 'proficient', icon: 'ph:robot' }
+  { id: 'devops',   level: 'proficient', icon: 'ph:cloud'    },
+  { id: 'ai',       level: 'proficient', icon: 'ph:robot'    },
 ] as const
 
-const activeCategory = ref('frontend')
+const activeCategory = ref<'frontend' | 'backend' | 'database' | 'devops' | 'ai'>('frontend')
 
-// Current stack (hardcoded for now, could be moved to app.config or a composable)
 const currentStack = [
-  'Nuxt 4.4',
-  'Laravel 11',
-  'TypeScript',
-  'Tailwind',
-  'PostgreSQL',
-  'Docker',
-  'GitHub Actions',
-  'Claude Code'
+  'Nuxt 4.4', 'Laravel 11', 'TypeScript',
+  'Tailwind', 'PostgreSQL', 'Docker',
+  'GitHub Actions', 'Claude Code',
 ]
 
-// Returns a link to the portfolio project that proves this tech skill
-function getProjectLink(tech: any): string | null {
-  // Use an optional 'project' field in app.config skills entries (see suggestion below)
-  if (tech.project) {
-    return `/portfolio/${tech.project}`
-  }
-  // Fallback: manual mapping if you haven't added the project field yet
+function getProjectLink(tech: { name: string; project?: string }): string {
+  // Priorité 1 : champ project explicite dans app.config.ts
+  if (tech.project) return `/portfolio/${tech.project}`
+
+  // Priorité 2 : fallback par nom — AVEC /portfolio/ devant (c'était le bug)
   const map: Record<string, string> = {
-    'Vue.js / Nuxt': 'adam-portfolio',
-    'Laravel / PHP': 'saas-ecommerce',
-    'React / React Native': 'mobile-x',
-    'Claude Code': 'adam-portfolio'
+    'Vue.js / Nuxt':        '/portfolio/adam-portfolio',  // ← /portfolio/ ajouté
+    'Laravel / PHP':        '/portfolio/saas-ecommerce',
+    'React / React Native': '/portfolio/mobile-x',        // ← /portfolio/ ajouté
+    'Claude Code':          '/portfolio/adam-portfolio',
   }
-  const slug = map[tech.name]
-  return slug ? `/portfolio/${slug}` : null
+  return map[tech.name] ?? null
 }
 </script>
