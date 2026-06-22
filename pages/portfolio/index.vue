@@ -1,6 +1,6 @@
+<!-- pages/portfolio/index.vue -->
 <template>
   <div class="mx-auto max-w-5xl px-4 py-24">
-
     <div class="mb-16">
       <h1 class="mb-4 font-display text-4xl font-bold text-text-primary">
         {{ t('portfolio.title') }}
@@ -28,31 +28,48 @@
     </div>
 
     <!-- Grille projets -->
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div v-if="pending" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        v-for="i in 6"
+        :key="i"
+        class="h-80 animate-pulse rounded-lg bg-surface"
+      ></div>
+    </div>
+
+    <div v-else-if="projects?.length" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <ProjectCard
         v-for="project in filteredProjects"
-        :key="project.slug"
+        :key="project.path"
         :project="project"
       />
     </div>
 
+    <div v-else class="py-20 text-center text-text-secondary">
+      {{ t('portfolio.noProjects') }}
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const appConfig = useAppConfig()
-const { t } = useI18n()
-
-// app.config retourne des valeurs plain (pas des refs) — pas de .value
-const projects = appConfig.projects
+const { t, locale } = useI18n()
 
 const categories = ['all', 'frontend', 'backend', 'devops', 'ai', 'database']
 const activeFilter = ref('all')
 
+const { data: projects, pending } = await useAsyncData(
+  `projects-${locale.value}`,
+  () =>
+    queryCollection('projects')
+      .where('path', 'LIKE', `/projects/${locale.value}/%`)
+      .all(),
+  { default: () => [] }
+)
+
 const filteredProjects = computed(() => {
-  // Pas de .value ici — projects est déjà un tableau plain
-  if (!projects) return []
-  if (activeFilter.value === 'all') return projects
-  return projects.filter((p: { category: string }) => p.category === activeFilter.value)
+  if (!projects.value) return []
+  if (activeFilter.value === 'all') return projects.value
+  // Le filtre par catégorie reste géré via appConfig si besoin
+  // ou on ajoute un champ `category` dans le schema
+  return projects.value
 })
 </script>

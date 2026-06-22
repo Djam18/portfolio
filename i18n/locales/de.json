@@ -78,10 +78,40 @@
         "results": "Ergebnisse",
         "featuredProjects": "Ausgewählte Projekte",
         "viewAll": "Alle anzeigen",
-        "noProjects": "Noch keine Projekte. Füge dein erstes hinzu in",
         "goToPortfolio": "Zur Portfolio-Seite",
         "liveSite": "Live-Website",
-        "sourceCode": "Quellcode"
+        "sourceCode": "Quellcode",
+        "status": {
+            "live": "Live",
+            "in-progress": "In Bearbeitung",
+            "concept": "Konzept",
+            "draft": "Entwurf"
+        },
+        "wireframeAvailable": "Wireframe verfügbar",
+        "noProjects": "Keine Projekte im Moment.",
+        "vision": {
+            "title": "Die Vision",
+            "motivation": "Warum dieses Projekt?",
+            "approach": "Technischer Ansatz",
+            "expectedOutcome": "Erwartetes Ergebnis",
+            "wireframe": "Design-Vorschau (Wireframe)",
+            "wireframeNote": "Dieses Wireframe zeigt die angestrebte visuelle Richtung, nicht die finale Darstellung."
+        },
+        "statusBanner": {
+            "in-progress": {
+                "title": "Projekt in Entwicklung",
+                "description": "Dieses Projekt befindet sich derzeit im Aufbau. Funktionen und Links werden in Kürze verfügbar sein."
+            },
+            "concept": {
+                "title": "Projekt in der Konzeptionsphase",
+                "description": "Dieses Projekt befindet sich noch im Konzeptstadium. Es veranschaulicht eine Vision, die ich gerade verwirkliche."
+            },
+            "draft": {
+                "title": "Unfertiges Projekt",
+                "description": "Dieses Projekt ist noch nicht öffentlich verfügbar."
+            },
+            "cta": "Sprechen wir darüber"
+        }
     },
     "button": {
         "light": "Zum hellen Modus wechseln",
@@ -138,8 +168,9 @@
     },
     "projectCard": {
         "caseStudy": "Fallstudie",
-        "live": "Live-Demo",
-        "code": "Code"
+        "live": "Live-Website",
+        "code": "Quellcode",
+        "seeVision": "Die Vision ansehen"
     },
     "socialLink": {
         "opensInNewTab": "öffnet in einem neuen Tab"
@@ -167,7 +198,7 @@
         "contactPage": "Kontakt | {author} ",
         "blogPage": "Blog | {author} "
     },
- "portfolioData": {
+    "portfolioData": {
         "identity": {
             "name": "Adam Abdel-Djamal",
             "title": "Full-Stack-Entwickler",

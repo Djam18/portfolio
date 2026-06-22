@@ -78,10 +78,40 @@
         "results": "Results",
         "featuredProjects": "Featured Projects",
         "viewAll": "View all",
-        "noProjects": "No projects yet. Add your first one in",
         "goToPortfolio": "Go to Portfolio page",
         "liveSite": "Live Site",
-        "sourceCode": "Source Code"
+        "sourceCode": "Source Code",
+        "status": {
+            "live": "Live",
+            "in-progress": "In progress",
+            "concept": "Concept",
+            "draft": "Draft"
+        },
+        "wireframeAvailable": "Wireframe available",
+        "noProjects": "No projects at the moment.",
+        "vision": {
+            "title": "The Vision",
+            "motivation": "Why this project?",
+            "approach": "Technical approach",
+            "expectedOutcome": "Expected outcome",
+            "wireframe": "Design preview (wireframe)",
+            "wireframeNote": "This wireframe represents the envisioned visual direction, not the final render."
+        },
+        "statusBanner": {
+            "in-progress": {
+                "title": "Project in Development",
+                "description": "This project is currently under construction. Features and links will be available soon."
+            },
+            "concept": {
+                "title": "Project in Design Phase",
+                "description": "This project is still a concept. It illustrates a vision I am bringing to life."
+            },
+            "draft": {
+                "title": "Unfinished Project",
+                "description": "This project is not yet publicly available."
+            },
+            "cta": "Let's talk about it"
+        }
     },
     "cookies": {
         "message": "We use cookies to remember your language preference and measure anonymous traffic.",
@@ -148,8 +178,9 @@
     },
     "projectCard": {
         "caseStudy": "Case study",
-        "live": "Live",
-        "code": "Code"
+        "live": "Live site",
+        "code": "Source code",
+        "seeVision": "See the vision"
     },
     "socialLink": {
         "opensInNewTab": "opens in a new tab"

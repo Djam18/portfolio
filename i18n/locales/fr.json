@@ -78,10 +78,40 @@
         "results": "Résultats",
         "featuredProjects": "Projects à présenter",
         "viewAll": "Voir tout",
-        "noProjects": "Aucun projet pour le moment. Ajoutez le premier dans",
         "goToPortfolio": "Aller à la page Portfolio",
         "liveSite": "Site en ligne",
-        "sourceCode": "Code source"
+        "sourceCode": "Code source",
+        "status": {
+            "live": "Live",
+            "in-progress": "En cours",
+            "concept": "Concept",
+            "draft": "Draft"
+        },
+        "wireframeAvailable": "Wireframe disponible",
+        "noProjects": "Aucun projet pour le moment.",
+        "vision": {
+            "title": "La vision",
+            "motivation": "Pourquoi ce projet ?",
+            "approach": "Approche technique",
+            "expectedOutcome": "Résultat attendu",
+            "wireframe": "Aperçu du design (wireframe)",
+            "wireframeNote": "Ce wireframe représente la direction visuelle envisagée, pas le rendu final."
+        },
+        "statusBanner": {
+            "in-progress": {
+                "title": "Projet en cours de développement",
+                "description": "Ce projet est en construction active. La vision ci-dessous reflète l'état actuel de la réflexion."
+            },
+            "concept": {
+                "title": "Projet en phase de conception",
+                "description": "Ce projet est encore au stade de concept. Il illustre ma façon d'aborder un problème."
+            },
+            "draft": {
+                "title": "Projet non finalisé",
+                "description": "Ce projet n'est pas encore disponible publiquement."
+            },
+            "cta": "Discutons-en"
+        }
     },
     "button": {
         "light": "Passer en mode clair",
@@ -139,7 +169,8 @@
     "projectCard": {
         "caseStudy": "Étude de cas",
         "live": "Site en direct",
-        "code": "Code source"
+        "code": "Code source",
+        "seeVision": "Voir la vision"
     },
     "socialLink": {
         "opensInNewTab": "s'ouvre dans un nouvel onglet"

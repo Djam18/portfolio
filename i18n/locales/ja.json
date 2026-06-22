@@ -78,10 +78,40 @@
         "results": "成果",
         "featuredProjects": "注目のプロジェクト",
         "viewAll": "すべて見る",
-        "noProjects": "まだプロジェクトがありません。最初のプロジェクトを追加してください：",
         "goToPortfolio": "ポートフォリオページへ",
         "liveSite": "ライブサイト",
-        "sourceCode": "ソースコード"
+        "sourceCode": "ソースコード",
+        "status": {
+            "live": "公開中",
+            "in-progress": "進行中",
+            "concept": "コンセプト",
+            "draft": "下書き"
+        },
+        "wireframeAvailable": "ワイヤーフレーム利用可能",
+        "noProjects": "現在プロジェクトはありません。",
+        "vision": {
+            "title": "ビジョン",
+            "motivation": "なぜこのプロジェクトなのか？",
+            "approach": "技術的アプローチ",
+            "expectedOutcome": "期待される結果",
+            "wireframe": "デザインプレビュー（ワイヤーフレーム）",
+            "wireframeNote": "このワイヤーフレームは、最終的なレンダリングではなく、想定されるビジュアルの方向性を示しています。"
+        }
+    },
+    "statusBanner": {
+        "in-progress": {
+            "title": "開発中のプロジェクト",
+            "description": "このプロジェクトは現在構築中です。機能とリンクはまもなく利用可能になります。"
+        },
+        "concept": {
+            "title": "構想段階のプロジェクト",
+            "description": "このプロジェクトはまだコンセプト段階です。現在実現しようとしているビジョンを表しています。"
+        },
+        "draft": {
+            "title": "未完成のプロジェクト",
+            "description": "このプロジェクトはまだ公開されていません。"
+        },
+        "cta": "話し合いましょう"
     },
     "button": {
         "light": "ライトモードに切り替え",
@@ -138,9 +168,10 @@
         "linkedin": "LinkedIn"
     },
     "projectCard": {
-        "caseStudy": "事例を見る",
-        "live": "ライブデモ",
-        "code": "コード"
+        "caseStudy": "ケーススタディ",
+        "live": "ライブサイト",
+        "code": "ソースコード",
+        "seeVision": "ビジョンを見る"
     },
     "socialLink": {
         "opensInNewTab": "新しいタブで開きます"
@@ -168,8 +199,7 @@
         "contactPage": "お問い合わせ | {author} ",
         "blogPage": "ブログ | {author} "
     },
-
- "portfolioData": {
+    "portfolioData": {
         "identity": {
             "name": "Adam Abdel-Djamal",
             "title": "フルスタック開発者",
@@ -326,4 +356,5 @@
                 "description": "Claude API を使用した記事要約ツール。プロンプトテンプレートと MCP 連携を実装。"
             }
         }
-    }}
+    }
+}

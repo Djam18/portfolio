@@ -37,7 +37,6 @@
 
 <script setup lang="ts">
 const { t, locale } = useI18n();
-const localePath = useLocalePath();
 
 useHead({
   title: computed(() => t('metaTitles.blogPage', { author: 'Adam Abdel-Djamal' })),

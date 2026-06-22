@@ -1,6 +1,7 @@
 ---
 title: "Adam Portfolio v2"
-description: "Mon portfolio personnel construit avec Nuxt 3, Tailwind CSS et Nuxt Content. Objectif : un site rapide, multilingue et SEO-friendly."
+description: "Mon portfolio personnel construit avec Nuxt 3, Tailwind CSS et Nuxt Content. Objectif : un site rapide, multilingue et SEO-friendly"
+status: "live"
 date: "2025-03-15"
 stack: ["Nuxt 4", "Vue 3", "Tailwind CSS", "TypeScript", "Nuxt Content"]
 image: "/images/portfolio/portfolio-v2.jpg"
