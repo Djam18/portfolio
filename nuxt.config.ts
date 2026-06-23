@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     'nuxt-umami',
     '@nuxtjs/google-fonts',
+    '@vercel/analytics',
   ],
 
   runtimeConfig: {
