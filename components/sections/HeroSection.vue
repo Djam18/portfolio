@@ -36,12 +36,12 @@
 
     <!-- CTAs -->
     <div class="mb-10 flex flex-wrap justify-center gap-4">
-      <NuxtLink to="/portfolio"
+      <NuxtLink :to="localePath('/portfolio')"
         class="rounded-lg bg-accent px-8 py-3 font-medium text-white transition hover:opacity-90">
         {{ t('hero.viewProjects') }}
       </NuxtLink>
 
-      <NuxtLink to="/contact"
+      <NuxtLink :to="localePath('/contact')"
         class="rounded-lg border border-border px-8 py-3 font-medium text-text-primary transition hover:bg-surface">
         {{ t('hero.contactMe') }}
       </NuxtLink>
@@ -81,5 +81,6 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
+const localePath = useLocalePath()
 const links = useAppConfig().links
 </script>

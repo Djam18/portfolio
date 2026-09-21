@@ -41,21 +41,11 @@
 </template>
 
 <script setup>
-const { t } = useI18n()
 import { SOCIALS } from '~/constants/socials'
-const { links } = useAppConfig();
-const email = links?.email
-const copied = ref(false)
 
-const copyEmail = async () => {
-  try {
-    await navigator.clipboard.writeText(email)
-    copied.value = true
-    setTimeout(() => (copied.value = false), 2000)
-  } catch (err) {
-    console.error('Copy failed', err)
-  }
-}
+const { t } = useI18n()
+const { email, copied, copyEmail } = useContact()
+
 useHead({
   title: computed(() => t('metaTitles.contactPage', { author: 'Adam Abdel-Djamal' }))
 });

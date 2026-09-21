@@ -44,11 +44,18 @@
 </template>
 
 <script setup>
-const { t } = useI18n();
+const { t, locale } = useI18n();
 
 const localePath = useLocalePath();
-const { data: projects } = await useAsyncData("featured-home", () =>
-  queryCollection("projects").order("date", "DESC").limit(3).all(),
+const { data: projects } = await useAsyncData(
+  `featured-home-${locale.value}`,
+  () =>
+    queryCollection("projects")
+      .where("path", "LIKE", `/projects/${locale.value}/%`)
+      .order("date", "DESC")
+      .limit(3)
+      .all(),
+  { watch: [locale] }
 );
 
 const featured = computed(() => projects.value || []);

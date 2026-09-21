@@ -8,25 +8,26 @@
 
     <div class="space-y-0">
       <TimelineItem
-        v-for="job in jobs"
-        :key="rt(job.company)"
-        :role="rt(job.role)"
-        :company="rt(job.company)"
-        :year="rt(job.year)"
-        :period="rt(job.period)"
-        :current="!!job.current"
-        :description="rt(job.desc)"
+        v-for="job in experience"
+        :key="job.slug"
+        :role="t(`portfolioData.experience.${job.slug}.role`)"
+        :company="t(`portfolioData.experience.${job.slug}.company`)"
+        :type="t(`portfolioData.experience.${job.slug}.type`)"
+        :location="t(`portfolioData.experience.${job.slug}.location`)"
+        :period="t(`portfolioData.experience.${job.slug}.period`)"
+        :current="job.current"
+        :description="t(`portfolioData.experience.${job.slug}.description`)"
+        :skills="job.skills"
       />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const { t, tm, rt } = useI18n()
+const { t } = useI18n()
+const { experience } = useAppConfig()
 
 useHead({
   title: computed(() => t('metaTitles.experiencePage', { author: 'Adam Abdel-Djamal' }))
 })
-
-const jobs = computed(() => tm('experience.jobs'))
 </script>

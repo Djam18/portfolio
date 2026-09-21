@@ -8,7 +8,7 @@
       <p class="mb-3 text-sm text-text-secondary">
         {{ t('cookies.message') }}
         <NuxtLink :to="localePath('/privacy')" class="text-accent underline">
-          {{ t('cookies.learnMore') }}
+          {{ t('privacy.title') }}
         </NuxtLink>
       </p>
       <div class="flex gap-2">
