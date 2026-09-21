@@ -122,31 +122,33 @@
     </div>
 
     <!-- CTA -->
-    <div class="mt-12 flex flex-wrap gap-4">
-      <template v-if="project?.status === 'live'">
-<a
-          v-if="project?.liveUrl"
-          :href="project.liveUrl"
-          target="_blank"
-          rel="noopener"
-          class="rounded-full border border-border px-6 py-2.5 text-sm font-medium transition hover:border-accent hover:text-accent"
-        >
-          {{ t("portfolio.liveSite") }} ↗
-        </a>
-<a
-          v-if="project?.repoUrl"
-          :href="project.repoUrl"
-          target="_blank"
-          rel="noopener"
-          class="rounded-full border border-border px-6 py-2.5 text-sm font-medium transition hover:border-accent hover:text-accent"
-        >
-          {{ t("portfolio.sourceCode") }} ↗
-        </a>
-      </template>
+    <!-- CTA -->
+    <div class="mt-12 flex flex-wrap items-center gap-4">
+      <a
+        v-if="project?.liveUrl || project?.link"
+        :href="project.liveUrl || project.link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-6 py-2.5 text-sm font-medium text-text-primary transition hover:border-accent hover:text-accent"
+      >
+        <Icon name="ph:arrow-square-out" class="h-4 w-4" />
+        {{ t("portfolio.liveSite") }}
+      </a>
+
+      <a
+        v-if="project?.repoUrl || project?.github"
+        :href="project.repoUrl || project.github"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-6 py-2.5 text-sm font-medium text-text-primary transition hover:border-accent hover:text-accent"
+      >
+        <Icon name="ph:github-logo" class="h-4 w-4" />
+        {{ t("portfolio.sourceCode") }}
+      </a>
+
       <NuxtLink
-        v-else
         :to="localePath('/contact')"
-        class="rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-bg transition hover:opacity-90"
+        class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-white transition hover:opacity-90"
       >
         {{ t("portfolio.statusBanner.cta") }} →
       </NuxtLink>
@@ -173,4 +175,27 @@ const { data: project } = await useAsyncData(
 if (!project.value) {
   throw createError({ statusCode: 404, statusMessage: 'Project not found' })
 }
+
+const SITE_URL = 'https://adam-portfolio.vercel.app'
+const canonicalUrl = computed(() => `${SITE_URL}${route.path}`)
+const ogImage = computed(() =>
+  project.value?.image ? `${SITE_URL}${project.value.image}` : `${SITE_URL}/images/og-default.jpg`
+)
+
+useSeoMeta({
+  title: () => `${project.value?.title} | Adam Abdel-Djamal`,
+  description: () => project.value?.description,
+  ogTitle: () => `${project.value?.title} | Adam Abdel-Djamal`,
+  ogDescription: () => project.value?.description,
+  ogUrl: canonicalUrl,
+  ogImage,
+  twitterCard: 'summary_large_image',
+  twitterTitle: () => `${project.value?.title} | Adam Abdel-Djamal`,
+  twitterDescription: () => project.value?.description,
+  twitterImage: ogImage,
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: canonicalUrl }],
+})
 </script>

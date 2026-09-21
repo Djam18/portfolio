@@ -56,7 +56,7 @@
         </div>
 
         <!-- Project link -->
-        <NuxtLink v-if="service.project" :to="`/portfolio/${service.project}`"
+        <NuxtLink v-if="service.project" :to="localePath(`/portfolio/${service.project}`)"
           class="mb-3 inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline">
           {{ t('services.seeProject') }}
           <Icon name="ph:arrow-right" class="h-4 w-4" />
@@ -76,7 +76,28 @@
 
 <script setup lang="ts">
 const appConfig = useAppConfig()
+const localePath = useLocalePath()
+const route = useRoute()
 // tm() + rt() est le pattern correct pour les tableaux i18n
 // tm() retourne le tableau de messages, rt() résout chaque item en string
 const { t, tm, rt } = useI18n()
+
+const SITE_URL = 'https://adam-portfolio.vercel.app'
+const canonicalUrl = computed(() => `${SITE_URL}${route.path}`)
+
+useSeoMeta({
+  title: () => t('metaTitles.servicesPage', { author: 'Adam Abdel-Djamal' }),
+  description: () => t('metaTitles.servicesDesc'),
+  ogTitle: () => t('metaTitles.servicesPage', { author: 'Adam Abdel-Djamal' }),
+  ogDescription: () => t('metaTitles.servicesDesc'),
+  ogUrl: canonicalUrl,
+  ogImage: `${SITE_URL}/images/og-default.jpg`,
+  twitterCard: 'summary_large_image',
+  twitterTitle: () => t('metaTitles.servicesPage', { author: 'Adam Abdel-Djamal' }),
+  twitterDescription: () => t('metaTitles.servicesDesc'),
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: canonicalUrl }],
+})
 </script>

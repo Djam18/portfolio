@@ -52,8 +52,29 @@
 
 <script setup lang="ts">
 const { t, locale } = useI18n()
+const appConfig = useAppConfig()
+const route = useRoute()
 
-const categories = ['all', 'frontend', 'backend', 'devops', 'ai', 'database']
+const SITE_URL = 'https://adam-portfolio.vercel.app'
+const canonicalUrl = computed(() => `${SITE_URL}${route.path}`)
+
+useSeoMeta({
+  title: () => t('metaTitles.portfolioPage', { author: 'Adam Abdel-Djamal' }),
+  description: () => t('metaTitles.portfolioDesc'),
+  ogTitle: () => t('metaTitles.portfolioPage', { author: 'Adam Abdel-Djamal' }),
+  ogDescription: () => t('metaTitles.portfolioDesc'),
+  ogUrl: canonicalUrl,
+  ogImage: `${SITE_URL}/images/og-default.jpg`,
+  twitterCard: 'summary_large_image',
+  twitterTitle: () => t('metaTitles.portfolioPage', { author: 'Adam Abdel-Djamal' }),
+  twitterDescription: () => t('metaTitles.portfolioDesc'),
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: canonicalUrl }],
+})
+
+const categories = ['all', 'ai', 'backend', 'frontend']
 const activeFilter = ref('all')
 
 const { data: projects, pending } = await useAsyncData(
@@ -68,8 +89,10 @@ const { data: projects, pending } = await useAsyncData(
 const filteredProjects = computed(() => {
   if (!projects.value) return []
   if (activeFilter.value === 'all') return projects.value
-  // Le filtre par catégorie reste géré via appConfig si besoin
-  // ou on ajoute un champ `category` dans le schema
-  return projects.value
+  return projects.value.filter((p) => {
+    const slug = p.path?.split('/').pop()
+    const configProject = appConfig.projects?.find((cp) => cp.slug === slug)
+    return configProject?.category === activeFilter.value
+  })
 })
 </script>

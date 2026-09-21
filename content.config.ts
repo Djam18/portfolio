@@ -7,9 +7,10 @@ export default defineContentConfig({
       source: "projects/**/*.md",
       schema: z.object({
         title: z.string(),
+        slug: z.string().optional(),
         description: z.string(),
         date: z.string().optional(),
-        status: z.enum(["live", "in-progress", "draft", "concept"]).default("draft"),
+        status: z.enum(["live", "in-progress", "draft", "concept", "analysis"]).default("draft"),
         stack: z.array(z.string()).optional(),
         image: z.string().optional(),
         wireframe: z.string().optional(),         // chemin vers le PNG wireframe
@@ -43,6 +44,7 @@ export default defineContentConfig({
         image: z.string().optional(),
         author: z.string().optional(),
         readingTime: z.number().optional(),
+        featured: z.boolean().optional(),
         slug: z.string(),
       }),
     }),

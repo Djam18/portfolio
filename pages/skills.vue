@@ -88,9 +88,29 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
-const localePath = useLocalePath()   // ← ajout pour les liens localisés
+const localePath = useLocalePath()
 const appConfig = useAppConfig()
+const route = useRoute()
 const skills = appConfig.skills
+
+const SITE_URL = 'https://adam-portfolio.vercel.app'
+const canonicalUrl = computed(() => `${SITE_URL}${route.path}`)
+
+useSeoMeta({
+  title: () => t('metaTitles.skillsPage', { author: 'Adam Abdel-Djamal' }),
+  description: () => t('metaTitles.skillsDesc'),
+  ogTitle: () => t('metaTitles.skillsPage', { author: 'Adam Abdel-Djamal' }),
+  ogDescription: () => t('metaTitles.skillsDesc'),
+  ogUrl: canonicalUrl,
+  ogImage: `${SITE_URL}/images/og-default.jpg`,
+  twitterCard: 'summary_large_image',
+  twitterTitle: () => t('metaTitles.skillsPage', { author: 'Adam Abdel-Djamal' }),
+  twitterDescription: () => t('metaTitles.skillsDesc'),
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: canonicalUrl }],
+})
 
 const categories = [
   { id: 'frontend', level: 'expert',     icon: 'ph:monitor'  },
@@ -108,17 +128,17 @@ const currentStack = [
   'GitHub Actions', 'Claude Code',
 ]
 
-function getProjectLink(tech: { name: string; project?: string }): string {
+function getProjectLink(tech: { name: string; project?: string }): string | null {
   // Priorité 1 : champ project explicite dans app.config.ts
-  if (tech.project) return `/portfolio/${tech.project}`
+  if (tech.project) return localePath(`/portfolio/${tech.project}`)
 
-  // Priorité 2 : fallback par nom — AVEC /portfolio/ devant (c'était le bug)
+  // Priorité 2 : fallback par nom
   const map: Record<string, string> = {
-    'Vue.js / Nuxt':        '/portfolio/adam-portfolio',  // ← /portfolio/ ajouté
-    'Laravel / PHP':        '/portfolio/saas-ecommerce',
-    'React / React Native': '/portfolio/mobile-x',        // ← /portfolio/ ajouté
-    'Claude Code':          '/portfolio/adam-portfolio',
+    'Vue.js / Nuxt': '/portfolio/ats-analyzer',
+    'Laravel / PHP': '/portfolio/shop-tenant',
+    'Claude Code':   '/portfolio/operia',
+    'Python':        '/portfolio/operia',
   }
-  return map[tech.name] ?? null
+  return map[tech.name] ? localePath(map[tech.name]) : null
 }
 </script>
