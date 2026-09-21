@@ -59,12 +59,22 @@
         "shareTitle": "Share this article",
         "twitter": "Twitter / X",
         "linkedin": "LinkedIn",
+        "readArticle": "Read Article",
+        "featured": "Featured Article",
+        "tableOfContents": "Table of Contents",
+        "relatedPosts": "Related Articles",
+        "allTags": "All Topics",
+        "searchPlaceholder": "Search articles or topics...",
+        "authorBio": {
+            "bio": "Adam Abdel-Djamal is a Full-Stack & AI Engineer crafting high-performance web applications with Nuxt, Vue, Laravel, and autonomous AI agents.",
+            "cta": "Get in touch"
+        },
         "index": {
-            "title": "Blog",
-            "subtitle": "Thoughts on web development, tutorials, and lessons learned.",
-            "noPosts": "No posts yet. Coming soon!",
-            "metaTitle": "Blog | Adam Abdel-Djamal",
-            "metaDesc": "Articles and thoughts on web development by Adam Abdel-Djamal."
+            "title": "Blog & Insights",
+            "subtitle": "Engineering tutorials, architecture breakdowns, and thoughts on AI & modern web development.",
+            "noPosts": "No articles found matching your criteria.",
+            "metaTitle": "Blog & Insights | Adam Abdel-Djamal — Full Stack Developer",
+            "metaDesc": "In-depth engineering articles on Nuxt, Vue, Laravel, AI agents, PostgreSQL optimization, and web performance by Adam Abdel-Djamal."
         }
     },
     "portfolio": {
@@ -84,6 +94,7 @@
         "status": {
             "live": "Live",
             "in-progress": "In progress",
+            "analysis": "In Analysis",
             "concept": "Concept",
             "draft": "Draft"
         },
@@ -101,6 +112,10 @@
             "in-progress": {
                 "title": "Project in Development",
                 "description": "This project is currently under construction. Features and links will be available soon."
+            },
+            "analysis": {
+                "title": "Project in Analysis Phase",
+                "description": "This project is currently undergoing architectural and technical feasibility analysis."
             },
             "concept": {
                 "title": "Project in Design Phase",
@@ -180,7 +195,8 @@
         "caseStudy": "Case study",
         "live": "Live site",
         "code": "Source code",
-        "seeVision": "See the vision"
+        "seeVision": "See the vision",
+        "seeAnalysis": "See analysis"
     },
     "socialLink": {
         "opensInNewTab": "opens in a new tab"
@@ -194,9 +210,17 @@
         "copied": "Copied!"
     },
     "metaTitles": {
-        "experiencePage": "Experience | {author} ",
-        "contactPage": "Contact | {author} ",
-        "blogPage": "Blog | {author} "
+        "home": "Adam Abdel-Djamal | Full-Stack Developer & AI Engineer",
+        "homeDesc": "Portfolio of Adam Abdel-Djamal, Full-Stack Developer specialized in Vue.js, Nuxt, Laravel, and autonomous AI agents.",
+        "portfolioPage": "Portfolio & Case Studies | {author}",
+        "portfolioDesc": "Explore production applications and systems built by Adam Abdel-Djamal: AI agents, SaaS architectures, and web platforms.",
+        "skillsPage": "Technical Skills & Stack | {author}",
+        "skillsDesc": "Core technical competencies: Vue, Nuxt, Laravel, Python, TypeScript, PostgreSQL, Docker, and AI systems.",
+        "servicesPage": "Services & Solutions | {author}",
+        "servicesDesc": "Custom web development, SaaS architecture, AI automation, and web performance optimization.",
+        "experiencePage": "Experience | {author}",
+        "contactPage": "Contact | {author}",
+        "blogPage": "Blog & Insights | {author}"
     },
     "portfolioData": {
         "identity": {
@@ -324,35 +348,25 @@
             }
         },
         "projects": {
+            "atsAnalyzer": {
+                "title": "ATS Analyzer (Talenta)",
+                "role": "Lead Full-Stack & AI Developer",
+                "description": "AI-powered CV scoring tool for job seekers with ATS compatibility analysis (0–100 score), keyword gap detection, rewrite suggestions, and Supabase auth."
+            },
+            "operia": {
+                "title": "OpérIA",
+                "role": "AI Systems & Backend Architect",
+                "description": "Enterprise Operations & Financial Copilot AI Agent (MCP) with Human-in-the-Loop validation, high-performance SQL pushdown (<15ms), and financial recovery dashboards."
+            },
+            "shopTenant": {
+                "title": "Shop-Tenant",
+                "role": "Backend & Cloud Architect",
+                "description": "Multi-tenant e-commerce SaaS platform for independent merchants in West Africa with tenant isolation, Stripe payments, and automated provisioning."
+            },
             "adamPortfolio": {
-                "title": "Adam Portfolio",
+                "title": "Adam Portfolio v2",
                 "role": "Lead Full-Stack Developer",
-                "description": "Nuxt 4 portfolio with dynamic content, i18n, blog, and CI/CD via GitHub Actions."
-            },
-            "saasEcommerce": {
-                "title": "SaaS E‑commerce Platform",
-                "role": "Full-Stack Developer",
-                "description": "Multi-tenant SaaS with Laravel, Vue 3, Stripe integration, and Docker deployment."
-            },
-            "mobileX": {
-                "title": "Mobile App X",
-                "role": "React Native Developer",
-                "description": "Cross-platform mobile app for field agents with offline-first sync and real-time dashboard."
-            },
-            "queryCraft": {
-                "title": "Query Craft",
-                "role": "Full-Stack Developer",
-                "description": "SQL query analyzer with execution plan visualization and optimization suggestions."
-            },
-            "deployLab": {
-                "title": "Deploy Lab",
-                "role": "DevOps Engineer",
-                "description": "CI/CD pipeline and containerized microservice with automated deployment and monitoring."
-            },
-            "aiBlogAutopilot": {
-                "title": "AI Blog Autopilot",
-                "role": "AI Developer",
-                "description": "Article summarization tool using Claude API with prompt templates and MCP integration."
+                "description": "Nuxt 4 developer portfolio and technical blog with dynamic content, 5 languages i18n, SQLite engine, and edge deployment on Vercel."
             }
         }
     }

@@ -6,6 +6,10 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'vercel-static',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/robots.txt', '/sitemap.xml'],
+    },
   },
 
   modules: [
@@ -34,6 +38,9 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
+      meta: [
+        { name: 'google-site-verification', content: '-9sULS5ZzMUDa-oT9w5mIT6drEbVNLBegSk_CBMURiA' },
+      ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       ],
@@ -47,7 +54,10 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
   },
 
-  sitemap: {},
+  sitemap: {
+    sitemaps: false,
+    xsl: false,
+  },
 
   robots: {
     groups: [

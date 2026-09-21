@@ -59,12 +59,22 @@
         "shareTitle": "Partager cet article",
         "twitter": "Twitter / X",
         "linkedin": "LinkedIn",
+        "readArticle": "Lire l'article",
+        "featured": "Article à la une",
+        "tableOfContents": "Table des matières",
+        "relatedPosts": "Articles recommandés",
+        "allTags": "Tous les thèmes",
+        "searchPlaceholder": "Rechercher un article ou un thème...",
+        "authorBio": {
+            "bio": "Adam Abdel-Djamal est Développeur Full-Stack & Ingénieur IA, spécialisé dans la conception d'applications robustes avec Nuxt, Vue, Laravel et agents IA autonomes.",
+            "cta": "Me contacter"
+        },
         "index": {
-            "title": "Blog",
-            "subtitle": "Réflexions sur le développement web, tutoriels et leçons apprises.",
-            "noPosts": "Pas encore d'articles. Bientôt !",
-            "metaTitle": "Blog | Adam Abdel-Djamal",
-            "metaDesc": "Articles et réflexions sur le développement web par Adam Abdel-Djamal."
+            "title": "Blog & Analyses",
+            "subtitle": "Tutoriels d'ingénierie, architectures logicielles et réflexions sur l'IA et le développement web moderne.",
+            "noPosts": "Aucun article ne correspond à votre recherche.",
+            "metaTitle": "Blog & Analyses | Adam Abdel-Djamal — Développeur Full Stack",
+            "metaDesc": "Articles techniques approfondis sur Nuxt, Vue, Laravel, agents IA, optimisation PostgreSQL et performance web par Adam Abdel-Djamal."
         }
     },
     "portfolio": {
@@ -82,10 +92,11 @@
         "liveSite": "Site en ligne",
         "sourceCode": "Code source",
         "status": {
-            "live": "Live",
+            "live": "En ligne",
             "in-progress": "En cours",
+            "analysis": "En analyse",
             "concept": "Concept",
-            "draft": "Draft"
+            "draft": "Brouillon"
         },
         "wireframeAvailable": "Wireframe disponible",
         "noProjects": "Aucun projet pour le moment.",
@@ -101,6 +112,10 @@
             "in-progress": {
                 "title": "Projet en cours de développement",
                 "description": "Ce projet est en construction active. La vision ci-dessous reflète l'état actuel de la réflexion."
+            },
+            "analysis": {
+                "title": "Projet en phase d'analyse",
+                "description": "Ce projet fait actuellement l'objet d'une analyse architecturale et de faisabilité technique."
             },
             "concept": {
                 "title": "Projet en phase de conception",
@@ -170,7 +185,8 @@
         "caseStudy": "Étude de cas",
         "live": "Site en direct",
         "code": "Code source",
-        "seeVision": "Voir la vision"
+        "seeVision": "Voir la vision",
+        "seeAnalysis": "Voir l'analyse"
     },
     "socialLink": {
         "opensInNewTab": "s'ouvre dans un nouvel onglet"
@@ -194,9 +210,17 @@
         "cookies": "Ce site utilise uniquement des cookies pour mémoriser votre préférence de langue (i18n_redirected) et mesurer le trafic anonyme via Umami Analytics. Aucune donnée personnelle n'est collectée ou vendue."
     },
     "metaTitles": {
-        "experiencePage": "Expérience | {author} ",
-        "contactPage": "Contact | {author} ",
-        "blogPage": "Blog | {author} "
+        "home": "Adam Abdel-Djamal | Développeur Full-Stack & Ingénieur IA",
+        "homeDesc": "Portfolio d'Adam Abdel-Djamal, Développeur Full-Stack spécialisé en Vue.js, Nuxt, Laravel et agents IA autonomes.",
+        "portfolioPage": "Portfolio & Projets | {author}",
+        "portfolioDesc": "Découvrez les applications et architectures conçues par Adam Abdel-Djamal : agents IA, SaaS multi-tenant et plateformes web.",
+        "skillsPage": "Compétences Techniques & Stack | {author}",
+        "skillsDesc": "Stack et savoir-faire technique d'Adam Abdel-Djamal : Vue, Nuxt, Laravel, Python, TypeScript, Docker et systèmes IA.",
+        "servicesPage": "Services & Solutions Logicielles | {author}",
+        "servicesDesc": "Développement web sur mesure, architecture SaaS, automatisation par IA et optimisation de performance SEO.",
+        "experiencePage": "Expérience | {author}",
+        "contactPage": "Contact | {author}",
+        "blogPage": "Blog & Analyses | {author}"
     },
     "portfolioData": {
         "identity": {
@@ -324,35 +348,25 @@
             }
         },
         "projects": {
+            "atsAnalyzer": {
+                "title": "ATS Analyzer (Talenta)",
+                "role": "Lead Développeur Full-Stack & IA",
+                "description": "Outil de scoring de CV propulsé par l'IA pour candidats : analyse de compatibilité ATS (score 0–100), détection de mots-clés manquants, suggestions de réécriture et auth Supabase."
+            },
+            "operia": {
+                "title": "OpérIA",
+                "role": "Architecte Systèmes IA & Backend",
+                "description": "Copilote IA Opérationnel & Financier d'entreprise (Agent MCP) avec validation humaine (HITL), pushdown SQL haute performance (< 15 ms) et tableaux de bord de recouvrement."
+            },
+            "shopTenant": {
+                "title": "Shop-Tenant",
+                "role": "Architecte Backend & Cloud",
+                "description": "Plateforme SaaS e-commerce multi-tenant pour commerçants indépendants en Afrique de l'Ouest avec isolation des données, paiements Stripe et provisioning automatisé."
+            },
             "adamPortfolio": {
-                "title": "Adam Portfolio",
-                "role": "Lead Full-Stack Developer",
-                "description": "Portfolio Nuxt 4 avec contenu dynamique, i18n, blog et CI/CD via GitHub Actions."
-            },
-            "saasEcommerce": {
-                "title": "SaaS E‑commerce Platform",
-                "role": "Développeur Full-Stack",
-                "description": "SaaS multi-tenant avec Laravel, Vue 3, intégration Stripe et déploiement Docker."
-            },
-            "mobileX": {
-                "title": "Mobile App X",
-                "role": "Développeur React Native",
-                "description": "Application mobile cross-platform pour agents de terrain avec synchronisation offline-first et tableau de bord temps réel."
-            },
-            "queryCraft": {
-                "title": "Query Craft",
-                "role": "Développeur Full-Stack",
-                "description": "Analyseur de requêtes SQL avec visualisation du plan d'exécution et suggestions d'optimisation."
-            },
-            "deployLab": {
-                "title": "Deploy Lab",
-                "role": "Ingénieur DevOps",
-                "description": "Pipeline CI/CD et microservice conteneurisé avec déploiement automatisé et monitoring."
-            },
-            "aiBlogAutopilot": {
-                "title": "AI Blog Autopilot",
-                "role": "Développeur IA",
-                "description": "Outil de résumé d'articles utilisant l'API Claude avec templates de prompts et intégration MCP."
+                "title": "Adam Portfolio v2",
+                "role": "Lead Développeur Full-Stack",
+                "description": "Portfolio de développeur et blog technique Nuxt 4 avec contenu dynamique, i18n en 5 langues, moteur SQLite et déploiement edge sur Vercel."
             }
         }
     }

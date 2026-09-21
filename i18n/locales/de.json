@@ -59,12 +59,22 @@
         "shareTitle": "Diesen Artikel teilen",
         "twitter": "Twitter / X",
         "linkedin": "LinkedIn",
+        "readArticle": "Artikel lesen",
+        "featured": "Top-Beitrag",
+        "tableOfContents": "Inhaltsverzeichnis",
+        "relatedPosts": "Ähnliche Artikel",
+        "allTags": "Alle Themen",
+        "searchPlaceholder": "Artikel oder Themen durchsuchen...",
+        "authorBio": {
+            "bio": "Adam Abdel-Djamal ist Full-Stack-Entwickler und KI-Ingenieur und erstellt leistungsstarke Webanwendungen mit Nuxt, Vue, Laravel und KI-Agenten.",
+            "cta": "Kontakt aufnehmen"
+        },
         "index": {
-            "title": "Blog",
-            "subtitle": "Gedanken zur Webentwicklung, Tutorials und gewonnene Erkenntnisse.",
-            "noPosts": "Noch keine Beiträge. Demnächst!",
-            "metaTitle": "Blog | Adam Abdel-Djamal",
-            "metaDesc": "Artikel und Gedanken zur Webentwicklung von Adam Abdel-Djamal."
+            "title": "Blog & Einblicke",
+            "subtitle": "Engineering-Tutorials, Software-Architekturen und Gedanken zu KI & moderner Webentwicklung.",
+            "noPosts": "Keine Artikel gefunden, die Ihren Kriterien entsprechen.",
+            "metaTitle": "Blog & Einblicke | Adam Abdel-Djamal — Full Stack Entwickler",
+            "metaDesc": "Fundierte technische Artikel zu Nuxt, Vue, Laravel, KI-Agenten, PostgreSQL-Optimierung und Webleistung von Adam Abdel-Djamal."
         }
     },
     "portfolio": {
@@ -84,6 +94,7 @@
         "status": {
             "live": "Live",
             "in-progress": "In Bearbeitung",
+            "analysis": "In Analyse",
             "concept": "Konzept",
             "draft": "Entwurf"
         },
@@ -101,6 +112,10 @@
             "in-progress": {
                 "title": "Projekt in Entwicklung",
                 "description": "Dieses Projekt befindet sich derzeit im Aufbau. Funktionen und Links werden in Kürze verfügbar sein."
+            },
+            "analysis": {
+                "title": "Projekt in Analysephase",
+                "description": "Dieses Projekt wird derzeit architektonisch und auf technische Machbarkeit hin analysiert."
             },
             "concept": {
                 "title": "Projekt in der Konzeptionsphase",
@@ -170,7 +185,8 @@
         "caseStudy": "Fallstudie",
         "live": "Live-Website",
         "code": "Quellcode",
-        "seeVision": "Die Vision ansehen"
+        "seeVision": "Die Vision ansehen",
+        "seeAnalysis": "Analyse ansehen"
     },
     "socialLink": {
         "opensInNewTab": "öffnet in einem neuen Tab"
@@ -194,9 +210,17 @@
         "cookies": "Diese Website verwendet Cookies ausschließlich, um Ihre Sprachpräferenz (i18n_redirected) zu speichern und anonymen Traffic über Umami Analytics zu messen. Es werden keine persönlichen Daten erfasst oder verkauft."
     },
     "metaTitles": {
-        "experiencePage": "Berufserfahrung | {author} ",
-        "contactPage": "Kontakt | {author} ",
-        "blogPage": "Blog | {author} "
+        "home": "Adam Abdel-Djamal | Full-Stack-Entwickler & KI-Ingenieur",
+        "homeDesc": "Portfolio von Adam Abdel-Djamal, Full-Stack-Entwickler spezialisiert auf Vue.js, Nuxt, Laravel und autonome KI-Agenten.",
+        "portfolioPage": "Portfolio & Fallstudien | {author}",
+        "portfolioDesc": "Entdecken Sie von Adam Abdel-Djamal entwickelte Anwendungen: KI-Agenten, Multi-Tenant-SaaS und Webplattformen.",
+        "skillsPage": "Technische Fähigkeiten & Stack | {author}",
+        "skillsDesc": "Technisches Profil: Vue, Nuxt, Laravel, Python, TypeScript, PostgreSQL, Docker und KI-Systeme.",
+        "servicesPage": "Dienstleistungen & Lösungen | {author}",
+        "servicesDesc": "Webentwicklung nach Maß, SaaS-Architektur, KI-Automatisierung und Web-Performance-Optimierung.",
+        "experiencePage": "Erfahrung | {author}",
+        "contactPage": "Kontakt | {author}",
+        "blogPage": "Blog & Einblicke | {author}"
     },
     "portfolioData": {
         "identity": {
@@ -324,35 +348,25 @@
             }
         },
         "projects": {
+            "atsAnalyzer": {
+                "title": "ATS Analyzer (Talenta)",
+                "role": "Lead Full-Stack & KI-Entwickler",
+                "description": "KI-gestütztes Tool zur CV-Bewertung für Bewerber: ATS-Kompatibilitätsanalyse (0–100 Score), Erkennung fehlender Schlüsselwörter, Optimierungsvorschläge und Supabase-Auth."
+            },
+            "operia": {
+                "title": "OpérIA",
+                "role": "KI-System- & Backend-Architekt",
+                "description": "Betriebs- & Finanz-Copilot-KI-Agent für Unternehmen (MCP) mit Human-in-the-Loop-Validierung, High-Performance-SQL-Pushdown (< 15 ms) und Finanzanalysen."
+            },
+            "shopTenant": {
+                "title": "Shop-Tenant",
+                "role": "Backend- & Cloud-Architekt",
+                "description": "Mandantenfähige E-Commerce-SaaS-Plattform für unabhängige Händler in Westafrika mit Mandantentrennung, Stripe-Zahlungen und automatisierter Bereitstellung."
+            },
             "adamPortfolio": {
-                "title": "Adam Portfolio",
+                "title": "Adam Portfolio v2",
                 "role": "Lead Full-Stack Developer",
-                "description": "Nuxt 4 Portfolio mit dynamischen Inhalten, i18n, Blog und CI/CD über GitHub Actions."
-            },
-            "saasEcommerce": {
-                "title": "SaaS E‑commerce Plattform",
-                "role": "Full-Stack Developer",
-                "description": "Multi-Tenant-SaaS mit Laravel, Vue 3, Stripe-Integration und Docker-Deployment."
-            },
-            "mobileX": {
-                "title": "Mobile App X",
-                "role": "React Native Developer",
-                "description": "Plattformübergreifende Mobile-App für Außendienstmitarbeiter mit Offline-First-Synchronisation und Echtzeit-Dashboard."
-            },
-            "queryCraft": {
-                "title": "Query Craft",
-                "role": "Full-Stack Developer",
-                "description": "SQL-Query-Analyzer mit Visualisierung des Ausführungsplans und Optimierungsvorschlägen."
-            },
-            "deployLab": {
-                "title": "Deploy Lab",
-                "role": "DevOps Engineer",
-                "description": "CI/CD-Pipeline und containerisierter Microservice mit automatisierter Bereitstellung und Überwachung."
-            },
-            "aiBlogAutopilot": {
-                "title": "AI Blog Autopilot",
-                "role": "AI Developer",
-                "description": "Tool zur Artikelzusammenfassung mit der Claude-API, Prompt-Vorlagen und MCP-Integration."
+                "description": "Nuxt 4 Entwickler-Portfolio und technischer Blog mit dynamischen Inhalten, i18n in 5 Sprachen, SQLite-Content-Engine und Edge-Deployment auf Vercel."
             }
         }
     }

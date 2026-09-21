@@ -55,16 +55,26 @@
     "blog": {
         "backToBlog": "ブログに戻る",
         "notFound": "記事が見つかりません。",
-        "readingTime": "{time}分",
+        "readingTime": "{time}分で読める",
         "shareTitle": "この記事をシェア",
         "twitter": "Twitter / X",
         "linkedin": "LinkedIn",
+        "readArticle": "記事を読む",
+        "featured": "注目記事",
+        "tableOfContents": "目次",
+        "relatedPosts": "関連記事",
+        "allTags": "すべてのトピック",
+        "searchPlaceholder": "記事やトピックを検索...",
+        "authorBio": {
+            "bio": "Adam Abdel-Djamal は、Nuxt、Vue、Laravel、および自律型AIエージェントを用いた高性能Webアプリケーションの開発を専門とするフルスタック＆AIエンジニアです。",
+            "cta": "お問い合わせ"
+        },
         "index": {
-            "title": "ブログ",
-            "subtitle": "ウェブ開発に関する考察、チュートリアル、学んだ教訓。",
-            "noPosts": "まだ投稿はありません。近日公開！",
-            "metaTitle": "ブログ | Adam Abdel-Djamal",
-            "metaDesc": "Adam Abdel-Djamal によるウェブ開発の記事と考察。"
+            "title": "ブログ＆知見",
+            "subtitle": "エンジニアリングのチュートリアル、ソフトウェアアーキテクチャ、AIと最新Web開発の考察。",
+            "noPosts": "条件に一致する記事は見つかりませんでした。",
+            "metaTitle": "ブログ＆知見 | Adam Abdel-Djamal — フルスタック開発者",
+            "metaDesc": "Nuxt、Vue、Laravel、AIエージェント、PostgreSQL最適化、Webパフォーマンスに関する技術的考察（Adam Abdel-Djamal）。"
         }
     },
     "portfolio": {
@@ -84,6 +94,7 @@
         "status": {
             "live": "公開中",
             "in-progress": "進行中",
+            "analysis": "分析中",
             "concept": "コンセプト",
             "draft": "下書き"
         },
@@ -102,6 +113,10 @@
         "in-progress": {
             "title": "開発中のプロジェクト",
             "description": "このプロジェクトは現在構築中です。機能とリンクはまもなく利用可能になります。"
+        },
+        "analysis": {
+            "title": "分析フェーズのプロジェクト",
+            "description": "このプロジェクトは現在、アーキテクチャ設計および技術的実現可能性の分析を行っています。"
         },
         "concept": {
             "title": "構想段階のプロジェクト",
@@ -171,7 +186,8 @@
         "caseStudy": "ケーススタディ",
         "live": "ライブサイト",
         "code": "ソースコード",
-        "seeVision": "ビジョンを見る"
+        "seeVision": "ビジョンを見る",
+        "seeAnalysis": "分析を見る"
     },
     "socialLink": {
         "opensInNewTab": "新しいタブで開きます"
@@ -195,9 +211,17 @@
         "cookies": "このサイトは、言語設定（i18n_redirected）を記憶し、Umami Analyticsによる匿名トラフィックを測定する目的でのみCookieを使用します。個人データは収集も販売もされません。"
     },
     "metaTitles": {
-        "experiencePage": "職歴 | {author} ",
-        "contactPage": "お問い合わせ | {author} ",
-        "blogPage": "ブログ | {author} "
+        "home": "Adam Abdel-Djamal | フルスタック開発者＆AIエンジニア",
+        "homeDesc": "Adam Abdel-Djamal のポートフォリオ。Vue.js、Nuxt、Laravel、自律型AIエージェントに特化したフルスタックエンジニア。",
+        "portfolioPage": "ポートフォリオ＆ケーススタディ | {author}",
+        "portfolioDesc": "Adam Abdel-Djamal が構築したプロダクト：AIエージェント、マルチテナントSaaS、Webプラットフォーム。",
+        "skillsPage": "技術スキル＆スタック | {author}",
+        "skillsDesc": "技術スキル：Vue、Nuxt、Laravel、Python、TypeScript、PostgreSQL、Docker、AIシステム。",
+        "servicesPage": "サービス＆ソリューション | {author}",
+        "servicesDesc": "カスタムWeb開発、SaaSアーキテクチャ、AI自動化、Webパフォーマンス最適化。",
+        "experiencePage": "職務経歴 | {author}",
+        "contactPage": "お問い合わせ | {author}",
+        "blogPage": "ブログ＆知見 | {author}"
     },
     "portfolioData": {
         "identity": {
@@ -325,35 +349,25 @@
             }
         },
         "projects": {
+            "atsAnalyzer": {
+                "title": "ATS Analyzer (Talenta)",
+                "role": "リードフルスタック＆AI開発者",
+                "description": "求職者向けAI履歴書スコアリングツール：ATS適合率分析（0〜100点）、不足キーワード検出、書き直し提案、Supabase認証を搭載。"
+            },
+            "operia": {
+                "title": "OpérIA",
+                "role": "AIシステム＆バックエンドアーキテクト",
+                "description": "企業向け業務・財務コパイロットAIエージェント（MCP）。人間の確認（HITL）ワークフロー、超高速SQLプッシュダウン（<15ms）、財務分析ダッシュボードを実装。"
+            },
+            "shopTenant": {
+                "title": "Shop-Tenant",
+                "role": "バックエンド＆クラウドアーキテクト",
+                "description": "西アフリカの独立系加盟店向けマルチテナントEコマースSaaS。テナントデータ分離、Stripe決済、自動プロビジョニングをサポート。"
+            },
             "adamPortfolio": {
-                "title": "Adam ポートフォリオ",
+                "title": "Adam Portfolio v2",
                 "role": "リードフルスタック開発者",
-                "description": "Nuxt 4 を使用したポートフォリオサイト。動的コンテンツ、i18n、ブログ、GitHub Actions による CI/CD を実装。"
-            },
-            "saasEcommerce": {
-                "title": "SaaS Eコマースプラットフォーム",
-                "role": "フルスタック開発者",
-                "description": "Laravel、Vue 3、Stripe連携、Dockerデプロイを採用したマルチテナントSaaS。"
-            },
-            "mobileX": {
-                "title": "モバイルアプリ X",
-                "role": "React Native 開発者",
-                "description": "フィールドエージェント向けクロスプラットフォームモバイルアプリ。オフラインファースト同期とリアルタイムダッシュボードを実装。"
-            },
-            "queryCraft": {
-                "title": "Query Craft",
-                "role": "フルスタック開発者",
-                "description": "SQLクエリアナライザー。実行計画の可視化と最適化提案を提供。"
-            },
-            "deployLab": {
-                "title": "Deploy Lab",
-                "role": "DevOps エンジニア",
-                "description": "CI/CDパイプラインとコンテナ化されたマイクロサービス。自動デプロイと監視を実装。"
-            },
-            "aiBlogAutopilot": {
-                "title": "AIブログオートパイロット",
-                "role": "AI開発者",
-                "description": "Claude API を使用した記事要約ツール。プロンプトテンプレートと MCP 連携を実装。"
+                "description": "Nuxt 4で構築された開発者ポートフォリオ＆技術ブログ。動的コンテンツ、5言語i18n、SQLiteコンテンツエンジン、Vercelエッジデプロイ。"
             }
         }
     }
