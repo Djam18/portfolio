@@ -5,9 +5,11 @@ status: "live"
 date: "2025-03-15"
 stack: ["Nuxt 4", "Vue 3", "Tailwind CSS", "TypeScript", "Nuxt Content"]
 image: "/images/portfolio/portfolio-v2.jpg"
-link: "https://portfolio-phi-virid-73.vercel.app/"
-github: "https://github.com/ton-user/portfolio"
-slug: "portfolio"
+link: "https://adam-portfolio.vercel.app"
+liveUrl: "https://adam-portfolio.vercel.app"
+github: "https://github.com/Djam18/portfolio"
+repoUrl: "https://github.com/Djam18/portfolio"
+slug: "adam-portfolio"
 featured: true
 ---
 
